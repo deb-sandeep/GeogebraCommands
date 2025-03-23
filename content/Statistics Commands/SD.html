@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">SD Command</h1> 
+ <div id="preamble"> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SD( &lt;List of Raw Data&gt; )
+     </dt> 
+     <dd> 
+      <p>Calculates the <a href="https://en.wikipedia.org/wiki/Standard_deviation">standard deviation</a> of the numbers in the list.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>This command has also the equivalent syntax <code>stdevp( &lt;List of Raw Data&gt; )</code>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>SD({1, 2, 3, 4, 5})</code> yields <em>1.41</em></p> </li> 
+       <li> <p><code>stdevp({1, 2, 3, 4, 5})</code> yields <em>1.41</em></p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SD( &lt;List of Numbers&gt;, &lt;List of Frequencies&gt; )
+     </dt> 
+     <dd> 
+      <p>Calculates the weighted <em>standard deviation</em> of the given numbers.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>This command has also the equivalent syntax <code>stdevp( &lt;List of Numbers&gt;, &lt;List of Frequencies&gt; )</code>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>SD({1, 2, 3, 4, 5}, {5, 4, 3, 2, 1})</code> yields <em>1.25</em></p> </li> 
+       <li> <p><code>stdevp({1, 2, 3, 4, 5}, {5, 4, 3, 2, 1})</code> yields <em>1.25</em></p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="sect1"> 
+  <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SD( &lt;List of Raw Data&gt; )
+     </dt> 
+     <dd> 
+      <p>Calculates the <em>standard deviation</em> of the numbers in the list.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>This command has also the equivalent syntax <code>stdevp( &lt;List of Raw Data&gt; )</code>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>SD({1, 2, 3, 4, 5})</code> yields \(\sqrt{2}\).</p> </li> 
+       <li> <p><code>stdevp({1, 2, 3, 4, 5})</code> yields \(\sqrt{2}\).</p> </li> 
+       <li> <p><code>SD({-3 + 2 x, -1- 4 x, -2 + 5 x^2})</code> is <a href="../../tools/Evaluate/" class="xref page">evaluated</a> as \( \sqrt{2} \frac{\sqrt{25x⁴ + 10x³ + 28x² - 18x + 3} } { 3 } \).</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SD( &lt;List of Numbers&gt;, &lt;List of Frequencies&gt; )
+     </dt> 
+     <dd> 
+      <p>Calculates the weighted <em>standard deviation</em> of the given numbers.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>This command has also the equivalent syntax <code>stdevp( &lt;List of Numbers&gt;, &lt;List of Frequencies&gt; )</code>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>SD({1, 2, 3, 4, 5}, {5, 4, 3, 2, 1})</code> yields \(\frac{\sqrt{14}}{3}\)</p> </li> 
+       <li> <p><code>stdevp({1, 2, 3, 4, 5}, {5, 4, 3, 2, 1})</code> yields \(\frac{\sqrt{14}}{3}\)</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <a href="../Algebra Commands/Mean.html" class="xref page">Mean Command</a>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Numeric Command</h1> 
+ <div class="sect1"> 
+  <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Numeric( &lt;Expression&gt; )
+     </dt> 
+     <dd> 
+      <p>Tries to determine a numerical approximation of the given expression. The number of decimals depends on the global rounding you choose in the <a href="../../Options_Menu/" class="xref page">Options Menu</a>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Numeric(3 / 2)</code> yields <em>1.5</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Numeric( &lt;Expression&gt;, &lt;Significant Figures&gt; )
+     </dt> 
+     <dd> 
+      <p>Tries to determine a numerical approximation of the given expression, using the entered number of significant figures.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Numeric(sin(1), 20)</code> yields <em>0.84147098480789650665</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>If you don’t specify enough digits then you can get an apparently wrong answer due to <a href="http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html">floating point cancelation</a>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Numeric(-500000000/785398163*sin(785398163/500000000)*1258025227.19^2+500000000/785398163*1258025227.19^2,10)</code> will give <em>4096</em> but <code>Numeric(-500000000/785398163*sin(785398163/500000000)*1258025227.19^2+500000000/785398163*1258025227.19^2,30)</code> will give <em>0.318309886345536696694580314215</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <span class="image"><img src="../../_images/24px-Mode_numeric.svg.png" alt="24px Mode numeric.svg" width="24" height="24"></span> <a href="../Algebra Commands/Numeric.html" class="xref page">Numeric</a> tool.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

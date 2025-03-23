@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Erlang Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Erlang( &lt;Shape&gt;, &lt;Rate&gt;, &lt;Variable Value&gt; )
+   </dt> 
+   <dd> 
+    <p>Calculates the value of cumulative distribution function of an <a href="https://en.wikipedia.org/wiki/Erlang_distribution">Erlang distribution</a> at <em>variable value v</em>, i.e. the probability <em>P(X ≤ v)</em> where <em>X</em> is a random variable with an Erlang distribution defined by the parameters <em>shape</em> and <em>rate</em>.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>This syntax returns the probability at a given value, that is the area under the Erlang distribution curve to the left of the given <em>x</em>-coordinate.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Erlang( &lt;Shape&gt;, &lt;Rate&gt;, &lt;Variable Value&gt;, &lt;Boolean Cumulative&gt; )
+   </dt> 
+   <dd> 
+    <p>If <em>Cumulative = true</em>, calculates the value of the cumulative distribution function of an Erlang distribution with given <em>shape</em> and <em>rate</em> at the given <em>variable value</em>, otherwise it calculates the probability density function of the distribution at <em>variable value</em>.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    Erlang( &lt;Shape&gt;, &lt;Rate&gt;, x, &lt;Boolean Cumulative&gt; )
+   </dt> 
+   <dd> 
+    <p>If <em>Cumulative = true</em>, creates the cumulative density function (cdf) of an Erlang distribution with given <em>shape</em> and <em>rate</em>, othewise it creates the probability density function (pdf) of the distribution.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+</article></body>
+</html>

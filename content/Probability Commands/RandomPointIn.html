@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">RandomPointIn Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    RandomPointIn( &lt;Region&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates a random point inside a given polygon or closed conic.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    RandomPointIn( &lt;List of Points&gt; )
+   </dt> 
+   <dd> 
+    <p>Returns a random point inside the polygon with given vertices.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>RandomPointIn(Polygon(A,B,C))</code> and <code>RandomPointIn(A,B,C)</code> both give random point inside triangle ABC.</p> 
+   </div> 
+   <div class="paragraph"> 
+    <p>To get a random point that belongs to the list use <a href="../CAS Specific Commands/RandomElement.html" class="xref page">Random Element</a> instead.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    RandomPointIn( &lt;xMin&gt;, &lt;xMax&gt;, &lt;yMin&gt;, &lt;yMax&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates a random point with x-coordinate from interval [xMin,xMax] and y-coordinate from interval [yMin, yMax].</p> 
+   </dd> 
+  </dl> 
+ </div> 
+</article></body>
+</html>

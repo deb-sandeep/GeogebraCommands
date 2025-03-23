@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Poisson Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Poisson( &lt;Mean&gt; )
+   </dt> 
+   <dd> 
+    <p>Returns a bar graph of a <a href="https://en.wikipedia.org/wiki/Poisson_distribution">Poisson distribution</a> with given mean <em>λ</em>.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    Poisson( &lt;Mean&gt;, &lt;Boolean Cumulative&gt; )
+   </dt> 
+   <dd> 
+    <p>Returns a bar graph of a Poisson distribution when <em>Cumulative = false</em>. Returns a graph of a cumulative Poisson distribution when <em>Cumulative = true</em>. The first parameter is same as above.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    Poisson( &lt;Mean&gt;, &lt;Variable Value v&gt;, &lt;Boolean Cumulative&gt; )
+   </dt> 
+   <dd> 
+    <p>Let X be a Poisson random variable. Returns P( X = <em>v</em>) when <em>Cumulative</em> = false. Returns P( X ≤ <em>v</em>) when <em>Cumulative</em> = true. First parameter is same as above.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="ulist"> 
+    <ul> 
+     <li> <p><code>Poisson(3, 1, true)</code> yields <em>0.2</em> in the <span class="image"><img src="../../_images/16px-Menu_view_algebra.svg.png" alt="Menu view algebra.svg" width="16" height="16"></span> <em>Algebra View</em> and <em>\(\frac{4}{e³}\) in the <span class="image"><img src="../../_images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span></em> CAS View<em>.</em></p> </li> 
+     <li> <p><code>Poisson(3, 1, false)</code> yields <em>0.15</em> in the <span class="image"><img src="../../_images/16px-Menu_view_algebra.svg.png" alt="Menu view algebra.svg" width="16" height="16"></span> <em>Algebra View</em> and <em>\(\frac{3}{e³}\)</em> in the <span class="image"><img src="../../_images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span> <em>CAS View</em>.</p> </li> 
+    </ul> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>A simplified syntax is available to calculate P(<em>u</em> ≤ X ≤ <em>v</em>): e.g. <code>Poisson(1, 1..5)</code> yields <em>0.63153</em>, that is the same as Poisson(1, {1, 2, 3, 4, 5}).</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

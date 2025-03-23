@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">KeepIf Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    KeepIf( &lt;Condition&gt;, &lt;List&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates a new list that only contains those elements of the initial list that fulfil the condition.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>KeepIf(x&lt;3, {1, 2, 3, 4, 1, 5, 6})</code> returns the new list <em>{1, 2, 1}</em>.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>For list of numbers arbitrary condition may be used. For list of other objects one can use only conditions of the form <code>x==constant</code> or <code>x!=constant</code>.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    KeepIf( &lt;Condition&gt;, &lt;Variable&gt;, &lt;List&gt; )
+   </dt> 
+   <dd> 
+    <p>This syntax allows a more flexible condition.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p>For Points <em>P, Q, R</em> <code>KeepIf(x(A) &lt; 3, A, {P, Q, R})</code> will filter the points whose <em>x</em>-coordinate is less than <em>3</em> out of the list. The variable <em>A</em> is replaced in turn with <em>P</em> then <em>Q</em> then <em>R</em> for the check.</p> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

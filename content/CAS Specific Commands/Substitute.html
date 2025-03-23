@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Substitute Command</h1> 
+ <div class="sect1"> 
+  <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Substitute( &lt;Expression&gt;, &lt;from&gt;, &lt;to&gt; )
+     </dt> 
+     <dd> 
+      <p>Replaces in <em>expression</em> all occurrences of <em>from</em> with <em>to</em> and evaluates the result when variables are substituted with values.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>Substitute((3 m - 3)^2 - (m + 3)^2, m, a)</code> yields <em>8 a<sup>2</sup> - 24 a</em>.</p> </li> 
+       <li> <p><code>Substitute((3 m - 3)^2 - (m + 3)^2, m, 2)</code> yields <em>-16</em>.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Substitute( &lt;Expression&gt;, &lt;Substitution List&gt; )
+     </dt> 
+     <dd> 
+      <p>Replaces in <em>expression</em> every occurrence of the variables in the <em>substitution list</em> with the corresponding terms or values, and evaluates numerical substitutions.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>Substitute(2x + 3y - z, {x = a, y = 2, z = b})</code> yields <em>2a - b + 6</em>.</p> </li> 
+       <li> <p><code>Substitute(2x + 3y - z, x = a, y = 2, z = b)</code> yields <em>2a - b + 6</em>.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

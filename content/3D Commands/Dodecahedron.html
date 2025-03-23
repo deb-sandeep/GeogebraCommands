@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Dodecahedron Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Dodecahedron( &lt;Regular pentagon&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates a dodecahedron having the given regular pentagon as base.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    Dodecahedron( &lt;Point&gt;, &lt;Point&gt;, &lt;Direction&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates a dodecahedron having the segment between two points as an edge. The other vertices are univocally determined by the given direction, that needs to be:</p> 
+    <div class="ulist"> 
+     <ul> 
+      <li> <p>a vector, a segment, a line, a ray <strong>orthogonal</strong> to the segment, or</p> </li> 
+      <li> <p>a polygon, a plane <strong>parallel</strong> to the segment.</p> 
+       <div class="paragraph"> 
+        <p>The created dodecahedron will have:</p> 
+       </div> </li> 
+      <li> <p>a face with the segment as an edge in a plane orthogonal to the given vector/segment/line/ray, or</p> </li> 
+      <li> <p>a face with the segment as an edge in a plane parallel to the polygon/plane.</p> </li> 
+     </ul> 
+    </div> 
+   </dd> 
+   <dt class="hdlist1">
+    Dodecahedron( &lt;Point&gt;, &lt;Point&gt;, &lt;Point&gt;)
+   </dt> 
+   <dd> 
+    <p>Creates a dodecahedron with three (adjacent) points of the first face. The points have to start a regular pentagon for the dodecahedron to be defined.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    Dodecahedron( &lt;Point&gt;, &lt;Point&gt;)
+   </dt> 
+   <dd> 
+    <p>Creates a dodecahedron with two (adjacent) points of the first face, and the third point automatically created on a circle, so that the dodecahedron can rotate around its first edge.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p><code>Dodecahedron(A, B)</code> is a shortcut for <code>Dodecahedron(A, B, C)</code> with <code>C = Point(Circle(((1 - sqrt(5)) A + (3 + sqrt(5)) B) / 4, Distance(A, B) sqrt(10 + 2sqrt(5)) / 4, Segment(A, B)))</code>.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>See also <a href="../3D Commands/Cube.html" class="xref page">Cube</a>, <a href="../3D Commands/Tetrahedron.html" class="xref page">Tetrahedron</a>, <a href="../3D Commands/Icosahedron.html" class="xref page">Icosahedron</a>, <a href="../3D Commands/Octahedron.html" class="xref page">Octahedron</a> commands.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

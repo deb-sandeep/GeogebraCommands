@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">PresentValue Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    PresentValue( &lt;Rate&gt;, &lt;Number of Periods&gt;, &lt;Payment&gt;, &lt;Future Value (optional)&gt;, &lt;Type (optional)&gt; )
+   </dt> 
+   <dd> 
+    <p>Returns the total amount of payments of an investment.</p> 
+    <div class="ulist"> 
+     <ul> 
+      <li> <p><strong>&lt;Rate&gt;</strong> Interest rate per period.</p> </li> 
+      <li> <p><strong>&lt;Number of Periods&gt;</strong> Total number of payments for the loan.</p> </li> 
+      <li> <p><strong>&lt;Payment&gt;</strong> The amount paid in each period.</p> </li> 
+      <li> <p><strong>&lt;Future Value (optional)&gt;</strong> A cash balance you want to attain after the last payment. If you do not enter a future value, it is assumed to be 0.</p> </li> 
+      <li> <p><strong>&lt;Type (optional)&gt;</strong> Indicates when payments are due. If you do not enter a value or you enter 0 the payment is due at the end of the period. If you enter 1 it is due at the beginning of the period.</p> </li> 
+     </ul> 
+    </div> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>PresentValue(12%/12, 4*12, -100, 5000, 0)</code> yields a present value of 696.06.</p> 
+   </div> 
+   <div class="paragraph"> 
+    <p><code>PresentValue(12%/12, 4*12, -100, 5000, 1)</code> yields a present value of 734.07.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>Make sure that you are consistent about the units you use for <code>&lt;Rate&gt;</code> and <code>&lt;Number of Periods&gt;</code>. If you make monthly payments on a four-year loan at an annual interest rate of 12 percent, use 12%/12 for rate and 4*12 for number of payments.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>For all arguments, cash paid out is represented by negative numbers and cash received by positive numbers.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>See also <a href="../Financial Commands/Payment.html" class="xref page">Payment</a>, <a href="../Financial Commands/Periods.html" class="xref page">Periods</a>, <a href="../Financial Commands/Rate.html" class="xref page">Rate</a> and <a href="../Financial Commands/FutureValue.html" class="xref page">Future Value</a> commands.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

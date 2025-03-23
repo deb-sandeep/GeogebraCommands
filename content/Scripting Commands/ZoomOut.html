@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">ZoomOut Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ZoomOut( &lt;Scale Factor&gt; )
+   </dt> 
+   <dd> 
+    <p>Zooms the <span class="image"><img src="../../_images/16px-Menu_view_graphics.svg.png" alt="Menu view graphics.svg" width="16" height="16"></span> <a href="../../Graphics_View/" class="xref page">Graphics View</a> out by given factor with respect to current zoom, center of the screen is used as center point for the zoom.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ZoomOut(2)</code> zooms the view out.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ZoomOut( &lt;Scale Factor&gt;, &lt;Center Point&gt; )
+   </dt> 
+   <dd> 
+    <p>Zooms the <span class="image"><img src="../../_images/16px-Menu_view_graphics.svg.png" alt="Menu view graphics.svg" width="16" height="16"></span> <a href="../../Graphics_View/" class="xref page">Graphics View</a> out by given factor with respect to current zoom, second parameter specifies center point for the zoom.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ZoomOut(2, (0, 0))</code></p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p><code>ZoomOut(t)</code> and <code>ZoomOut(t, A)</code> are equivalent to <code>ZoomIn(1/t)</code> and <code>ZoomIn(1/t, A)</code> respectively.</p> </li> 
+        <li> <p>If multiple <em>Graphics Views</em> are present, the active one is used.</p> </li> 
+        <li> <p>See also <a href="../Scripting Commands/ZoomIn.html" class="xref page">ZoomIn</a>, <a href="../Scripting Commands/SetActiveView.html" class="xref page">SetActiveView</a>, <a href="../Scripting Commands/Pan.html" class="xref page">Pan</a> commands.</p> </li> 
+       </ul> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

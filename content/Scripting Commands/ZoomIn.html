@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">ZoomIn Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ZoomIn( )
+   </dt> 
+   <dd> 
+    <p>Restores the <span class="image"><img src="../../_images/16px-Menu_view_graphics.svg.png" alt="Menu view graphics.svg" width="16" height="16"></span> <a href="../../Graphics_View/" class="xref page">Graphics View</a> to the default initial position</p> 
+   </dd> 
+   <dt class="hdlist1">
+    ZoomIn( &lt;Scale Factor&gt; )
+   </dt> 
+   <dd> 
+    <p>Zooms the <span class="image"><img src="../../_images/16px-Menu_view_graphics.svg.png" alt="Menu view graphics.svg" width="16" height="16"></span> <a href="../../Graphics_View/" class="xref page">Graphics View</a> in by given factor with respect to current zoom, center of the screen is used as center point for the zoom.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ZoomIn(1)</code> doesn’t change the view, but does remove traces</p> 
+   </div> 
+   <div class="paragraph"> 
+    <p><code>ZoomIn(2)</code> zooms the view in</p> 
+   </div> 
+   <div class="paragraph"> 
+    <p><code>ZoomIn(0.5)</code> is equivalent to <code>ZoomOut(2)</code>, i.e. it zooms the view out.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ZoomIn( &lt;Scale Factor&gt;, &lt;Center Point&gt; )
+   </dt> 
+   <dd> 
+    <p>Zooms the <span class="image"><img src="../../_images/16px-Menu_view_graphics.svg.png" alt="Menu view graphics.svg" width="16" height="16"></span> <a href="../../Graphics_View/" class="xref page">Graphics View</a> in by given factor with respect to current zoom, second parameter specifies center point for the zoom.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ZoomIn(2, (0, 0))</code></p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ZoomIn( &lt;Min x&gt;, &lt;Min y&gt;, &lt;Max x&gt;, &lt;Max y&gt; )
+   </dt> 
+   <dd> 
+    <p>Zooms the graphics view to the rectangle given by vertices (Min x, Min y), (Max x, Max y).</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ZoomIn(0, 1, 5, 6)</code></p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>If any of these parameters are dependent or has label set, the bounds of the view become dynamic. To avoid this behavior, use <a href="../Scripting Commands/CopyFreeObject.html" class="xref page">CopyFreeObject Command</a>.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p>If <em>a</em> is a slider, <code>ZoomIn(-a, -a, a, a)</code> makes the zoom of the view dependent on slider <em>a</em>.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ZoomIn( &lt;Min x&gt;, &lt;Min y&gt;, &lt;Min z&gt;, &lt;Max x&gt;, &lt;Max y&gt;, &lt;Max z&gt; )
+   </dt> 
+   <dd> 
+    <p>Zooms the 3D graphics view to the cuboid given by vertices (Min x, Min y, Min z), (Max x, Max y, Max z).</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ZoomIn(-5, -5, -5, 5, 5, 5)</code></p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>The dynamic behavior of the 2D version isn’t supported</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>If multiple <span class="image"><img src="../../_images/16px-Menu_view_graphics.svg.png" alt="Menu view graphics.svg" width="16" height="16"></span> <a href="../../Graphics_View/" class="xref page">Graphics Views</a> are present, the active one is used</p> </li> 
+        <li> <p>See also <a href="../Scripting Commands/ZoomOut.html" class="xref page">ZoomOut</a>, <a href="../Scripting Commands/SetActiveView.html" class="xref page">SetActiveView</a>, <a href="../Scripting Commands/Pan.html" class="xref page">Pan</a> commands.</p> </li> 
+       </ul> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

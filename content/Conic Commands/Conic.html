@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Conic Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Conic( &lt;Point&gt;, &lt;Point&gt;, &lt;Point&gt;, &lt;Point&gt;, &lt;Point&gt; )
+   </dt> 
+   <dd> 
+    <p>Returns a conic section through the five given points.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>Conic((0, -4), (2, 4), (3,1), (-2,3), (-3,-1))</code> yields <em>151x² - 37x y + 72y² + 14x - 42y = 1320</em> .</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>If four of the points lie on one line, then the conic section is not defined.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Conic( &lt;Number a&gt;, &lt;Number b&gt;, &lt;Number c&gt;, &lt;Number d&gt;, &lt;Number e&gt;, &lt;Number f&gt; )
+   </dt> 
+   <dd> 
+    <p>Returns a conic section \(a\cdot x^2+d\cdot xy+b\cdot y^2+e\cdot x+f\cdot y=-c\).</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>Conic(2, 3, -1, 4, 2, -3)</code> yields <em>2x² + 4x y + 3y² + 2x - 3y = 1</em> .</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Conic( &lt;List&gt; )
+   </dt> 
+   <dd> 
+    <p>Returns a conic section \(a\cdot x^2+d\cdot xy+b\cdot y^2+e\cdot x+f\cdot y=-c\).</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>Conic({2, 3, -1, 4, 2, -3})</code> yields <em>2x² + 4x y + 3y² + 2x - 3y = 1</em> .</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>See also <span class="image"><img src="../../_images/24px-Mode_conic5.svg.png" alt="Mode conic5.svg" width="24" height="24"></span> <a href="../../tools/Conic_through_5_Points/" class="xref page">Conic through 5 Points</a> tool and <a href="../Function Commands/Coefficients.html" class="xref page">Coefficients</a> command.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

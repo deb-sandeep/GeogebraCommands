@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Axes Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Axes( &lt;Conic&gt; )
+   </dt> 
+   <dd> 
+    <p>Returns the equations of the major and minor axes of a conic section.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>See also <a href="../Conic Commands/MajorAxis.html" class="xref page">MajorAxis</a> and <a href="../Conic Commands/MinorAxis.html" class="xref page">MinorAxis</a> commands.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Axes( &lt;Quadric&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates the 3 axes of the given quadric.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>Axes(x^2 + y^2 + z^2= 3)</code> returns the three lines</p> 
+   </div> 
+   <div class="paragraph"> 
+    <p><em>a</em>: <em>X</em> = (0, 0, 0) + <em>λ</em> (1, 0, 0), <em>b</em>: <em>X</em> = (0, 0, 0) + <em>λ</em> (0, 1, 0) and <em>c</em>: <em>X</em> = (0, 0, 0) + <em>λ</em> (0, 0, 1)</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>Specifically:</p> 
+      </div> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>if the given quadric is a <em>cylinder</em>, the command yields the two axes of the bottom circle and the rotation axis.</p> </li> 
+        <li> <p>if the given quadric is a <em>sphere</em>, the command yields the three axes parallel to the coordinate system axes.</p> </li> 
+       </ul> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

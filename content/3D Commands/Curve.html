@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Curve Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Curve( &lt;Expression&gt;, &lt;Expression&gt;, &lt;Parameter Variable&gt;, &lt;Start Value&gt;, &lt;End Value&gt; )
+   </dt> 
+   <dd> 
+    <p>Yields the Cartesian <a href="../../Curves/" class="xref page">parametric curve</a> for the given <em>x</em>-expression (first &lt;Expression&gt;) and <em>y</em>-expression (second &lt;Expression&gt;) (using parameter variable) within the given interval [<em>Start Value</em>, <em>End Value</em>].</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>Curve(2 cos(t), 2 sin(t), t, 0, 2π)</code> creates a circle with radius <em>2</em> around the origin of the coordinate system.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Curve( &lt;Expression&gt; , &lt;Expression&gt; , &lt;Expression&gt; , &lt;Parameter Variable&gt; , &lt;Start Value&gt; , &lt;End Value&gt; )
+   </dt> 
+   <dd> 
+    <p>Yields the 3D Cartesian parametric curve for the given <em>x</em>-expression (first &lt;Expression&gt;), <em>y</em>-expression (second &lt;Expression&gt;) and <em>z</em>-expression (third &lt;Expression&gt;) (using parameter variable) within the given interval [<em>Start Value</em>, <em>End Value</em>].</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>Curve(cos(t), sin(t), t, t, 0, 10π)</code> creates a 3D spiral.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p><em>End Value</em> must be greater than or equal to <em>Start Value</em> and both must be finite.</p> </li> 
+        <li> <p><em>x</em>, <em>y</em> and <em>z</em> are not allowed as parameter variables.</p> </li> 
+        <li> <p>See <a href="../../Curves/" class="xref page">Curves</a> for details, also see the <a href="../Function Commands/Derivative.html" class="xref page">Derivative Command</a> and the <a href="../Function Commands/ParametricDerivative.html" class="xref page">Parametric Derivative Command</a>.</p> </li> 
+       </ul> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

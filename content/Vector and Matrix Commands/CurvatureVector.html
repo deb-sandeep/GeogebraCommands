@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">CurvatureVector Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    CurvatureVector( &lt;Point&gt;, &lt;Object&gt; )
+   </dt> 
+   <dd> 
+    <p>Yields the curvature vector of the object (function, curve, conic) in the given point.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="ulist"> 
+    <ul> 
+     <li> <p><code>CurvatureVector((0, 0), x^2)</code> yields vector <em>(0, 2)</em></p> </li> 
+     <li> <p><code>CurvatureVector((0, 0), Curve(cos(t), sin(2t), t, 0, π))</code> yields vector <em>(0, 0)</em></p> </li> 
+     <li> <p><code>CurvatureVector((-1, 0), Conic({1, 1, 1, 2, 2, 3}))</code> yields vector <em>(0, -2)</em></p> </li> 
+    </ul> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

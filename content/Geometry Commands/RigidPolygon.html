@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">RigidPolygon Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    RigidPolygon( &lt;Polygon&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates a copy of any polygon that can only be translated by dragging its first vertex and rotated by dragging its second vertex.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    RigidPolygon( &lt;Polygon&gt;, &lt;Offset x&gt;, &lt;Offset y&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates a copy of any polygon with the given offset that can only be translated by dragging its first vertex and rotated by dragging its second vertex.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    RigidPolygon( &lt;Free Point&gt;, …​, &lt;Free Point&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates polygon whose shape cannot be changed. This polygon can be translated by dragging its first vertex and rotated by dragging its second vertex.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>The copy will join in every change of the original polygon. If you want to change the shape of the copy, you have to change the original.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">IFactor Command</h1> 
+ <div id="preamble"> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      IFactor( &lt;Polynomial&gt; )
+     </dt> 
+     <dd> 
+      <p>Factors over the irrationals.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>IFactor(x^2 + x - 1)</code> gives \( \left( x + \frac{-\sqrt{5} + 1}{2} \right) \left( x + \frac{\sqrt{5} + 1}{2} \right)\)</p> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="sect1"> 
+  <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      IFactor( &lt;Expression&gt; )
+     </dt> 
+     <dd> 
+      <p>Factors over the irrationals.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>IFactor(x^2 + x - 1)</code> returns \( \left( x + \frac{-\sqrt{5} + 1}{2} \right) \left( x + \frac{\sqrt{5} + 1}{2} \right)\)</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      IFactor( &lt;Expression&gt;, &lt;Variable&gt; )
+     </dt> 
+     <dd> 
+      <p>Factors over the irrationals with respect to a given variable.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>IFactor(a^2 + a - 1, a)</code> returns \( \left( a + \frac{-\sqrt{5} + 1}{2} \right) \left( a + \frac{\sqrt{5} + 1}{2} \right)\)</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <a href="../Algebra Commands/CIFactor.html" class="xref page">CIFactor</a> command.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

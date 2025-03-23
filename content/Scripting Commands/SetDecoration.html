@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">SetDecoration Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    SetDecoration( &lt;Object&gt;, &lt;Number&gt; )
+   </dt> 
+   <dd> 
+    <p>Sets the decoration of the given object (see also the <em>Style</em> tab in the <em>Properties</em> window of the object). The object must be an angle, a segment or a "fillable object". The second argument in the command is the numeric code of the decoration / fill-style, as described in the following table.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <table class="tableblock frame-all grid-all stretch"> 
+  <colgroup> 
+   <col style="width: 25%;"> 
+   <col style="width: 25%;"> 
+   <col style="width: 25%;"> 
+   <col style="width: 25%;"> 
+  </colgroup> 
+  <thead> 
+   <tr> 
+    <th class="tableblock halign-left valign-top">Value</th> 
+    <th class="tableblock halign-left valign-top">Segment decoration</th> 
+    <th class="tableblock halign-left valign-top">Angle decoration</th> 
+    <th class="tableblock halign-left valign-top">Fill-style</th> 
+   </tr> 
+  </thead> 
+  <tbody> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Remove decoration</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Remove decoration</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Solid fill</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">One tick</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Two arcs</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Hatched</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Two ticks</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Three arcs</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Cross-hatched</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Three ticks</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">One tick</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Chessboard</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">One arrow</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Two ticks</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Dotted</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Two arrows</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Three ticks</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Honeycomb</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Three arrows</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Clockwise arrow</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Brick</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">(None)</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Anticlockwise arrow</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">Weave pattern</p></td> 
+   </tr> 
+  </tbody> 
+ </table> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    SetDecoration(&lt;Segment&gt;, &lt;Number&gt;, &lt;Number&gt;)
+   </dt> 
+   <dd> 
+    <p>Sets the aspect of the line start and end of a segment. In order to view the decoration, it’s necessary to hide the two points that define the vertices of the segment. The segment decoration can also be set in the <em>Style</em> tab of the <em>Properties</em> window of the segment. The first number used as command parameter defines the style of the line segment start, and the second number sets the style of the line segment end, as described in the following table.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <table class="tableblock frame-all grid-all stretch"> 
+  <colgroup> 
+   <col style="width: 50%;"> 
+   <col style="width: 50%;"> 
+  </colgroup> 
+  <thead> 
+   <tr> 
+    <th class="tableblock halign-left valign-top">Value</th> 
+    <th class="tableblock halign-left valign-top">Decoration</th> 
+   </tr> 
+  </thead> 
+  <tbody> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">No decoration</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">vertical bar</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">empty square</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">filled square</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">arrow</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">filled arrow</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">empty dot</p></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">filled dot</p></td> 
+   </tr> 
+  </tbody> 
+ </table> 
+</article></body>
+</html>

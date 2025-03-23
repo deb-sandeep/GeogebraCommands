@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">ZMeanTest Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ZMeanTest( &lt;List of Sample Data&gt;, &lt;σ&gt;, &lt;Hypothesized Mean&gt;, &lt;Tail&gt; )
+   </dt> 
+   <dd> 
+    <p>Performs a one sample <a href="https://en.wikipedia.org/wiki/Z-test">Z test</a> of a population mean using the given list of sample data and the population standard deviation. <em>Hypothesized Mean</em> is the population mean assumed in the null hypothesis. <em>Tail</em> has possible values "&lt;", "&gt;" , "≠". These specify the alternative hypothesis as follows:</p> 
+    <div class="literalblock"> 
+     <div class="content"> 
+      <pre>"&lt;" = population mean &lt; _Hypothesized Mean_
+"&gt;" = population mean &gt; _Hypothesized Mean_
+"≠" = population mean ≠ _Hypothesized Mean_</pre> 
+     </div> 
+    </div> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="paragraph"> 
+  <p>Results are returned in list form as {Probability value, Z test statistic}.</p> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ZMeanTest( &lt;Sample Mean&gt;, &lt;σ&gt;, &lt;Sample Size&gt;, &lt;Hypothesized Mean&gt;, &lt;Tail&gt; )
+   </dt> 
+   <dd> 
+    <p>Performs a <em>one sample Z test</em> of a population mean using the given sample statistics and the population standard deviation. <em>Hypothesized Mean</em> and <em>Tail</em> are defined as above. Results are returned in list form as {Probability value, Z test statistic}.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+</article></body>
+</html>

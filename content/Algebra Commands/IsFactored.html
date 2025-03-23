@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">IsFactored Command</h1> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p><span class="image left"><img src="../../_images/64px-Globe.png" alt="Globe.png" width="64" height="64"></span></p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>This command differs among variants of English:</p> 
+      </div> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>IsFactored (US)</p> </li> 
+        <li> <p>IsFactorised (UK + Aus)</p> </li> 
+       </ul> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    IsFactored( &lt;Polynomial&gt; )
+   </dt> 
+   <dd> 
+    <p>Returns ''true'' if the polynomial is factored in \(\mathbb Q\) and ''false'' otherwise. In general, in order to consider a polynomial decomposition as factored, the coefficient of the leading term of each factor needs to be positive.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="ulist"> 
+    <ul> 
+     <li> <p><code>IsFactored(x)</code> yields <em>true</em><br></p> </li> 
+     <li> <p><code>IsFactored(0.5)</code> yields <em>true</em><br></p> </li> 
+     <li> <p><code>IsFactored(5)</code> yields <em>true</em><br></p> </li> 
+     <li> <p><code>IsFactored(x^2-1)</code> yields <em>false</em><br></p> </li> 
+     <li> <p><code>IsFactored(x^2-2)</code> yields <em>true</em><br></p> </li> 
+     <li> <p><code>IsFactored(x(x+1))</code> yields <em>true</em><br></p> </li> 
+     <li> <p><code>IsFactored(x(2x+2))</code> yields <em>false</em><br></p> </li> 
+     <li> <p><code>IsFactored(x^3-1)</code> yields <em>false</em><br></p> </li> 
+     <li> <p><code>IsFactored(x(x/2+1/2))</code> yields <em>false</em><br></p> </li> 
+     <li> <p><code>IsFactored((x+1)(x^2-1))</code> yields <em>false</em><br></p> </li> 
+     <li> <p><code>IsFactored(-2x-2)</code> yields <em>false</em><br></p> </li> 
+     <li> <p><code>IsFactored(2x+2)</code> yields <em>false</em><br></p> </li> 
+    </ul> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

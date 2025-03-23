@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Cauchy Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Cauchy( &lt;Median&gt;, &lt;Scale&gt;, &lt;Variable value&gt; )
+   </dt> 
+   <dd> 
+    <p>Calculates the value of the cumulative density function (cdf) at the given <em>variable value v</em> of a <a href="https://en.wikipedia.org/wiki/Cauchy_distribution">Cauchy distribution</a>, that is the probability <em>P(X≤v)</em> where <em>X</em> is a random variable of a Cauchy distribution of given parameters <em>median</em> and <em>scale</em>.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>Cauchy(1, 2, 3)</code> yields <em>0.75</em> in the <span class="image"><img src="../../_images/16px-Menu_view_algebra.svg.png" alt="Menu view algebra.svg" width="16" height="16"></span> <a href="../../Algebra_View/" class="xref page">Algebra View</a> and <em>\(\frac{3}{4}\)</em> in the <span class="image"><img src="../../_images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span> <a href="../../CAS_View/" class="xref page">CAS View</a>.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>This syntax returns the probability for a given value, that is the area under the Cauchy distribution curve to the left of the given <em>x</em>-coordinate.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Cauchy( &lt;Median&gt;, &lt;Scale&gt;, &lt;Variable value&gt;, &lt;Boolean Cumulative&gt;)
+   </dt> 
+   <dd> 
+    <p>If <em>Cumulative</em> is <em>true</em>, calculates the value of a cumulative distribution function of a Cauchy distribution at <em>variable value</em>, otherwise it calculates the value of the probability density function (pdf) at <em>variable value</em> of the given Cauchy distribution of parameters <em>median</em> and <em>scale</em>.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    Cauchy( &lt;Median&gt;, &lt;Scale&gt;, x, &lt;Boolean Cumulative&gt;)
+   </dt> 
+   <dd> 
+    <p>If <em>Cumulative</em> is <em>true</em>, creates the cumulative distribution function of a Cauchy distribution, otherwise creates the probability density function of the given Cauchy distribution of parameters <em>median</em> and <em>scale</em>.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+</article></body>
+</html>

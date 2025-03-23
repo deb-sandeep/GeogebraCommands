@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">TiedRank Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    TiedRank( &lt;List&gt; )
+   </dt> 
+   <dd> 
+    <p>Returns a list, whose <em>i</em>-th element is the rank of <em>i</em>-th element of the given list <em>L</em> (rank of element is its position in <a href="../List Commands/Sort.html" class="xref page">Sort</a>(L)). If there are more equal elements in <em>L</em> which occupy positions from <em>k</em> to <em>l</em> in Sort[L], the mean of the ranks from <em>k</em> to <em>l</em> are associated with these elements.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="ulist"> 
+    <ul> 
+     <li> <p><code>TiedRank({4, 1, 2, 3, 4, 2})</code> returns {5.5, 1, 2.5, 4, 5.5, 2.5}.</p> </li> 
+     <li> <p><code>TiedRank({3, 2, 2, 1})</code> returns {4, 2.5, 2.5, 1}.</p> </li> 
+    </ul> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>Also see <a href="../List Commands/OrdinalRank.html" class="xref page">OrdinalRank Command</a></p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

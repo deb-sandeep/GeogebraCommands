@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">ContingencyTable Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ContingencyTable( &lt;List of Text&gt;, &lt;List of Text&gt; )
+   </dt> 
+   <dd> 
+    <p>Draws a <a href="https://en.wikipedia.org/wiki/Contingency_table">Contingency Table</a> created from the two given lists. Unique values from the first list are used as row values in the table. Unique values from the second list are used as column values in the table.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    ContingencyTable( &lt;List of Text&gt;, &lt;List of Text&gt;, &lt;Options&gt; )
+   </dt> 
+   <dd> 
+    <p>Draws a <a href="https://en.wikipedia.org/wiki/Contingency_table">Contingency Table</a> created from the two given lists as described above. The text <em>Options</em> controls the display of optional calculations within the table.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>Possible values for <em>Options</em> are "|", "_", "+", "e", "k", "=".</p> 
+      </div> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>"|" = show column percentages</p> </li> 
+        <li> <p>"_" = show row percentages</p> </li> 
+        <li> <p>"+" = show total percentages</p> </li> 
+        <li> <p>"e" = show expected counts</p> </li> 
+        <li> <p>"k" = show Chi Squared contributions</p> </li> 
+        <li> <p>"=" = show results of a Chi Squared test</p> </li> 
+       </ul> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ContingencyTable( &lt;List of Row Values&gt;, &lt;List of Column Values&gt;, &lt;Frequency Table&gt; )
+   </dt> 
+   <dd> 
+    <p>Draws a <a href="https://en.wikipedia.org/wiki/Contingency_table">Contingency Table</a> using the given list of row values, column values and corresponding frequency table.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ContingencyTable({"Males","Females"},{"Right-handed", "Left-handed"},{{43,9},{44,4}})</code> yields the corresponding Contingency Table.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ContingencyTable( &lt;List of Row Values&gt;, &lt;List of Column Values&gt; &lt;Frequency Table&gt;, &lt;Options&gt; )
+   </dt> 
+   <dd> 
+    <p>Draws a <a href="https://en.wikipedia.org/wiki/Contingency_table">Contingency Table</a> using the given list of row values, column values and corresponding frequency table. The text <em>Options</em> controls the display of optional calculations within the table as described above.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ContingencyTable({"Males","Females"},{"Right-handed", "Left-handed"},{{43,9},{44,4}},"_")</code> yields the corresponding Contingency Table showing the row percentages.</p> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

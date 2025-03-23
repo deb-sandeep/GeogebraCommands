@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">SetImage Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    SetImage( &lt;Object&gt;, &lt;Image&gt; )
+   </dt> 
+   <dd> 
+    <p>Fills the given object with an image.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>The object needs to allow filling, e.g. polygons, closed conics, buttons…</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    SetImage( &lt;Object&gt;, &lt;Text&gt; )
+   </dt> 
+   <dd> 
+    <p>Fills the object with one of the GeoGebra’s predefined action images, identified by the texts listed below.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>SetImage(button1,"pause")</code> shows the GeoGebra’s predefined&nbsp; Pause icon on button1.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>The current version of the command supports only button objects. The names of the images (Text parameter) need to be enclosed in " ".</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="paragraph"> 
+  <p>GeoGebra’s predefined action images</p> 
+ </div> 
+ <table class="tableblock frame-all grid-all stretch"> 
+  <colgroup> 
+   <col style="width: 50%;"> 
+   <col style="width: 50%;"> 
+  </colgroup> 
+  <thead> 
+   <tr> 
+    <th class="tableblock halign-left valign-top">Text</th> 
+    <th class="tableblock halign-left valign-top">Image</th> 
+   </tr> 
+  </thead> 
+  <tbody> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">pause</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Pause.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">play</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Play.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">stop</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Stop.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">replay</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Replay.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">skip_next</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Skip_next.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">skip_previous</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Skip_previous.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">loop</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Loop.svg.png" alt="loop" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">zoom_in</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Zoom_in.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">zoom_out</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Zoom_out.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">close</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Close.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">arrow_up</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Arrow_upward.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">arrow_down</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Arrow_downward.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">arrow_forward</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Arrowforward.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">arrow_back</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Arrow_forward.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">fast_forward</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Fast_forward.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">fast_rewind</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Fast_rewind.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">zoom_to_fit</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Zoom_to_fit.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">center_view</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Filter_center_focus.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">help</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Question_mark.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+   <tr> 
+    <td class="tableblock halign-left valign-top"><p class="tableblock">settings</p></td> 
+    <td class="tableblock halign-left valign-top">
+     <div class="content">
+      <div class="paragraph"> 
+       <p><span class="image"><img src="../../_images/20px-Settings.svg.png" alt="link" width="20" height="20"></span></p> 
+      </div>
+     </div></td> 
+   </tr> 
+  </tbody> 
+ </table> 
+</article></body>
+</html>

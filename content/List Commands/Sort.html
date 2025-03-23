@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Sort Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Sort( &lt;List&gt; )
+   </dt> 
+   <dd> 
+    <p>Sorts a list of numbers, text objects, or points.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="ulist"> 
+    <ul> 
+     <li> <p><code>Sort({3, 2, 1})</code> gives you the list <em>{1, 2, 3}</em>.</p> </li> 
+     <li> <p><code>Sort({"pears", "apples", "figs"})</code> gives you the list elements in alphabetical order.</p> </li> 
+     <li> <p><code>Sort({(3, 2), (2, 5), (4, 1)}) </code> gives you <em>{(2, 5), (3, 2), (4, 1)}</em>.</p> </li> 
+    </ul> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>Lists of points are sorted by <em>x</em>-coordinates.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Sort( &lt;Values&gt;, &lt;Keys&gt; )
+   </dt> 
+   <dd> 
+    <p>Sorts the first list <em>Values</em> according to the corresponding second list <em>Keys</em>.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="ulist"> 
+    <ul> 
+     <li> <p>In order to sort a list of polynomials <code>list1 = {x^3, x^2, x^6}</code> according to degree, create the dependent list of degrees <code>list2 = Zip(Degree(a), a, list1)</code>. After that, <code> Sort(list1, list2)</code> yields the requested <em>list3 = {x^2, x^3, x^6}</em>.</p> </li> 
+     <li> <p>In order to draw the polygon having as vertices the complex roots of \(x^{10}-1\), sorted by their arguments, create <code>list1 = {ComplexRoot(x^10-1)}</code>, then use the command <code>Polygon(Sort(list1, arg(list1)))</code>. This command yields <em>poly1 = 2.94</em>.</p> </li> 
+    </ul> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

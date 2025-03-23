@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Uniform Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Uniform( &lt;Lower Bound&gt;, &lt;Upper Bound&gt;, &lt;Variable Value&gt; )
+   </dt> 
+   <dd> 
+    <p>Evaluates the cumulative distribution function of a uniform distribution at <em>variable value v</em>, i.e. calculates the probability <em>P(X ≤ v)</em> where <em>X</em> is a random variable with a uniform distribution in [<em>lower bound</em>, <em>upper bound</em>].</p> 
+   </dd> 
+   <dt class="hdlist1">
+    Uniform( &lt;Lower Bound&gt;, &lt;Upper Bound&gt;, &lt;Variable Value&gt;, &lt;Boolean Cumulative&gt; )
+   </dt> 
+   <dd> 
+    <p>If <em>Cumulative = true</em>, evaluates the cumulative distribution function of a <a href="https://en.wikipedia.org/wiki/Uniform_distribution_(continuous)">uniform distribution</a> at the given <em>variable value</em> in [<em>lower bound</em>, <em>upper bound</em>], otherwise it evaluates the probability density function of the distribution at <em>variable value</em>.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    Uniform( &lt;Lower Bound&gt;, &lt;Upper Bound&gt;, x, &lt;Boolean Cumulative&gt; )
+   </dt> 
+   <dd> 
+    <p>If <em>Cumulative</em> is true, creates the cumulative distribution function of a uniform distribution in [<em>lower bound</em>, <em>upper bound</em>], otherwise it creates the probability density function of a unifrom distribution in [<em>lower bound</em>, <em>upper bound</em>].</p> 
+   </dd> 
+  </dl> 
+ </div> 
+</article></body>
+</html>

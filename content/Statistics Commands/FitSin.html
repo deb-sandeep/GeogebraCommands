@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">FitSin Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    FitSin( &lt;List of Points&gt; )
+   </dt> 
+   <dd> 
+    <p>Calculates the regression curve in the form <em>a + b sin (c x + d)</em>.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>FitSin({(1, 1), (2, 2), (3, 1), (4, 0), (5, 1), (6, 2)})</code> yields <em>f(x) = 1 + 1 sin (1.57 x - 1.57)</em>.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>The list should have at least four points, preferably more. The list should cover at least two extremal points. The first two local extremal points should not be too different from the absolute extremal points of the curve.</p> </li> 
+        <li> <p>See also <a href="../CAS Specific Commands/FitExp.html" class="xref page">FitExp Command</a>, <a href="../CAS Specific Commands/FitLog.html" class="xref page">FitLog Command</a>, <a href="../CAS Specific Commands/FitPoly.html" class="xref page">FitPoly Command</a> and <a href="../CAS Specific Commands/FitPow.html" class="xref page">FitPow Command</a>.</p> </li> 
+        <li> <p>If you work with big/small numbers, you should consider normalizing them for a more accurate result, see <a href="../Function Commands/Normalize.html" class="xref page">Normalize Command</a>.</p> </li> 
+       </ul> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Polynomial Command</h1> 
+ <div id="preamble"> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Polynomial( &lt;Function&gt; )
+     </dt> 
+     <dd> 
+      <p>Yields the expanded polynomial function.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Polynomial((x - 3)^2)</code> yields <em>x<sup>2</sup> - 6x + 9</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Polynomial(y^2+(x+y)^2)</code> yields <em>x<sup>2</sup>+2xy+2y^2</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Polynomial( &lt;List of Points&gt; )
+     </dt> 
+     <dd> 
+      <p>Creates the interpolation polynomial of degree <em>n-1</em> through the given <em>n</em> points.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Polynomial({(1, 1), (2, 3), (3, 6)})</code> yields <em>0.5 x<sup>2</sup> + 0.5 x</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="sect1"> 
+  <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Polynomial( &lt;Function&gt; )
+     </dt> 
+     <dd> 
+      <p>Expands the function and writes it as a polynomial in x (grouping the coefficients).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Polynomial((x - 3)^2 + (a + x)^2)</code> yields <em>2 x<sup>2</sup> + (2a - 6) x + a<sup>2</sup> + 9</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Polynomial( &lt;Function&gt;, &lt;Variable&gt; )
+     </dt> 
+     <dd> 
+      <p>Expands the function and writes it as a polynomial in the variable (grouping the coefficients).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Polynomial((x - 3)^2 + (a + x)^2, a)</code> yields <em>a<sup>2</sup> + 2 x a + 2 x<sup>2</sup> - 6 x + 9</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

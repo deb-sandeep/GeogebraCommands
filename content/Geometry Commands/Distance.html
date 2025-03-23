@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Distance Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Distance( &lt;Point&gt;, &lt;Object&gt; )
+   </dt> 
+   <dd> 
+    <p>Yields the shortest distance between a point and an object.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="ulist"> 
+    <ul> 
+     <li> <p><code> Distance((2, 1), x^2 + (y - 1)^2 = 1)</code> yields <em>1</em></p> </li> 
+     <li> <p><code>Distance((2, 1, 2), (1, 3, 0)) </code> yields <em>3</em></p> </li> 
+     <li> <p>Let <em>f</em> be a function and <em>A</em> be a point. <code>Distance(A, f)</code> yields the distance between <em>A</em> and <em>(x(A), f(x(A)))</em>, that is the distance between point <em>A</em> and <code>ClosestPoint(f, A)</code>.</p> </li> 
+    </ul> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>The command works for points, segments, lines, conics, functions, and implicit curves. For functions, it uses a numerical algorithm which works better for polynomials.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Distance( &lt;Line&gt;, &lt;Line&gt; )
+   </dt> 
+   <dd> 
+    <p>Yields the distance between two lines.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="ulist"> 
+    <ul> 
+     <li> <p><code>Distance(y = x + 3, y = x + 1)</code> yields <em>1.41</em></p> </li> 
+     <li> <p><code>Distance(y = 3x + 1, y = x + 1)</code> yields <em>0</em></p> </li> 
+     <li> <p>Let <em>a: X = (-4, 0, 0) + λ*(4, 3, 0)</em> and <em>b: X = (0, 0, 0) + λ*(0.8, 0.6, 0)</em>.&nbsp; <code>Distance(a, b)</code> yields <em>2.4</em></p> </li> 
+    </ul> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>The distance between intersecting lines is <em>0</em>. Thus, this command is only interesting for parallel lines.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Distance( &lt;Plane&gt;, &lt;Plane&gt; )
+   </dt> 
+   <dd> 
+    <p>Yields the distance between the two planes.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p>Let <em>eq1: x + y + 2z = 1</em> and <em>eq2: 2x + 2y + 4z = -2</em>.&nbsp; <code>Distance(eq1, eq2)</code> yields <em>0.82</em></p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>The distance between intersecting planes is 0. Thus, this command is only meaningful for parallel planes.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>See also <span class="image"><img src="../../_images/20px-Mode_distance.svg.png" alt="Mode distance.svg" width="20" height="20"></span> <a href="../../tools/Distance_or_Length/" class="xref page">Distance or Length</a> tool .</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

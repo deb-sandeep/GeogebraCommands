@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">ChiSquared Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ChiSquared( &lt;Degrees of Freedom&gt;, &lt;Variable Value&gt; )
+   </dt> 
+   <dd> 
+    <p>Calculates the value of the cumulative distribution function of a Chi squared distribution at <em>variable value</em> <em>v</em>, i.e. the probability <em>P(X ≤ v)</em> where <em>X</em> is a random variable with a Chi squared distribution with the given <em>degrees of freedom</em>.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ChiSquared(4, 3)</code> yields \(\gamma\left(2, \frac{3}{2}\right)\), which is approximately <em>0.44</em>.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>This syntax returns the probability at a given <em>x</em>-coordinate’s value, that is the area under the Chi squared distribution curve to the left of the given <em>x</em>-coordinate.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ChiSquared( &lt;Degrees of Freedom&gt;, &lt;Variable Value&gt;, &lt;Boolean Cumulative&gt; )
+   </dt> 
+   <dd> 
+    <p>If <em>Cumulative = true</em>, calculates the value of the cumulative distribution function of a Chi squared distribution with given <em>degrees of freedom</em> at the given <em>variable value</em>, otherwise it calculates the probability density function of the distribution at <em>variable value</em>.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    ChiSquared( &lt;Degrees of Freedom&gt;, x, &lt;Boolean Cumulative&gt; )
+   </dt> 
+   <dd> 
+    <p>If <em>Cumulative = true</em>, creates the cumulative density function (cdf) of a <a href="https://en.wikipedia.org/wiki/Chi-square_distribution">Chi squared distribution</a> with the given degrees of freedom, othewise it creates the probability density function (pdf) of the distribution.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+</article></body>
+</html>

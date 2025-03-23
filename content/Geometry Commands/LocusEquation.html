@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">LocusEquation Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    LocusEquation( &lt;Locus&gt; )
+   </dt> 
+   <dd> 
+    <p>Calculates the equation of a Locus and plots this as an Implicit Curve.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    LocusEquation( &lt;Point Creating Locus Line Q&gt;, &lt;Point P&gt; )
+   </dt> 
+   <dd> 
+    <p>Calculates the equation of a Locus by using inputs tracer point <em>Q</em> and mover point <em>P</em>, and plots this as an Implicit Curve.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p>Let us construct a parabola as a locus: Create free Points <em>A</em> and <em>B</em>, and Line <em>d</em> lying through them (this will be the directrix of the parabola). Create free point <em>F</em> for the focus. Now create <em>P</em> on Line <em>d</em> (the mover point), then create line <em>p</em> as a perpendicular line to <em>d</em> through <em>P</em>. Also create line <em>b</em> as perpendicular bisector of Line Segment <em>FP</em>. Finally, point <em>Q</em> (the point creating locus line) is to be created as intersection of Lines <em>p</em> and <em>b</em>. Now <code>LocusEquation(Q,P)</code> will find and plot the exact equation of the locus.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    LocusEquation( &lt;Boolean Expression&gt;, &lt;Free Point&gt; )
+   </dt> 
+   <dd> 
+    <p>Calculates the locus of the free point such that the boolean condition is satisified.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>LocusEquation(AreCollinear(A, B, C), A)</code> for free points <em>A</em>, <em>B</em>, <em>C</em> calculates the set of positions of <em>A</em> that make <em>A</em>, <em>B</em> and <em>C</em> collinear—i.e. a line through <em>B</em> and C<em>.</em></p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>The Locus must be made from a Point (not from a Slider)</p> </li> 
+        <li> <p>Works only for a restricted set of geometric loci, i.e. using points, lines, circles, conics. (Rays and line segments will be treated as (infinite) lines.)</p> </li> 
+        <li> <p>If the locus is too complicated then it will return 'undefined'.</p> </li> 
+        <li> <p>If there is no locus then the implicit curve is the empty set 0=1.</p> </li> 
+        <li> <p>If the locus is the whole plane then the implicit curve is the equation 0=0.</p> </li> 
+        <li> <p>The calculation is done using <a href="https://en.wikipedia.org/wiki/Gr%C3%B6bner_basis">Gröbner bases</a>, so sometimes extra branches of the curve will appear that were not in the original locus.</p> </li> 
+        <li> <p>Further informations and examples on <a href="https://www.geogebra.org/m/KZVzqVEM">geogebra.org</a>. A <a href="https://www.geogebra.org/m/mbXQuvUV">collection of implicit locus examples</a> is also available.</p> </li> 
+        <li> <p>See also <a href="../Geometry Commands/Locus.html" class="xref page">Locus</a> command and <a href="https://github.com/kovzol/gg-art-doc/tree/master/pdf/english.pdf">GeoGebra Automated Reasoning Tools: A Tutorial</a>.</p> </li> 
+       </ul> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

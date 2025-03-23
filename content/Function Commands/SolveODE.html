@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">SolveODE Command</h1> 
+ <div id="preamble"> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SolveODE( &lt;f'(x, y)&gt; )
+     </dt> 
+     <dd> 
+      <p>Attempts to find the exact solution of the first order ordinary differential equation (ODE) \(\frac{dy}{dx}(x)=f'(x, y(x))\).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SolveODE(2x / y)</code> yields <em>\(\sqrt{2} \sqrt{-c_{1}+x^{2}}\)</em>, where \(c_{1}\) is a constant.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>\(c_{1}\) will be created as an auxiliary object with a corresponding slider.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SolveODE( &lt;f'(x, y)&gt;, &lt;Point on f&gt; )
+     </dt> 
+     <dd> 
+      <p>Attempts to find the exact solution of the first order ODE \(\frac{dy}{dx}(x)=f'(x, y(x))\) and returns the solution through the given point (Cauchy problem).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SolveODE(y / x, (1, 2))</code> yields <em>y = 2x</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SolveODE( &lt;f'(x, y)&gt;, &lt;Start x&gt;, &lt;Start y&gt;, &lt;End x&gt;, &lt;Step&gt; )
+     </dt> 
+     <dd> 
+      <p>Solves first order ODE \(\frac{dy}{dx}=f'(x, y)\) numerically with given start point, end and step for <em>x</em>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SolveODE(-x*y, x(A), y(A), 5, 0.1)</code> solves \(\frac{dy}{dx}=-xy\) using previously defined <em>A</em> as a starting point.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p><a href="../Vector and Matrix Commands/Length.html" class="xref page">Length</a>( &lt;Locus&gt; ) allows you to find out how many points are in the computed locus.</p> </li> 
+          <li> <p><a href="../CAS Specific Commands/First.html" class="xref page">First</a>( &lt;Locus&gt;, &lt;Number&gt; ) allows you to extract the points as a list.</p> </li> 
+          <li> <p>To find the "reverse" solution, just enter a negative value for <em>End x</em>, for example <code>SolveODE(-x*y, x(A), y(A), -5, 0.1)</code></p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SolveODE( &lt;y'&gt;, &lt;x'&gt;, &lt;Start x&gt;, &lt;Start y&gt;, &lt;End t&gt;, &lt;Step&gt; )
+     </dt> 
+     <dd> 
+      <p>Solves first order ODE \(\frac{dy}{dx}=\frac{f(x, y)}{g(x, y)}\) with given start point, maximal value of an internal parameter <em>t</em> and step for <em>t</em>. This version of the command may work where the first one fails e.g. when the solution curve has vertical points.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SolveODE(-x, y, x(A), y(A), 5, 0.1)</code> solves \(\frac{dy}{dx}=- \frac{x}{y} \) using previously defined <em>A</em> as a starting point.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>To find the "reverse" solution, just enter a negative value for <em>End t</em>, for example <code>SolveODE(-x, y, x(A), y(A), -5, 0.1)</code>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SolveODE( &lt;b(x)&gt;, &lt;c(x)&gt;, &lt;f(x)&gt;, &lt;Start x&gt;, &lt;Start y&gt;, &lt;Start y'&gt;, &lt;End x&gt;, &lt;Step&gt; )
+     </dt> 
+     <dd> 
+      <p>Solves second order ODE \(y'' + b(x) y' + c(x) y = f(x)\).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SolveODE(x^2, 2x, 2x^2 + x, x(A), y(A), 0, 5, 0.1)</code> solves the second order ODE using previously defined <em>A</em> as a starting point.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>Always returns the result as locus. The algorithms are currently based on <a href="https://en.wikipedia.org/wiki/Runge-Kutta_methods">Runge-Kutta numeric methods</a>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <a href="../Function Commands/SlopeField.html" class="xref page">SlopeField command</a>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="sect1"> 
+  <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SolveODE( &lt;Equation&gt; )
+     </dt> 
+     <dd> 
+      <p>Attempts to find the exact solution of the first or second order ODE. For first and second derivative of <em>y</em> you can use <em>y'</em> and <em>y''</em> respectively.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SolveODE(y' = y / x)</code> yields <em>y = c<sub>1</sub> x</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SolveODE( &lt;Equation&gt;, &lt;Point(s) on f&gt; )
+     </dt> 
+     <dd> 
+      <p>Attempts to find the exact solution of the given first or second order ODE which goes through the given point or list of points.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SolveODE(y' = y / x, (1, 2))</code> yields <em>y = 2x</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SolveODE( &lt;Equation&gt;, &lt;Point(s) on f&gt;, &lt;Point(s) on f'&gt; )
+     </dt> 
+     <dd> 
+      <p>Attempts to find the exact solution of the given first or second order ODE and goes through the given <em>point (or list of points) on f</em> and <em>f'</em> goes through the given <em>point (or list of points) on f'</em> .</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SolveODE(y'' - 3y' + 2 = x, (2, 3), (1, 2))</code> yields \( y = \frac{-9 x^2 e^3 + 30 x e^3 - 32 {(e^3)}^2 + 138 e^3 + 32 e^{3 x} }{54 e^3} \).</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SolveODE( &lt;Equation&gt;, &lt;Dependent Variable&gt;, &lt;Independent Variable&gt;, &lt;Point(s) on f&gt; )
+     </dt> 
+     <dd> 
+      <p>Attempts to find the exact solution of the given first or second order ODE which goes through the given point (or list of points).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SolveODE(v' = v / w, v, w, (1, 2))</code> yields <em>v = 2w</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SolveODE( &lt;Equation&gt;, &lt;Dependent Variable&gt;, &lt;Independent Variable&gt;, &lt;Point(s) on f&gt;, &lt;Point(s) on f'&gt; )
+     </dt> 
+     <dd> 
+      <p>Attempts to find the exact solution of the given first or second order ODE which goes through the given <em>point (or list of points) on f</em> and <em>f'</em> goes through the given <em>point (or list of points) on f'</em> .</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SolveODE(v' = v / w, v, w, (1, 2), (0, 2))</code> yields <em>v = 2w</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>For compatibility with input bar, if the first parameter is just an expression without <em>y'</em> or <em>y''</em>, it is supposed to be right hand side of ODE with left hand side <em>y'</em>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

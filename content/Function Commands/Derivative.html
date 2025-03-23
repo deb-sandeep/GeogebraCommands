@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Derivative Command</h1> 
+ <div id="preamble"> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Derivative( &lt;Function&gt; )
+     </dt> 
+     <dd> 
+      <p>Returns the derivative of the function with respect to the main variable.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Derivative(x^3 + x^2 + x)</code> yields <em>3x² + 2x + 1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Derivative( &lt;Function&gt;, &lt;Number&gt; )
+     </dt> 
+     <dd> 
+      <p>Returns the <em>n</em><sup>th</sup> derivative of the function with respect to the main variable, whereupon <em>n</em> equals &lt;Number&gt;.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Derivative(x^3 + x^2 + x, 2)</code> yields <em>6x + 2</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Derivative( &lt;Function&gt;, &lt;Variable&gt; )
+     </dt> 
+     <dd> 
+      <p>Returns the partial derivative of the function with respect to the given variable.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Derivative(x^3 y^2 + y^2 + xy, y)</code> yields <em>2x³y + x + 2y</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Derivative( &lt;Function&gt;, &lt;Variable&gt;, &lt;Number&gt; )
+     </dt> 
+     <dd> 
+      <p>Returns the <em>n</em><sup>th</sup> partial derivative of the function with respect to the given variable, whereupon <em>n</em> equals &lt;Number&gt;.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Derivative(x^3 + 3x y, x, 2)</code> yields <em>6x</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Derivative( &lt;Curve&gt; )
+     </dt> 
+     <dd> 
+      <p>Returns the derivative of the curve.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Derivative(Curve(cos(t), t sin(t), t, 0, π))</code> yields curve <em>x = -sin(t), y = sin(t) + t cos(t)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>This only works for parametric curves.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Derivative( &lt;Curve&gt;, &lt;Number&gt; )
+     </dt> 
+     <dd> 
+      <p>Returns the <em>n</em><sup>th</sup> derivative of the curve, whereupon <em>n</em> equals &lt;Number&gt;.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Derivative(Curve(cos(t), t sin(t), t, 0, π), 2)</code> yields curve <em>x = -cos(t), y = 2cos(t) - t sin(t)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>This only works for parametric curves.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>You can use <code>f'(x)</code> instead of <code>Derivative(f)</code>, or <code>f''(x)</code> instead of <code>Derivative(f, 2)</code>, and so on.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="sect1"> 
+  <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Derivative( &lt;Expression&gt; )
+     </dt> 
+     <dd> 
+      <p>Returns derivative of an expression with respect to the main variable.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Derivative(x^2)</code> yields <em>2x</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Derivative( &lt;Expression&gt;, &lt;Variable&gt; )
+     </dt> 
+     <dd> 
+      <p>Returns derivative of an expression with respect to the given variable.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Derivative(a x^3, a)</code> yields <em>x³</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Derivative( &lt;Expression&gt;, &lt;Variable&gt;, &lt;Number&gt; )
+     </dt> 
+     <dd> 
+      <p>Returns the <em>n</em><sup>th</sup> derivative of an expression with respect to the given variable, whereupon <em>n</em> equals &lt;Number&gt;.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>Derivative(y x^3, x, 2)</code> yields <em>6xy</em>.</p> </li> 
+       <li> <p><code>Derivative(x³ + 3x y, x, 2)</code> yields <em>6x</em>.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

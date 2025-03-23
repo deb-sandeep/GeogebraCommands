@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Factors Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Factors( &lt;Polynomial&gt; )
+   </dt> 
+   <dd> 
+    <p>Gives a list of lists of the type <em>{factor, exponent}</em> such that the product of all these factors raised to the power of the corresponding exponents equals the given polynomial. The factors are sorted by degree in ascending order.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>Factors(x^8 - 1)</code> yields <em>{{x - 1, 1}, {x + 1, 1}, {x^2 + 1, 1}, {x^4 + 1, 1}}</em>.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>Not all of the factors are irreducible over the reals.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Factors( &lt;Number&gt; )
+   </dt> 
+   <dd> 
+    <p>Gives matrix of the type \(\left( \begin{array}{ll} prime_1 &amp; exponent_1 \\ prime_2 &amp; exponent_2 \\prime_3 &amp; exponent_3 \\ \end{array} \right) \) such that the product of all these primes raised to the power of the corresponding <em>exponents</em> equals the given number. The primes are sorted in ascending order.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="ulist"> 
+    <ul> 
+     <li> <p><code>Factors(1024)</code> yields <em>( 2 10 )</em>, since \(1024 = 2^{10}\).</p> </li> 
+     <li> <p><code>Factors(42)</code> yields \(\left( \begin{array}{ll} 2 &amp; 1 \\ 3 &amp; 1 \\7 &amp; 1 \\ \end{array} \right) \), since \(42 = 2^1・3^1・7^1\).</p> </li> 
+    </ul> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>See also <a href="../Algebra Commands/PrimeFactors.html" class="xref page">PrimeFactors Command</a> and <a href="../Function Commands/Factor.html" class="xref page">Factor Command</a>.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>In the <span class="image"><img src="../../_images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span> <a href="../../CAS_View/" class="xref page">CAS View</a> undefined variables can be used as input and the results are returned as proper matrices.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>Factors(a^8 - 1)</code> yields \(\left( \begin{array}{cc} a - 1 &amp; 1 \\ a +1 &amp; 1 \\a^2 + 1&amp; 1 \\a^4 + 1&amp; 1 \\ \end{array} \right)\).</p> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

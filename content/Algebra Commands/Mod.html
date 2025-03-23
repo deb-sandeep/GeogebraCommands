@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Mod Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Mod( &lt;Dividend Number&gt;, &lt;Divisor Number&gt; )
+   </dt> 
+   <dd> 
+    <p>Yields the remainder when dividend number is divided by divisor number.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>Mod(9, 4)</code> yields <em>1</em>.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Mod( &lt;Dividend Polynomial&gt;, &lt;Divisor Polynomial&gt; )
+   </dt> 
+   <dd> 
+    <p>Yields the remainder when the dividend polynomial is divided by the divisor polynomial.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>Mod(x^3 + x^2 + x + 6, x^2 - 3)</code> yields <em>4 x + 9</em>.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>If you want a function to do this, you can define it yourself, e.g. <code>mod(x, y) = y (x / y - floor(x / y))</code>.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

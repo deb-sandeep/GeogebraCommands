@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">ApplyMatrix Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ApplyMatrix( &lt;
+    <a href="../../Matrices/" class="xref page">Matrix</a>&gt;, &lt;
+    <a href="../../Geometric_Objects/" class="xref page">Object</a>&gt; )
+   </dt> 
+   <dd> 
+    <p>Transforms the object <em>O</em> so that point <em>P</em> of <em>O</em> is mapped to:</p> 
+    <div class="ulist"> 
+     <ul> 
+      <li> <p>point <em>M*P</em>, if <em>P</em> is a <em>2D</em> point and <em>M</em> is a 2 x 2 matrix</p> </li> 
+      <li> <p>point <em>project(M*(x(P), y(P), 1))</em>, if <em>P</em> is a <em>2D</em> point and <em>M</em> a 3 x 3 matrix: <em>project</em> is a projection, mapping point <em>(x, y, z)</em> to <em>(x/z, y/z)</em>.</p> </li> 
+      <li> <p>point <em>M*P</em>, if <em>P</em> is a <em>3D</em> point and <em>M</em> a 3 x 3 matrix</p> </li> 
+      <li> <p>point <em>N*P</em>, if <em>P</em> is a <em>3D</em> point and <em>M</em> a 2 x 2 matrix: the matrix <em>N</em> is the <em>completion or order 3</em> of <em>M</em>: given <em>M</em> = \(\begin{pmatrix}a&amp;b\\ c&amp;d \end{pmatrix}\) then <em>N</em> = \(\begin{pmatrix}a&amp;b&amp;0\\ c&amp;d&amp;0\\0&amp;0&amp;1 \end{pmatrix}\)</p> </li> 
+     </ul> 
+    </div> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p>Let <code>M={{cos(π/2),-sin(π/2)}, {sin(π/2), cos(π/2)}}</code> be the transformation matrix and <code>u = (2,1)</code> a given vector (object). <code>ApplyMatrix(M,u)</code> yields the vector <em>u'=(-1,2)</em>, i.e. the result of a mathematically positive rotation by 90° of vector <em>u</em>.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p>Let <code>M={{1,1,0},{0,1,1},{1,0,1}}</code> be a matrix and <code>u=(2,1)</code> a given vector. <code>ApplyMatrix(M,u)</code> yields vector <em>u'=(1,0.67)</em>. In effect \(\begin{pmatrix}1&amp;1&amp;0\\ 0&amp;1&amp;1\\1&amp;0&amp;1 \end{pmatrix}\) \(\begin{pmatrix}2\\ 1\\1 \end{pmatrix}\) = \(\begin{pmatrix}3\\ 2\\3 \end{pmatrix}\), and (3/3 = 1, 2/3 ≈ 0.67) (rounding to 2 decimal places)</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>This command also works with quadrics and <a href="../../tools/Image/" class="xref page">images</a>.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

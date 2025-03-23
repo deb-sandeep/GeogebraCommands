@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">HyperGeometric Command</h1> 
+ <div id="preamble"> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      HyperGeometric( &lt;Population Size&gt;, &lt;Number of Successes&gt;, &lt;Sample Size&gt;)
+     </dt> 
+     <dd> 
+      <p>Returns a <a href="https://en.wikipedia.org/wiki/Hypergeometric_distribution">Hypergeometric distribution</a> bar graph.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Parameters:</p> 
+     </div> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><em>Population size</em>: number of balls in an urn</p> </li> 
+       <li> <p><em>Number of Successes</em>: number of white balls in the urn</p> </li> 
+       <li> <p><em>Sample Size</em>: number of balls drawn from the urn</p> </li> 
+      </ul> 
+     </div> 
+     <div class="paragraph"> 
+      <p>A random sample is repeatedly extracted from an urn, without replacement. <code>HyperGeometric(100, 50, 5)</code> generates a bar graph showing the probability distribution of the number of white balls in the sample.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      HyperGeometric( &lt;Population Size&gt;, &lt;Number of Successes&gt;, &lt;Sample Size&gt;, &lt;Boolean Cumulative&gt; )
+     </dt> 
+     <dd> 
+      <p>When <em>Cumulative = false</em> returns a bar graph of a Hypergeometric distribution, otherwise it returns the graph of a cumulative Hypergeometric distribution function. First three parameters are same as above.</p> 
+     </dd> 
+     <dt class="hdlist1">
+      HyperGeometric( &lt;Population Size&gt;, &lt;Number of Successes&gt;, &lt;Sample Size&gt;, &lt;Variable Value&gt;, &lt;Boolean Cumulative&gt; )
+     </dt> 
+     <dd> 
+      <p>Let X be a Hypergeometric random variable and v the variable value. The first three parameters are same as above.</p> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>When <em>Cumulative = false</em> it returns P( X = <em>v</em>)</p> </li> 
+        <li> <p>When <em>Cumulative = true</em> it returns P( X ≤ <em>v</em>)</p> </li> 
+       </ul> 
+      </div> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Assume you select two balls out of ten balls, two of which are white, without putting any back.</p> 
+     </div> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>HyperGeometric(10, 2, 2, 0, false)</code> yields \(\frac{28}{45}\), the probability of selecting zero white balls,</p> </li> 
+       <li> <p><code>HyperGeometric(10, 2, 2, 1, false)</code> yields \(\frac{16}{45}\), the probability of selecting one white ball,</p> </li> 
+       <li> <p><code>HyperGeometric(10, 2, 2, 2, false)</code> yields \(\frac{1}{45}\), the probability of selecting both white balls,</p> </li> 
+       <li> <p><code>HyperGeometric(10, 2, 2, 3, false)</code> yields <em>0</em>, the probability of selecting three white balls.</p> </li> 
+       <li> <p><code>HyperGeometric(10, 2, 2, 0, true)</code> yields \(\frac{28}{45}\), the probability of selecting zero (or less) white balls,</p> </li> 
+       <li> <p><code>HyperGeometric(10, 2, 2, 1, true)</code> yields \(\frac{44}{45}\), the probability of selecting one or less white balls,</p> </li> 
+       <li> <p><code>HyperGeometric(10, 2, 2, 2, true)</code> yields <em>1</em>, the probability of selecting two or less white balls and</p> </li> 
+       <li> <p><code>HyperGeometric(10, 2, 2, 3, true)</code> yields <em>1</em>, the probability of selecting three or less white balls.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="sect1"> 
+  <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+  <div class="sectionbody"> 
+   <div class="paragraph"> 
+    <p>In the <span class="image"><img src="../../_images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span> <a href="../../CAS_View/" class="xref page">CAS View</a> you can use only the following syntax:</p> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      HyperGeometric( &lt;Population Size&gt;, &lt;Number of Successes&gt;, &lt;Sample Size&gt;, &lt;Variable Value&gt;, &lt;Boolean Cumulative&gt; )
+     </dt> 
+     <dd> 
+      <p>Let X be a Hypergeometric random variable and v the variable value. The first three parameters are the same as above.</p> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>When <em>Cumulative = false</em> it returns P( X = <em>v</em>)</p> </li> 
+        <li> <p>When <em>Cumulative = true</em> it returns P( X ≤ <em>v</em>)</p> </li> 
+       </ul> 
+      </div> 
+     </dd> 
+    </dl> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">SolveCubic Command</h1> 
+ <div class="sect1"> 
+  <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      SolveCubic( &lt;Cubic Polynomial&gt; )
+     </dt> 
+     <dd> 
+      <p>Solves a given <a href="https://en.wikipedia.org/wiki/Cubic_function">cubic polynomial</a> and returns a list of all solutions.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SolveCubic(x³ - 1)</code> yields { 1, \( \frac{1}{2} (\sqrt{3} i -1) \) , \( \frac{1}{2} (\sqrt{3} (-i) -1) \) } .</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>Often the answers are very cumbersome, e.g. <code>SolveCubic(x³ + x² + x + 2)</code> in which case <code>Solve(x³ + x² + x + 2)</code> or <code>CSolve(x³ + x² + x + 2)</code> may work better for you.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

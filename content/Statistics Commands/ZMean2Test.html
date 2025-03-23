@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">ZMean2Test Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ZMean2Test( &lt;List of Sample Data 1&gt;, &lt;σ1&gt;, &lt;List of Sample Data 2&gt;, &lt;σ2&gt;, &lt;Tail&gt; )
+   </dt> 
+   <dd> 
+    <p>Performs a <a href="https://en.wikipedia.org/wiki/Z-test">Z test</a> of the difference between two population means using the given lists of sample data and the population standard deviations. Tail has possible values "&lt;", "&gt;" , "≠" that determine the following alternative hypotheses:<br> "&lt;" = difference in population means &lt; 0<br> "&gt;" = difference in population means &gt; 0<br> "≠" = difference in population means ≠ 0</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="paragraph"> 
+  <p>Results are returned in list form as {Probability value, Z test statistic}.</p> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ZMean2Test( &lt;Sample Mean 1 &gt;, &lt;σ1&gt;, &lt;Sample Size 1&gt;, &lt;Sample Mean 2 &gt;, &lt;σ2&gt;, &lt;Sample Size 2&gt;, &lt;Tail&gt; )
+   </dt> 
+   <dd> 
+    <p>Performs a Z test of the difference between two population means using the given sample statistics and population standard deviations. <em>Tail</em> is defined as above.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+</article></body>
+</html>

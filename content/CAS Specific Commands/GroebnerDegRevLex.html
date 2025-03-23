@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">GroebnerDegRevLex Command</h1> 
+ <div class="sect1"> 
+  <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      GroebnerDegRevLex( &lt;List of Polynomials&gt; )
+     </dt> 
+     <dd> 
+      <p>Computes the Gröbner basis of the list of the polynomials with respect to graded reverse lexicographical ordering of the variables (also known as <em>total degree reverse lexicographic ordering</em>, <em>degrevlex</em> or <em>grevlex</em> ordering).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>GroebnerDegRevLex({x^3 - y - 2, x^2 + y + 1})</code> yields {\( y^{2} - x + 3 y + 3, x y + x + y + 2, x^{2} + y + 1 \)}.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      GroebnerDegRevLex( &lt;List of Polynomials&gt;, &lt;List of Variables&gt; )
+     </dt> 
+     <dd> 
+      <p>Computes the Gröbner basis of the list of the polynomials with respect to graded reverse lexicographical ordering of the given variables (also known as <em>total degree reverse lexicographic ordering</em>, <em>degrevlex</em> or <em>grevlex</em> ordering).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>GroebnerDegRevLex({x^3 - y - 2, x^2 + y + 1}, {y, x})</code> yields {\( x^{2} + y + 1, y x + y + x + 2, y^{2} + 3y - x + 3\)}.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <a href="../CAS Specific Commands/GroebnerLex.html" class="xref page">GroebnerLex</a> and <a href="../CAS Specific Commands/GroebnerLexDeg.html" class="xref page">GroebnerLexDeg</a> commands.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

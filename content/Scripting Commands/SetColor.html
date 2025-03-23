@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">SetColor Command</h1> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p><span class="image left"><img src="../../_images/64px-Globe.png" alt="Globe.png" width="64" height="64"></span></p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>This command differs among variants of English:</p> 
+      </div> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>SetColor (US)</p> </li> 
+        <li> <p>SetColor (UK + Aus)</p> </li> 
+       </ul> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    SetColor( &lt;Object&gt;, &lt;Red&gt;, &lt;Green&gt;, &lt;Blue&gt; )
+   </dt> 
+   <dd> 
+    <p>Changes the color of given object. The red, green and blue represent amount of corresponding color component, 0 being minimum and 1 maximum. Number <em>t</em> exceeding this interval is mapped to it using function \(2\left|\frac{t}2-\mathrm round\left(\frac{t}2\right)\right|\).</p> 
+   </dd> 
+   <dt class="hdlist1">
+    SetColor( &lt;Object&gt;, &lt;"Color"&gt; )
+   </dt> 
+   <dd> 
+    <p>Changes the color of given object. The color is entered as <a href="../../Texts/" class="xref page">text</a>, that may be:</p> 
+    <div class="ulist"> 
+     <ul> 
+      <li> <p>an English color name (see <a href="../../../../reference/en/Colors/" class="xref page">the list of colors</a>). Some of them can be also used in national languages and are listed below.</p> </li> 
+     </ul> 
+    </div> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>If you use this command in a GeoGebraScript, you must use the English color names</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="ulist"> 
+  <ul> 
+   <li> <p>an hexadecimal string of the type #AARRGGBB or #RRGGBB, where <em>AA</em> defines transparency (01 full transparency to FF full opacity), <em>RR</em> defines the red component, <em>GG</em> the green one and <em>BB</em> the blue one.</p> </li> 
+  </ul> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>SetColor(text1, "#80FF0000")</code> sets the color of existing <em>text1</em> as red, with a 50% white transparency.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="ulist"> 
+  <ul> 
+   <li> <p>Black</p> </li> 
+   <li> <p>Dark Gray</p> </li> 
+   <li> <p>Gray</p> </li> 
+   <li> <p>Dark Blue</p> </li> 
+   <li> <p>Blue</p> </li> 
+   <li> <p>Dark Green</p> </li> 
+   <li> <p>Green</p> </li> 
+   <li> <p>Maroon</p> </li> 
+   <li> <p>Crimson</p> </li> 
+   <li> <p>Red</p> </li> 
+   <li> <p>Magenta</p> </li> 
+   <li> <p>Indigo</p> </li> 
+   <li> <p>Purple</p> </li> 
+   <li> <p>Brown</p> </li> 
+   <li> <p>Orange</p> </li> 
+   <li> <p>Gold</p> </li> 
+   <li> <p>Lime</p> </li> 
+   <li> <p>Cyan</p> </li> 
+   <li> <p>Turquoise</p> </li> 
+   <li> <p>Light Blue</p> </li> 
+   <li> <p>Aqua</p> </li> 
+   <li> <p>Silver</p> </li> 
+   <li> <p>Light Gray</p> </li> 
+   <li> <p>Pink</p> </li> 
+   <li> <p>Violet</p> </li> 
+   <li> <p>Yellow</p> </li> 
+   <li> <p>Light Yellow</p> </li> 
+   <li> <p>Light Orange</p> </li> 
+   <li> <p>Light Violet</p> </li> 
+   <li> <p>Light Purple</p> </li> 
+   <li> <p>Light Green</p> </li> 
+   <li> <p>White</p> </li> 
+  </ul> 
+ </div> 
+</article></body>
+</html>

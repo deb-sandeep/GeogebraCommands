@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">OsculatingCircle Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    OsculatingCircle( &lt;Point&gt;, &lt;Function&gt; )
+   </dt> 
+   <dd> 
+    <p>Yields the osculating circle of the function in the given point.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>OsculatingCircle((0, 0), x^2)</code> yields <em>x² + y² - y = 0</em>.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    OsculatingCircle( &lt;Point&gt;, &lt;Curve&gt; )
+   </dt> 
+   <dd> 
+    <p>Yields the osculating circle of the curve in the given point.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>OsculatingCircle((1, 0), Curve(cos(t), sin(2t), t, 0, 2π))</code> yields <em>x² + y² + 6x = 7</em>.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    OsculatingCircle( &lt;Point&gt;, &lt;Object&gt; )
+   </dt> 
+   <dd> 
+    <p>Yields the osculating circle of the object (function, curve, conic) in the given point.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="ulist"> 
+    <ul> 
+     <li> <p><code>OsculatingCircle((0, 0), x^2)</code> yields <em>x² + y² - y = 0</em></p> </li> 
+     <li> <p><code>OsculatingCircle((1, 0), Curve(cos(t), sin(2t), t, 0, 2π))</code> yields <em>x² + y² + 6x = 7</em></p> </li> 
+     <li> <p><code>OsculatingCircle((-1, 0), Conic({1, 1, 1, 2, 2, 3}))</code> yields <em>x² + y² + 2x + 1y = -1</em></p> </li> 
+    </ul> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>This command is for 2D objects only. For 3D, you can make a custom tool for example <a href="https://www.geogebra.org/m/tan7dxjt" class="bare">https://www.geogebra.org/m/tan7dxjt</a></p> </li> 
+       </ul> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

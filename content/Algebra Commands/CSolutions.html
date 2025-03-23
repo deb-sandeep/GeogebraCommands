@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">CSolutions Command</h1> 
+ <div class="sect1"> 
+  <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      CSolutions( &lt;Equation&gt; )
+     </dt> 
+     <dd> 
+      <p>Solves a given equation for the main variable and returns a list of all solutions, allowing for complex solutions.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>CSolutions(x^2 = -1)</code> yields <em>{ί, -ί}</em>, the complex solutions of <em>x<sup>2</sup> = -1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      CSolutions( &lt;Equation&gt;, &lt;Variable&gt; )
+     </dt> 
+     <dd> 
+      <p>Solves an equation for a given unknown variable and returns a list of all solutions, allowing for complex solutions.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>CSolutions(a^2 = -1, a)</code> yields <em>{ί, -ί}</em>, the complex solutions of <em>a<sup>2</sup> = -1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      CSolutions( &lt;List of Equations&gt;, &lt;List of Variables&gt; )
+     </dt> 
+     <dd> 
+      <p>Solves a set of equations for a given set of unknown variables and returns a list of all solutions, allowing for complex solutions.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>CSolutions({y^2 = x - 1, x = 2 * y - 1}, {x, y})</code> yields \(\begin{pmatrix}1 + 2 ί&amp;1 + ί\\1 - 2 ί&amp;1 - ί\end{pmatrix}\), the complex solutions of <em>y<sup>2</sup> = x - 1</em> and <em>x = 2 * y - 1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>The complex ί is obtained by pressing <span class="kcode">ALT</span> + <span class="kcode">i</span>.</p> </li> 
+          <li> <p>See also <a href="../Algebra Commands/CSolve.html" class="xref page">CSolve Command</a> and <a href="../Algebra Commands/Solutions.html" class="xref page">Solutions Command</a>.</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

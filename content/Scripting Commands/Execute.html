@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Execute Command</h1> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>The <em>Execute</em> command works only if the <strong>commands in the list are written in English (US)</strong>, regardless the language chosen for your GeoGebra interface.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Execute( &lt;List of Texts&gt; )
+   </dt> 
+   <dd> 
+    <p>Executes a list of commands entered as texts.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="ulist"> 
+    <ul> 
+     <li> <p><code>Execute({"A=(1,1)","B=(3,3)","C = Midpoint(A, B)"})</code> creates points <em>A, B</em> and their midpoint <em>C</em>.</p> </li> 
+     <li> <p><code>Execute(Join({"f_{1} = 1", "f_{2} = 1"}, Sequence("f_{"+(i + 2) + "} = f_{" + (i+1) + "} + f_{"+ i +"}", i, 1, 10)))</code> creates the first 10 elements of the <a href="https://en.wikipedia.org/wiki/Fibonacci_sequence">Fibonacci sequence</a>.</p> </li> 
+    </ul> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    Execute( &lt;List of Texts&gt;, &lt;Parameter&gt;, …​ , &lt;Parameter&gt; )
+   </dt> 
+   <dd> 
+    <p>Use the placeholders %1, %2 and so on as arguments of the commands in the list. The placeholders will be respectively replaced with the parameters used in the <em>Execute</em> command. Up to 9 parameters can be specified. After the replacement, the resulting scripts will be executed.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>Execute({"Segment(%1,%2)","Midpoint(%1,%2)"}, A, B)</code> creates the segment <em>AB</em> and its midpoint.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>If the quote symbol (<code>"</code>) is not available in your keyboard, use the virtual keyboard of GeoGebra or the command <code>UnicodeToLetter(34)</code></p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

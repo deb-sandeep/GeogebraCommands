@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">ParametricDerivative Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ParametricDerivative( &lt;Curve&gt; )
+   </dt> 
+   <dd> 
+    <p>Returns a new <a href="../../Curves/" class="xref page">parametric curve</a> given by <em>\( \left( x(t), \frac{y'(t)}{ x'(t)} \right) \)</em>.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ParametricDerivative(Curve(2t, t², t, 0, 10))</code> returns the parametric curve <em>(x(t) = 2t, y(t) = t)</em>. The curve given as argument to the command is the function <em>f(x) = \( \frac{x²}{4}\)</em>, and the result is the derivative of that function: <em>f'(x) = \( \frac{x}{2}\).</em></p> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

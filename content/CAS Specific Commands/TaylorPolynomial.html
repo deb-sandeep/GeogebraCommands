@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">TaylorPolynomial Command</h1> 
+ <div id="preamble"> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      TaylorPolynomial( &lt;Function&gt;, &lt;x-Value&gt;, &lt;Order Number&gt; )
+     </dt> 
+     <dd> 
+      <p>Creates the Taylor series expansion of the given function at the point <em>x-Value</em> up to the given order.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>TaylorPolynomial(x^2, 3, 1)</code> gives <em>9 + 6 (x - 3)</em>, the Taylor series expansion of <em>x<sup>2</sup></em> at <em>x = 3</em> up to order <em>1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="sect1"> 
+  <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      TaylorPolynomial( &lt;Expression&gt;, &lt;x-Value&gt;, &lt;Order Number&gt; )
+     </dt> 
+     <dd> 
+      <p>Creates the Taylor series expansion of the given expression at the point <em>x-Value</em> up to the given order.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>TaylorPolynomial(x^2, a, 1)</code> gives <em>a<sup>2</sup> + 2a (x - a)</em>, the Taylor series expansion of <em>x<sup>2</sup></em> at <em>x = a</em> up to order <em>1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      TaylorPolynomial( &lt;Expression&gt;, &lt;Variable&gt;, &lt;Variable Value&gt;, &lt;Order Number&gt; )
+     </dt> 
+     <dd> 
+      <p>Creates the Taylor series expansion of the given expression with respect to the given variable at the point <em>Variable Value</em> up to the given order.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>TaylorPolynomial(x^3 sin(y), x, 3, 2)</code> gives <em>27 sin(y) + 27 sin(y) (x - 3) + 9 sin(y) (x - 3)<sup>2</sup></em>, the Taylor series expansion with respect to <em>x</em> of <em>x<sup>3</sup> sin(y)</em> at <em>x = 3</em> up to order <em>2</em>.</p> </li> 
+       <li> <p><code>TaylorPolynomial(x^3 sin(y), y, 3, 2)</code> gives <em>x<sup>3</sup> sin(3) + x<sup>3</sup> cos(3) (y - 3) - x<sup>3</sup> \(\frac{sin(3) }{2}\) (y - 3)<sup>2</sup></em>, the Taylor series expansion with respect to <em>y</em> of <em>x<sup>3</sup> sin(y)</em> at <em>y = 3</em> up to order <em>2</em>.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>The order has got to be an integer greater or equal to zero.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

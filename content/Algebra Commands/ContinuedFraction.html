@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">ContinuedFraction Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ContinuedFraction( &lt;Number&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates the <a href="https://en.wikipedia.org/wiki/Continued_fraction">continued fraction</a> approximating a given number. The result is a LaTeX <a href="../../Texts/" class="xref page">text object</a>. The fraction is computed numerically within precision 10<sup>-8</sup>.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ContinuedFraction(5.45)</code> gives <em>\(5 + \frac{1}{ 2+ \frac{1}{4+ \frac{1}{ 1+ \frac{1}{ 1 } } } }\)</em></p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ContinuedFraction( &lt;Number&gt;, &lt;Level&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates the continued fraction approximating the given number. The number of quotients is less than or equal to <em>Level</em>, but never exceeding the number of quotients needed to achieve the numerical precision of 10<sup>-8</sup>.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ContinuedFraction(5.45, 3)</code> gives <em>\(5 + \frac{1}{ 2+ \frac{1}{4+ ... } }\)</em></p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ContinuedFraction( &lt;Number&gt;, &lt;Level&gt; (optional), &lt;Boolean Shorthand&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates the continued fraction approximating the given number. If the parameter <em>Level</em> is specified, the number of quotients is less than or equal to <em>Level</em>, but never exceeding the number of quotients needed to achieve the numerical precision of 10<sup>-8</sup>. When <em>Shorthand</em> is <em>true</em>, the LaTeX text uses a shorter syntax, and contains a list of the integer parts of the continued fraction.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="ulist"> 
+    <ul> 
+     <li> <p><code>ContinuedFraction(5.45, true)</code> gives [<em>5; 2, 4, 1, 1</em>]</p> </li> 
+     <li> <p><code>ContinuedFraction(5.45, 3, true)</code> gives [<em>5; 2, 4, …​</em>]</p> </li> 
+    </ul> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

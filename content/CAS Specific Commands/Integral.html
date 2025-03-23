@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">Integral Command</h1> 
+ <div id="preamble"> 
+  <div class="sectionbody"> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Integral( &lt;Function&gt; )
+     </dt> 
+     <dd> 
+      <p>Gives the indefinite integral with respect to the main variable.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Integral(x³)</code> gives <em>\(\frac{1}{4}x^4\)</em> .</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Integral( &lt;Function&gt;, &lt;Variable&gt; )
+     </dt> 
+     <dd> 
+      <p>Gives the partial integral with respect to the given variable.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Integral(x³+3x y, x)</code> gives <em>\(\frac{1}{4}x^4+\frac{3}{2}x^2 y\)</em> .</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Integral( &lt;Function&gt;, &lt;Start x-Value&gt;, &lt;End x-Value&gt; )
+     </dt> 
+     <dd> 
+      <p>Gives the definite integral over the interval <em>[Start x-Value , End x-Value]</em> with respect to the main variable.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Integral(x³, 1, 2)</code> yields 3.75.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>This command also shades the area between the function graph of <em>f</em> and the <em>x</em>-axis.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Integral( &lt;Function&gt;, &lt;Start x-Value&gt;, &lt;End x-Value&gt;, &lt;Boolean Evaluate&gt; )
+     </dt> 
+     <dd> 
+      <p>Gives the definite integral of the function over the interval <em>[Start x-Value , End x-Value]</em> with respect to the main variable and shades the related area if <em>Evaluate</em> is <em>true</em>. In case <em>Evaluate</em> is <em>false</em> the related area is shaded but the integral value is not calculated.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="sect1"> 
+  <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+  <div class="sectionbody"> 
+   <div class="paragraph"> 
+    <p>In the <span class="image"><img src="../../_images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span> <a href="../../CAS_View/" class="xref page">CAS View</a> undefined variables are allowed as input as well.</p> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Integral(cos(a t), t)</code> yields \(\frac{sin(a t)}{a} + c_1\).</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+      Integral( &lt;Function&gt;, &lt;Variable&gt;, &lt;Start Value&gt;, &lt;End Value&gt; )
+     </dt> 
+     <dd> 
+      <p>Gives the definite integral over the interval [<em>Start Value</em> , <em>End Value</em>] of the given variable.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Integral(cos(t), t, a, b)</code> yields \(- sin(a) + sin(b)\).</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>The answer isn’t guaranteed to be continuous, eg <code>Integral(floor(x))</code>, that is the integral of the function ⌊x⌋ - in that case you can define your own function to use eg <code>F(x)=(floor(x)² - floor(x))/2 + x floor(x) - floor(x)²</code>, i.e. the function \(\frac{⌊x⌋² - ⌊x⌋}{2} + x \cdot⌊x⌋ - ⌊x⌋²\)</p> </li> 
+          <li> <p>in some versions of GeoGebra, a numerical algorithm is used so integrating up to an asypmtote or similar eg <code>Integral(ln(x), 0, 1)</code> won’t work. In this case try <code>Integral(ln(x), 0, 1, false)</code></p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

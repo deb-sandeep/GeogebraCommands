@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">FitGrowth Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    FitGrowth( &lt;List of Points&gt; )
+   </dt> 
+   <dd> 
+    <p>Calculates a function of the form \( a b ^ x \) to the points in the list. (Very similar to <a href="../CAS Specific Commands/FitExp.html" class="xref page">FitExp</a>[ &lt;List of Points&gt; ], just in a slightly different form).</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>FitGrowth({(0, 1), (2, 3), (4, 3), (6, 4)})</code> yields <em>1.31</em> \( \cdot \) <em>1.23<sup>x</sup></em>.</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>You can do a direct least-squares fitting with <code>Fit(list, a*b^x)</code></p> </li> 
+        <li> <p>See also <a href="../Statistics Commands/Fit.html" class="xref page">Fit</a>, <a href="../CAS Specific Commands/FitExp.html" class="xref page">FitExp</a>, <a href="../Statistics Commands/FitLine.html" class="xref page">FitLine</a>, <a href="../Statistics Commands/FitLineX.html" class="xref page">FitLineX</a>, <a href="../CAS Specific Commands/FitLog.html" class="xref page">FitLog</a>, <a href="../Statistics Commands/FitLogistic.html" class="xref page">FitLogistic</a>, <a href="../CAS Specific Commands/FitPoly.html" class="xref page">FitPoly</a>, <a href="../CAS Specific Commands/FitPow.html" class="xref page">FitPow</a> and <a href="../CAS Specific Commands/FitSin.html" class="xref page">FitSin</a></p> </li> 
+       </ul> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>

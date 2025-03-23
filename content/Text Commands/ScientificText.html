@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">ScientificText Command</h1> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p><span class="image left"><img src="../../_images/64px-Globe.png" alt="Globe.png" width="64" height="64"></span></p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>This command differs among variants of English:</p> 
+      </div> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>StandardForm (UK)</p> </li> 
+        <li> <p>ScientificText (US + Aus)</p> </li> 
+       </ul> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ScientificText( &lt;Number&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates a text displaying the given number in <a href="https://en.wikipedia.org/wiki/Scientific_notation">scientific notation</a>.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>The text is placed with the top left corner (Corner 4) of its box at the origin of the coordinate system.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ScientificText(0.002)</code> gives <em>2 × 10<sup>-3</sup>.</em></p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    ScientificText( &lt;Number&gt;, &lt;Precision&gt; )
+   </dt> 
+   <dd> 
+    <p>Creates a text displaying the given number in <a href="https://en.wikipedia.org/wiki/Scientific_notation">scientific notation</a>, rounded to the number of significant digits specified by <strong>precision</strong>.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>ScientificText(e,5)</code> gives <em>2.7183 × 10<sup>0</sup>.</em></p> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

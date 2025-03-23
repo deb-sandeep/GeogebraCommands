@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">InverseNormal Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    InverseNormal( &lt;Mean&gt;, &lt;Standard Deviation&gt;, &lt;Probability&gt; )
+   </dt> 
+   <dd> 
+    <p>Evaluates the expression \(\Phi^{-1}(P) \cdot \sigma + \mu \) at given probability <em>P</em>, where \(\Phi^{-1}\) is the inverse of the cumulative distribution function <em>Φ</em> for <em>N(0,1)</em>, defined by the given parameters <em>mean</em> and <em>standard deviation</em>.</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="paragraph"> 
+       <p>Returns the <em>x</em>-coordinate of the point with the given probability (area) to the left, under the normal distribution curve.</p> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>InverseNormal(50, 2, 0.9)</code> yields 52.56, that is the 90th percentile of a normal distribution with a mean of 50 and standard deviation 2.</p> 
+   </div> 
+  </div> 
+ </div> 
+</article></body>
+</html>

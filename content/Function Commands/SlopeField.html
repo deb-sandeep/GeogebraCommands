@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Commands</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<article class="doc"> 
+ <h1 class="page">SlopeField Command</h1> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    SlopeField( &lt;f(x,y)&gt; )
+   </dt> 
+   <dd> 
+    <p>Plots a <a href="https://en.wikipedia.org/wiki/Slope_field">slope field</a> of the differential equation \(\frac{dy}{dx}=f(x,y)\)</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="exampleblock"> 
+  <div class="content"> 
+   <div class="paragraph"> 
+    <p><code>SlopeField(x+y)</code> plots the slope field of the differential equation \(\frac{dy}{dx}=x+y\).</p> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="dlist"> 
+  <dl> 
+   <dt class="hdlist1">
+    SlopeField( &lt;f(x,y)&gt;, &lt;Number n&gt; )
+   </dt> 
+   <dd> 
+    <p>Plots a slope field of the differential equation \(\frac{dy}{dx}=f(x,y)\) on an n by n grid (if the <span class="image"><img src="../../_images/16px-Menu_view_graphics.svg.png" alt="Menu view graphics.svg" width="16" height="16"></span> <a href="../../Graphics_View/" class="xref page">Graphics View</a> is square) or a smaller grid if not. Default is 40.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    SlopeField( &lt;f(x,y)&gt;, &lt;Number n&gt;, &lt;Length Multiplier a&gt; )
+   </dt> 
+   <dd> 
+    <p>Plots a slope field of the differential equation \(\frac{dy}{dx}=f(x,y)\). The Length Multiplier 0&lt;a≤1 determines how long the segments are.</p> 
+   </dd> 
+   <dt class="hdlist1">
+    SlopeField( &lt;f(x,y)&gt;, &lt;Number n&gt;, &lt;Length Multiplier a&gt;, &lt;Min x&gt;, &lt;Min y&gt;, &lt;Max x&gt;, &lt;Max y&gt; )
+   </dt> 
+   <dd> 
+    <p>Plots a slope field of the differential equation \(\frac{dy}{dx}=f(x,y)\) inside the specified rectangle (rather than filling the <span class="image"><img src="../../_images/16px-Menu_view_graphics.svg.png" alt="Menu view graphics.svg" width="16" height="16"></span> <a href="../../Graphics_View/" class="xref page">Graphics View</a>)</p> 
+   </dd> 
+  </dl> 
+ </div> 
+ <div class="admonitionblock note"> 
+  <table> 
+   <tbody>
+    <tr> 
+     <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+     <td class="content"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>Use the following tools: <span class="image"><img src="../../_images/22px-Mode_translateview.svg.png" alt="Mode translateview.svg" width="22" height="22"></span> <a href="../../tools/Move_Graphics_View/" class="xref page">Move Graphics View</a>, <span class="image"><img src="../../_images/22px-Mode_zoomin.svg.png" alt="Mode zoomin.svg" width="22" height="22"></span> <a href="../../tools/Zoom_In/" class="xref page">Zoom In</a>, <span class="image"><img src="../../_images/22px-Mode_zoomout.svg.png" alt="Mode zoomout.svg" width="22" height="22"></span> <a href="../../tools/Zoom_Out/" class="xref page">Zoom Out</a> and observe the effect.</p> </li> 
+        <li> <p>See also <a href="../Function Commands/SolveODE.html" class="xref page">SolveODE</a>, <a href="../Geometry Commands/Locus.html" class="xref page">Locus</a>, <a href="../Function Commands/Integral.html" class="xref page">Integral</a></p> </li> 
+       </ul> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+</article></body>
+</html>
