@@ -22,15 +22,15 @@ a {
     top: 0;
     left: 0;
     width: var(--left-nav-width);
-    height: calc( 100vh / 3 );
+    height: calc( 0.45 * 100vh );
 }
 
 #group-cmds-frame {
     position: absolute;
-    top: calc( 100vh / 3 );
+    top: calc( 0.45 * 100vh );
     left: 0;
     width: var(--left-nav-width);
-    height: calc( 2 * 100vh / 3 );
+    height: calc( 0.55 * 100vh );
 }
 
 #cmd-detail-frame {
