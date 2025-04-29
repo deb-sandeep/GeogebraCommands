@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Median</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Median Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Median( &lt;List of Raw Data&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Determines the median of the list elements.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>Median({1, 2, 3})</code> yields <em>2</em>.</p> </li> 
+       <li> <p><code>Median({1, 1, 8, 8})</code> yields <em>4.5</em>.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Median( &lt;List of Numbers&gt;, &lt;List of Frequencies&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Calculates the weighted median of the list elements.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>Median({1, 2, 3}, {4, 1, 3})</code> yields <em>1.5</em>.</p> </li> 
+       <li> <p><code>Median({1, 2, 3, 4}, {6, 1, 3, 6})</code> yields <em>3</em>.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>If the length of the given list is even, the arithmetic mean of the two center elements is returned.</p> </li> 
+          <li> <p>See also <a href="../Algebra Commands/Mean.html" class="xref page">Mean</a> command.</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

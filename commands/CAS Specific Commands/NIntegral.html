@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>NIntegral</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">NIntegral Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       NIntegral( &lt;Function&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Plots the graph of the indefinite integral \(y=F(x)+c\) of the given function, with constant of integration <em>c</em> = 0. The equation of the primitive is not shown in <em>Algebra View</em>, because it is computed numerically.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       NIntegral( &lt;Function&gt;, &lt;Start x-Value&gt;, &lt;End x-Value&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Computes (numerically) and plots the definite integral \(\int_a^bf(x)\mathrm{d}x\) of the given function <em>f</em>, from <em>a</em> (<em>Start x-Value</em>) to <em>b</em> (<em>End x-Value</em>).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>NIntegral(ℯ^(-x^2), 0, 1)</code> yields <em>0.75</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       NIntegral( &lt;Function&gt;, &lt;Start x-Value&gt;, &lt;Start y-Value&gt;, &lt;End x-Value&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Computes (numerically) the indefinite integral of the given function, and plots the graph of that function through (<em>Start x-Value</em>, <em>Start y-Value</em>), with end point at (<em>End x-Value</em>).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>NIntegral(sin(x)/x, π, 1, 2π)</code> plots the graph of the indefinite integral \(y=F(x)+c\) of the given function in the interval [π, 2π]. The value of \(c\) is defined by the initial condition (start x-Value, start y-Value)=(π, 1).</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p><strong><span class="image"><img src="../../images/18px-Bulbgraph.png" alt="Note" width="18" height="22" title="Note"></span> Hint:</strong> In the <span class="image"><img src="../../images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/CAS_View/" class="xref page">CAS View</a> the following syntax can also be used:</p> 
+        </div> 
+        <div class="dlist"> 
+         <dl> 
+          <dt class="hdlist1">
+            NIntegral( &lt;Function&gt;, &lt;Variable&gt;, &lt;Start Value&gt;, &lt;End Value&gt; ) 
+          </dt> 
+          <dd> 
+           <p>Computes (numerically) the definite integral \(\int_a^bf(t)\mathrm{d}x\) of the given function <em>f</em>, from <em>a</em> (<em>Start value</em>) to <em>b</em> (<em>End value</em>), with respect to the given variable.</p> 
+          </dd> 
+         </dl> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>NIntegral(ℯ^(-a^2), a, 0, 1)</code> yields <em>0.75</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

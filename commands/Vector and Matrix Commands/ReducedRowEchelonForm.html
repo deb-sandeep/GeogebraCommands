@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>ReducedRowEchelonForm</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">ReducedRowEchelonForm Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         ReducedRowEchelonForm( &lt;Matrix&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Returns the <a href="https://en.wikipedia.org/wiki/Row_echelon_form">reduced echelon form</a> of the matrix.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>ReducedRowEchelonForm({{1, 6, 4}, {2, 8, 9}, {4, 5, 6}})</code> yields the matrix \( \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}\).</p> </li> 
+         <li> <p><code>ReducedRowEchelonForm({{2, 10, 11, 4}, {2, (-5), (-6), 12}, {2, 5, 3, 2}})</code> yields the matrix \( \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 5\\ 0 &amp; 1 &amp; 0 &amp; -2.8\\ 0 &amp; 0 &amp; 1 &amp; 2\end{pmatrix}\).</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         ReducedRowEchelonForm( &lt;Matrix&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Returns the <a href="https://en.wikipedia.org/wiki/Row_echelon_form">reduced echelon form</a> of the matrix.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>ReducedRowEchelonForm({{1, 6, 4}, {2, 8, 9}, {4, 5, 6}})</code> yields the matrix \( \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}\).</p> </li> 
+         <li> <p><code>ReducedRowEchelonForm({{2, 10, 11, 4}, {2, (-5), (-6), 12}, {2, 5, 3, 2}})</code> yields the matrix \( \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 5\\ 0 &amp; 1 &amp; 0 &amp; \frac{-14}{5} \\ 0 &amp; 0 &amp; 1 &amp; 2\end{pmatrix}\).</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

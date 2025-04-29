@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>TrigExpand</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">TrigExpand Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         TrigExpand( &lt;Expression&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Expands trigonometric functions of a sum of variables into trigonometric functions of a single variable, or expands products of trigonometric functions into linear expressions.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>TrigExpand(tan(x + y))</code> gives \(\frac{\frac{\sin(x)}{\cos(x)}+\frac{\sin(y)}{\cos(y)}} {1-\frac{\sin(x)}{\cos(x)} \cdot \frac{\sin(y)}{\cos(y)}} \).</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p><code>TrigExpand(sin(x)sin(x/3))</code> gives \(\frac{1}{2} \; \cos \left( 2 \cdot \frac{x}{3} \right) - \frac{1}{2} \; \cos \left( 4 \cdot \frac{x}{3} \right) \).</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         TrigExpand( &lt;Expression&gt;, &lt;Target Function&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Expands trigonometric functions of a sum of variables into expressions containing (when possible) the given target function of a single variable.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>TrigExpand(tan(x + y), tan(x))</code> gives \(\frac{-\tan(x) - \tan(y)}{\tan(x) \tan(y) - 1}\).</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="paragraph"> 
+      <p>CAS syntaxes may show different results, depending on the selected output mode:</p> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>TrigExpand(tan(x + y))</code> in <span class="image"><img src="../../images/32px-Mode_evaluate.svg.png" alt="Mode evaluate.svg" width="32" height="32"></span> <em>Evaluate</em> mode gives \(\frac{\frac{\sin(x)}{\cos(x)}+\frac{\sin(y)}{\cos(y)}} {1-\frac{\sin(x)}{\cos(x)} \cdot \frac{\sin(y)}{\cos(y)}} \) in <span class="image"><img src="../../images/32px-Mode_numeric.svg.png" alt="Mode numeric.svg" width="32" height="32"></span> <em>Numeric</em> mode gives \(\frac{\sin(x) \cos(y) + \sin(y) \cos(x)}{- \sin(x) \sin(y) +\cos(x) \cos(y) }\) .</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="paragraph"> 
+      <p>The following commands are only available in the <span class="image"><img src="../../images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/CAS_View/" class="xref page">CAS View</a>:</p> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         TrigExpand( &lt;Expression&gt;, &lt;Target Function&gt;, &lt;Target Variable&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Expands trigonometric expressions into expressions containing (when possible) only the given target function and variable.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>TrigExpand(sin(x), sin(x), x/2)</code> gives \(2\cos \left( \frac{x}{2} \right) \sin \left( \frac{x}{2} \right) \)</p> </li> 
+         <li> <p><code>TrigExpand(sin(x)/(1+cos(x)), tan(x), x/2)</code> gives \(\tan \left( \frac{x}{2} \right)\).</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         TrigExpand( &lt;Expression&gt;, &lt;Target Function&gt;, &lt;Target Variable&gt;, &lt;Target Variable&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Expands trigonometric expressions into expressions containing (when possible) only the given target function and variables.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>TrigExpand(csc(x) - cot(x) + csc(y) - cot(y), tan(x), x/2, y/2)</code> gives \(\tan \left( \frac{x}{2} \right) +\tan \left( \frac{y}{2} \right) \).</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p>See also <a href="TrigSimplify.html" class="xref page">TrigSimplify Command</a> and <a href="TrigCombine.html" class="xref page">TrigCombine Command</a>.</p> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

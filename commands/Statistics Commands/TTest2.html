@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>TTest2</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">TTest2 Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       TTest2( &lt;List of Sample Data 1&gt;, &lt;List of Sample Data 2&gt;, &lt;Tail&gt;, &lt;Boolean Pooled&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Performs a t-test of the difference between two population means using the given lists of sample data. Tail has possible values "&lt;", "&gt;" , "≠" that determine the following alternative hypotheses:<br> "&lt;" = difference in population means &lt; 0<br> "&gt;" = difference in population means &gt; 0<br> "≠" = difference in population means ≠ 0</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="paragraph"> 
+    <p>If <em>Pooled</em> = true, then population variances are assumed equal and sample standard deviations are combined in calculation.</p> 
+   </div> 
+   <div class="paragraph"> 
+    <p>If <em>Pooled</em> = false, then population variances are not assumed equal and sample standard deviations are not combined.</p> 
+   </div> 
+   <div class="paragraph"> 
+    <p>Results are returned in list form as <em>{Probabilty value, t-test statistic}</em>.</p> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       TTest2( &lt;Sample Mean 1&gt;, &lt;Sample Standard Deviation 1&gt;, &lt;Sample Size 1&gt;, &lt;Sample Mean 2&gt;, &lt;Sample Standard Deviation 2&gt;,&lt;Sample Size 2&gt;, &lt;Tail&gt;, &lt;Boolean Pooled&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Performs a t-test of the difference between two population means using the given sample statistics. <em>Tail</em> and <em>Pooled</em> are defined as above. Results are returned in list form as <em>{Probabilty value, t-test statistic}</em>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+  </article> 
+ </body>
+</html>

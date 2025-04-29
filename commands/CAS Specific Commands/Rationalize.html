@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Rationalize</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Rationalize Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p><span class="image left"><img src="../../images/64px-Globe.png" alt="Globe.png" width="64" height="64"></span></p> 
+          </div> 
+          <div class="paragraph"> 
+           <p>This command differs among variants of English:</p> 
+          </div> 
+          <div class="ulist"> 
+           <ul> 
+            <li> <p>Rationalize (US)</p> </li> 
+            <li> <p>Rationalise (UK + Aus)</p> </li> 
+           </ul> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Rationalize( &lt;Number&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Creates the fraction of the given <em>Number</em>, and rationalizes the denominator, if it contains square roots.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>Rationalize(3.5)</code> yields \(\frac{7}{2}\).</p> </li> 
+         <li> <p><code>Rationalize(1/sqrt(2))</code> yields \(\frac{\sqrt{2} }{2}\).</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p>See also <a href="../Algebra Commands/MixedNumber.html" class="xref page">MixedNumber Command</a>.</p> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

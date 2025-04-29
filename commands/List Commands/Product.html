@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Product</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Product Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Product( &lt;List of Raw Data&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Calculates the product of all numbers in the list.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>Product({2, 5, 8})</code> yields <em>80</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Product( &lt;List of Numbers&gt;, &lt;Number of Elements&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Calculates the product of the first <em>n</em> elements in the list.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>Product({1, 2, 3, 4}, 3)</code> yields <em>6</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Product( &lt;List of Numbers&gt;, &lt;List of Frequencies&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Calculates the product of all elements in the <em>list of numbers</em> raised to the value given in the <em>list of frequencies</em> for each one of them.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>Product({20, 40, 50, 60}, {4, 3, 2, 1})</code> yields <em>1536000000000000</em></p> </li> 
+         <li> <p><code>Product({sqrt(2), cbrt(3), sqrt(5), cbrt(-7)}, {4, 3, 2, 3})</code> yields <em>-420</em></p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p>The two lists must have the same length.</p> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Product( &lt;Expression&gt;, &lt;Variable&gt;, &lt;Start Value&gt;, &lt;End Value&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Calculates the product of the expressions that are obtained by replacing the given variable with every integer from the given <em>start</em> to the given <em>end</em> values.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>Product(k, k, 1, 7)</code> yields 5040</p> </li> 
+         <li> <p><code>Product(x + k, k, 2, 3)</code> yields <em>f</em>(<em>x</em>)=(<em>x</em> + 2)(<em>x</em> + 3).</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Product( &lt;List of Expressions&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Calculates the product of all elements in the list.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>Product({1, 2, x})</code> yields <em>2x</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Product( &lt;Expression&gt;, &lt;Variable&gt;, &lt;Start Value&gt;, &lt;End Value&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Calculates the product of the expressions that are obtained by replacing the given variable with every integer from the given <em>start</em> to the given <em>end</em> values.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>Product(x + 1, x, 2, 3)</code> yields <em>12</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

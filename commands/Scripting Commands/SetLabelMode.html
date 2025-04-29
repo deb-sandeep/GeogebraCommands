@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>SetLabelMode</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">SetLabelMode Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       SetLabelMode( &lt;Object&gt;, &lt;Number&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Changes the label mode of the given object, according to the table below.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>Integers distinct from the ones listed in table are treated as 0.</p> </li> 
+          <li> <p>The default option for the object’s label is <em>Name</em>.</p> </li> 
+          <li> <p>For options 3 and 9, if the object’s <em>Caption</em> box is empty, the <em>Name</em> of the object is used as caption.</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <table class="tableblock frame-all grid-all stretch"> 
+    <colgroup> 
+     <col style="width: 50%;"> 
+     <col style="width: 50%;"> 
+    </colgroup> 
+    <thead> 
+     <tr> 
+      <th class="tableblock halign-left valign-top">Number</th> 
+      <th class="tableblock halign-left valign-top">Mode</th> 
+     </tr> 
+    </thead> 
+    <tbody> 
+     <tr> 
+      <td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td> 
+      <td class="tableblock halign-left valign-top"><p class="tableblock">Name</p></td> 
+     </tr> 
+     <tr> 
+      <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td> 
+      <td class="tableblock halign-left valign-top"><p class="tableblock">Name + Value</p></td> 
+     </tr> 
+     <tr> 
+      <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td> 
+      <td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td> 
+     </tr> 
+     <tr> 
+      <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td> 
+      <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://geogebra.github.io/docs/manual/en/Labels_and_Captions/" class="xref page">Caption</a></p></td> 
+     </tr> 
+     <tr> 
+      <td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td> 
+      <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://geogebra.github.io/docs/manual/en/Labels_and_Captions/" class="xref page">Caption</a> + Value</p></td> 
+     </tr> 
+    </tbody> 
+   </table> 
+  </article> 
+ </body>
+</html>

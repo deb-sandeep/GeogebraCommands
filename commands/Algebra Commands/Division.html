@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Division</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Division Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Division( &lt;Dividend Number&gt;, &lt;Divisor Number&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Gives the quotient (integer part of the result) and the remainder of the division of the two numbers.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Division(16, 3)</code> yields <em>{5, 1}</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Division( &lt;Dividend Polynomial&gt;, &lt;Divisor Polynomial&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Gives the quotient and the remainder of the division of the two polynomials.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Division(x^2 + 3 x + 1, x - 1)</code> yields <em>{x + 4, 5}</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>In the <em>Algebra View</em> only one variable can be used and it will always be renamed to <em>x</em>. In the <em>CAS View</em> multivariable division is also supported.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>Division(x^2+y^2, x+y)</code> yields <em>{x - y, 2y^2}</em>.</p> </li> 
+       <li> <p><code>Division(x^2+y^2, y+x)</code> yields <em>{y - x, 2x^2}</em>.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

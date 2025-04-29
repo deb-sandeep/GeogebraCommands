@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Net</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Net Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Net( &lt;Polyhedron&gt; , &lt;Number&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates the net of a convex polyhedron, on the plane containing the face used for its construction. The number is used to define the progress of the unfolding procedure, and needs to be between 0 and 1. The net is totally unfold when the given number is 1.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>The net of a cube is displayed as Latin cross.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Net( &lt;Polyhedron&gt;, &lt;Number&gt;, &lt;Face&gt;, &lt;Edge&gt;, &lt;Edge&gt;, …​ ) 
+     </dt> 
+     <dd> 
+      <p>Applicable only to cubes (for the moment), allows you to create different nets of a cube, by specifying the face and edges that need to be cut to create the net.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>To explore the different configurations of the net of a cube, see <a href="http://geogebra.org/material/show/id/136596">this example file</a> on GeoGebra.</p> </li> 
+          <li> <p>See also <span class="image"><img src="../../images/24px-Mode_net.svg.png" alt="Mode net.svg" width="24" height="24"></span> <a href="https://geogebra.github.io/docs/manual/en/tools/Net/" class="xref page">Net</a> tool.</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

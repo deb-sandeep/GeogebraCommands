@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Envelope</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Envelope Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Envelope( &lt;Path&gt;, &lt;Point&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates the <a href="https://en.wikipedia.org/wiki/Envelope_(mathematics)">envelope</a> equation of a set of output paths while the moving point is bound to another object.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="paragraph"> 
+    <p>An envelope is a curve that is tangent to each member of the family of the output paths at some point.</p> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><a href="http://www.geogebra.org/student/m67909">A ladder is leaning against the wall and sliding down.</a></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p>The contour of its trace will be the envelope of the ladder. Strictly speaking, GeoGebra computes the envelope of the entire line containing the ladder as a segment. Only such envelopes can be computed where the appropriate construction leads to an algebraic equation system.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <a href="Locus.html" class="xref page">Locus</a>, <a href="LocusEquation.html" class="xref page">LocusEquation</a> commands and <a href="https://github.com/kovzol/gg-art-doc/tree/master/pdf/english.pdf">GeoGebra Automated Reasoning Tools: A Tutorial</a>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

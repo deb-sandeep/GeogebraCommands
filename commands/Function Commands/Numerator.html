@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Numerator</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Numerator Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Numerator( &lt;Function&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Returns the numerator of the function.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>Numerator((3x² + 1) / (2x - 1))</code> yields <em>f(x) = 3x² + 1</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Numerator( &lt;Number&gt; ) 
+       </dt> 
+       <dd> 
+        <p>For a rational number returns its (simplified) numerator. It uses a numerical method, which limits this command to numbers with small denominator. For irrational input the numerator of its <a href="../Algebra Commands/ContinuedFraction.html" class="xref page">continued fraction</a> is returned.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>Numerator(5 / 3)</code> yields 5.</p> </li> 
+         <li> <p><code>Numerator(10 / 6)</code> yields 5.</p> </li> 
+         <li> <p><code>Numerator(15 / 3)</code> yields 5.</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p>See also <a href="Denominator.html" class="xref page">Denominator Command</a> and <a href="../Text Commands/FractionText.html" class="xref page">FractionText Command</a>.</p> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Numerator( &lt;Expression&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Returns the numerator of a rational number or expression.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>Numerator(2/3 + 1/15)</code> yields <em>11</em>.</p> </li> 
+         <li> <p>If variables <em>a, b</em> and <em>c</em> haven’t been previously defined in GeoGebra, then <code>Numerator(a/b)</code> yields <em>a</em> and <code>Numerator(Simplify(a + b/c))</code> yields <em>a c + b</em></p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

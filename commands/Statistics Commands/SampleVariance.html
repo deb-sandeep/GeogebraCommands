@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>SampleVariance</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">SampleVariance Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       SampleVariance( &lt;List of Raw Data&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns the <a href="https://en.wikipedia.org/wiki/Sample_variance#Population_variance_and_sample_variance">sample variance</a> of the given list of numbers.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SampleVariance({1, 2, 3, 4, 5})</code> yields <em>a = 2.5</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       SampleVariance( &lt;List of Numbers&gt;, &lt;List of Frequencies&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns the <a href="https://en.wikipedia.org/wiki/Sample_variance#Population_variance_and_sample_variance">sample variance</a> of the given list of numbers with the specified frequencies.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SampleVariance({1, 2, 3, 4, 5}, {3, 2, 4, 4, 1})</code> yields <em>a = 1.67</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>If the list in the <span class="image"><img src="../../images/16px-Menu_view_spreadsheet.svg.png" alt="Menu view spreadsheet.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/CAS_View/" class="xref page">CAS View</a> contains undefined variables, this command yields a formula for the sample variance.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>SampleVariance({a, b, c})</code> yields \(\frac{1}{3} a^{2} - \frac{1}{3} ab - \frac{1}{3}ac + \frac{1}{3} b^{2} - \frac{1}{3} bc + \frac{1}{3} c^{2}\).</p> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

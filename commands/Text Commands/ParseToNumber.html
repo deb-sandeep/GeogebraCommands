@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>ParseToNumber</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">ParseToNumber Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       ParseToNumber( &lt;Number&gt;, &lt;Text&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Parses the text and stores the result to a <a href="https://geogebra.github.io/docs/manual/en/Numbers_and_Angles/" class="xref page">number</a> <em>a</em>, which must be defined and <a href="https://geogebra.github.io/docs/manual/en/Free_Dependent_and_Auxiliary_Objects/" class="xref page">free</a> before the command is used.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Define <code> a = 3</code> and <code> text1 = "6"</code>. <code> ParseToNumber(a, text1)</code> returns <em>a = 6</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>This is a <a href="../Scripting Commands/index.html" class="xref page" target="group-cmds-frame">scripting command</a> which only sets the value of a number once. To convert a text <em>text1</em> into a number which is updated dynamically, use <a href="../Algebra Commands/FromBase.html" class="xref page">FromBase</a>(text1,10).</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       ParseToNumber( &lt;Text&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Parses the text and stores the result to a <a href="https://geogebra.github.io/docs/manual/en/Numbers_and_Angles/" class="xref page">number</a>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>ParseToNumber("1+2+5-pi")</code> creates the number <em>a = 4.86</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <a href="../Scripting Commands/ParseToFunction.html" class="xref page">ParseToFunction</a> command.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

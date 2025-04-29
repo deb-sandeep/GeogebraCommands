@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>PerpendicularVector</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">PerpendicularVector Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       PerpendicularVector( &lt;Line&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns one of the perpendicular vector to the line.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Let <code>Line((1, 4), (5, -3))</code> be the line <em>j</em>. <code>PerpendicularVector(j)</code> yields vector <em>u=(7, 4)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>The components of the perpendicular vector to a line of equation <em>ax + by = c</em> are <em>(a, b)</em>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       PerpendicularVector( &lt;Segment&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns one of the perpendicular vector to the segment, having the same length.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Let <code>Segment((3, 2), (14, 5))</code> be the segment <em>k</em>. <code>PerpendicularVector(k)</code> yields vector <em>u=(-3, 11)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       PerpendicularVector( &lt;Vector&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns one of the perpendicular vector to the given vector.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Let <code>Vector((-12, 8))</code> be the vector <em>u</em>. <code>PerpendicularVector(u)</code> yields vector <em>v=(-8, -12)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>If a point is specified in the definition of the line, segment, or vector, the perpendicular vector will originate from that point. Otherwise, the origin will be at (0, 0).</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p>If point A is <em>(1, 4)</em> and point B is <em>(5, -3)</em>, let <code>Line(A, B)</code> be the line <em>i</em>,<code>PerpendicularVector(i)</code> will have its origin at A.</p> </li> 
+       <li> <p>Let <code>Line((1, 4), (5, -3))</code> be the line <em>j</em>. <code>PerpendicularVector(j)</code> will have its origin at (0, 0).</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>In the <span class="image"><img src="../../images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/CAS_View/" class="xref page">CAS View</a> undefined variables are allowed as well.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>PerpendicularVector((a, b))</code> yields the vector <em>{-b, a}</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       PerpendicularVector( &lt;Plane&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a vector orthogonal to the plane, with starting point at (0,0,0).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>PerpendicularVector(xOyPlane)</code> yields the perpendicular vector <em>u=(0, 0, 1)</em> to the xOy plane.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <a href="UnitPerpendicularVector.html" class="xref page">UnitPerpendicularVector Command</a>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

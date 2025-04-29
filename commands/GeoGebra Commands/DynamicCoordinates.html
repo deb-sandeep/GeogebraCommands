@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>DynamicCoordinates</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">DynamicCoordinates Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       DynamicCoordinates( &lt;Point&gt;, &lt;x-Coordinate&gt;, &lt;y-Coordinate&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a new point with given coordinates: this point is dependent, but can be moved. Whenever you try to move the new point to coordinates (x, y), the given point is moved there and coordinates for the new point are calculated. Works best if the given point is not <a href="https://geogebra.github.io/docs/manual/en/Object_Properties/" class="xref page">visible</a> and dragging is done with the mouse. At least one of the given coordinates should depend on the given point.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p>Let <em>A</em> be a point and <code>B = DynamicCoordinates(A, round(x(A)), round(y(A)))</code>. When you try to move <em>B</em> to (1.3, 2.1) using the <span class="image"><img src="../../images/20px-Mode_move.svg.png" alt="Mode move.svg" width="20" height="20"></span><a href="https://geogebra.github.io/docs/manual/en/tools/Move/" class="xref page">Move Tool</a>, point <em>A</em> becomes (1.3, 2.1) and <em>B</em> appears at (1,2).</p> </li> 
+       <li> <p><code>B = DynamicCoordinates(A, x(A), min(y(A), sin(x(A))))</code> creates a point under sin(x).</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="paragraph"> 
+    <p><code>PointIn(y &lt; sin(x))</code> is the easier solution in this case.</p> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>The following examples show other ways to restrain the positions of a point <em>C</em>:</p> 
+     </div> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p>Let <code>A = Point(xAxis)</code> and <code>B = Point(xAxis)</code>.</p> </li> 
+      </ul> 
+     </div> 
+     <div class="paragraph"> 
+      <p>Now type in the <a href="https://geogebra.github.io/docs/manual/en/Input_Bar/" class="xref page">Input Bar</a>:</p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>DynamicCoordinates(B, Min(x(B), x(A)), 0)</code> and press <span class="kcode">Enter</span></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>SetVisibleInView(B, 1, false)</code> and press <span class="kcode">Enter</span></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>SetLayer(C, 1)</code> and press <span class="kcode">Enter</span></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p>Now, <em>C</em> cannot be moved to the right of <em>A</em>.</p> 
+     </div> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p>Define <code>A=(1, 2)</code>.</p> </li> 
+      </ul> 
+     </div> 
+     <div class="paragraph"> 
+      <p>Now, type in the <a href="https://geogebra.github.io/docs/manual/en/Input_Bar/" class="xref page">Input Bar</a>:</p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>SetVisibleInView(A, 1, false)</code> and press <span class="kcode">Enter</span></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>B = DynamicCoordinates(A, If(x(A) &gt; 3, 3, If(x(A) &lt; -3, -3, If(x(A) &lt; 0, round(x(A)), x(A)))), If(x(A) &lt; 0, 0.5, If(y(A) &gt; 2, 2, If(y(A) &lt; 0, 0, y(A)))))</code> and press <span class="kcode">Enter</span></p> 
+     </div> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p>This example makes <em>A</em> a sticky point when a point <em>C</em> is dragged near it. Define <code>A = (1, 2)</code> and <code>B = (2, 3)</code>.</p> </li> 
+      </ul> 
+     </div> 
+     <div class="paragraph"> 
+      <p>Now, type in the <a href="https://geogebra.github.io/docs/manual/en/Input_Bar/" class="xref page">Input Bar</a>:</p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>SetVisibleInView(B, 1, false)</code> and press <span class="kcode">Enter</span></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>C = DynamicCoordinates(B, If(Distance(A, B) &lt; 1, x(A), x(B)), If(Distance(A, B) &lt; 1, y(A), y(B)))</code>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       DynamicCoordinates( &lt;Point&gt;, &lt;x-Coordinate&gt;, &lt;y-Coordinate&gt;, &lt;z-Coordinate&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a new 3D point with given coordinates: this point is dependent, but can be moved. Whenever you try to move the new point to coordinates (x, y, z), the given point is moved there and coordinates for the new point are calculated. Works best if the given point is not <a href="https://geogebra.github.io/docs/manual/en/Object_Properties/" class="xref page">visible</a> and dragging is done with the mouse. At least one of the given coordinates should depend on the given point.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+  </article> 
+ </body>
+</html>

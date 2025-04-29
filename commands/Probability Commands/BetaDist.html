@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>BetaDist</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">BetaDist Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       BetaDist( &lt;Number α&gt;, &lt;Number β&gt;, &lt;Variable value&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Calculates the value of the cumulative distribution function of a <a href="https://en.wikipedia.org/wiki/Beta_distribution">Beta distribution</a> with parameters <em>α, β</em> at the variable value <em>v</em>, that is the probability <em>P(X≤v)</em> where <em>X</em> is a random variable with a beta distribution with parameters <em>α</em> and <em>β</em></p> 
+     </dd> 
+     <dt class="hdlist1">
+       BetaDist( &lt;Number α&gt;, &lt;Number β&gt;, &lt;Variable value&gt;, &lt;Boolean Cumulative&gt; ) 
+     </dt> 
+     <dd> 
+      <p>If <em>Cumulative</em> is <em>true</em>, calculates the value of the cumulative distribution function of a Beta distribution with parameters <em>α</em> and <em>β</em> at the variable value <em>v</em>. If <em>Cumulative</em> is <em>false</em>, it calculates the value of the probability density function (pdf) of the corresponding beta distribution at <em>v</em>.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       BetaDist(&lt;Number α&gt;, &lt;Number β&gt;, x, &lt;Boolean Cumulative&gt;) 
+     </dt> 
+     <dd> 
+      <p>If <em>Cumulative</em> is <em>true</em>, creates the cumulative distribution function of a beta distribution with parameters <em>α</em> and <em>β</em>, otherwise it creates the probability density function (pdf) of the corresponding Beta distribution.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <a href="InverseBeta.html" class="xref page">InverseBeta</a> command.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

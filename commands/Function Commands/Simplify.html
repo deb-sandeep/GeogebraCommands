@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Simplify</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Simplify Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Simplify( &lt;Function&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Simplifies the terms of the given function, if possible.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>Simplify(x + x + x)</code> yields the function <em>f(x) = 3x</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Simplify( &lt;Text&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Attempts to tidy up text expressions by removing repeated negatives etc.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p>For <em>a</em> = <em>b</em> = <em>c</em> = -1 <code>Simplify("f(x) = " + a + "x² + " + b + "x + " + c)</code> yields the text <em>f(x) = -x<sup>2</sup> - x - 1</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p>The <a href="../Text Commands/FormulaText.html" class="xref page">FormulaText Command</a> normally produces better results and is simpler.</p> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p>This command needs to load the Computer Algebra System, so can be slow on some computers. Try using the <a href="Polynomial.html" class="xref page">Polynomial Command</a> instead.</p> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Simplify( &lt;Function&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Simplifies the terms of the given function, if possible. Undefined variables can be included in the terms.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>Simplify(3 * x + 4 * x + a * x)</code> yields <code> a x + 7x</code>.</p> </li> 
+         <li> <p><code>Assume(x&lt;2,Simplify(sqrt(x-2sqrt(x-1))))</code> yields <code>-sqrt(abs(x - 1)) + 1</code></p> </li> 
+         <li> <p><code>Assume(x&gt;2,Simplify(sqrt(x-2sqrt(x-1))))</code> yields <code>sqrt(x - 1) + 1</code></p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p>See also <a href="Factor.html" class="xref page">Factor Command</a>, <a href="../Algebra Commands/Assume.html" class="xref page">Assume Command</a>, <a href="PartialFractions.html" class="xref page">PartialFractions Command</a>, <a href="../Algebra Commands/Expand.html" class="xref page">Expand Command</a>, <a href="Polynomial.html" class="xref page">Polynomial Command</a>.</p> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

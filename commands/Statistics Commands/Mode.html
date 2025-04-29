@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Mode</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Mode Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Mode( &lt;List of Numbers&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Determines the mode(s) of the list elements.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>Mode({1, 2, 3, 4})</code> returns an empty list <em>{}</em>.</p> </li> 
+       <li> <p><code>Mode({1, 1, 1, 2, 3, 4})</code> returns the list <em>{1}</em> .</p> </li> 
+       <li> <p><code>Mode({1, 1, 2, 2, 3, 3, 4})</code> returns the list <em>{1, 2, 3}</em>.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

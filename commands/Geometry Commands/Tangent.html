@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Tangent</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Tangent Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Tangent( &lt;Point&gt;, &lt;Conic&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates (all) tangents through the point to the conic section.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Tangent((5, 4), 4x^2 - 5y^2 = 20)</code> yields <em>x - y = 1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Tangent( &lt;Point&gt;, &lt;Function&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates the tangent to the function at <em>x = x(A)</em>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Tangent((1, 0), x^2)</code> yields <em>y = 2x - 1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p><em>x(A)</em> is the <em>x</em>-coordinate of the given point <em>A</em>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Tangent( &lt;Point on Curve&gt;, &lt;Curve&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates the tangent to the curve in the given point.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Tangent((0, 1), Curve(cos(t), sin(t), t, 0, π))</code> yields <em>y = 1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Tangent( &lt;x-Value&gt;, &lt;Function&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates the tangent to the function at <em>x-Value</em>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Tangent(1, x^2)</code> yields <em>y = 2x - 1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Tangent( &lt;Line&gt;, &lt;Conic&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates (all) tangents to the conic section that are parallel to the given line.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Tangent(y = 4, x^2 + y^2 = 4)</code> yields <em>y = 2</em> and <em>y = -2</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Tangent( &lt;Circle&gt;, &lt;Circle&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates the common tangents to the two Circles (up to 4).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Tangent(x^2 + y^2 = 4, (x - 6)^2 + y^2 = 4)</code> yields <em>y = 2</em>, <em>y = -2</em>, <em>1.49x + 1.67y = 4.47</em> and <em>-1.49x + 1.67y = -4.47</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Tangent( &lt;Point&gt;, &lt;Spline&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates the tangent to the spline in the given point.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Let <em>A = (0, 1)</em>, <em>B = (4, 4)</em> and <em>C = (0, 4)</em>. <code>Tangent(A, Spline({A, B, C}))</code> yields line <em>a</em>: <em>y</em> = <em>0.59x + 1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Tangent( &lt;Point&gt;, &lt;Implicit Curve&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates the tangent to the implicit curve in the given point.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Tangent((1,1), x^2+y^2=1))</code> yields lines <em>x=1</em> and <em>y=1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <span class="image"><img src="../../images/24px-Mode_tangent.svg.png" alt="Mode tangent.svg" width="24" height="24"></span> <a href="https://geogebra.github.io/docs/manual/en/tools/Tangents/" class="xref page">Tangents</a> tool.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

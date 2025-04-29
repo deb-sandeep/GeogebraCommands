@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>BarChart</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">BarChart Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       BarChart( &lt;List of Data&gt;, &lt;List of Frequencies&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a bar chart using the list of data with corresponding frequencies.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>BarChart({10, 11, 12, 13, 14}, {5, 8, 12, 0, 1})</code></p> </li> 
+       <li> <p><code>BarChart({5, 6, 7, 8, 9}, {1, 0, 12, 43, 3})</code></p> </li> 
+       <li> <p><code>BarChart({0.3, 0.4, 0.5, 0.6}, {12, 33, 13, 4})</code></p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>The numbers in the list of raw data need to be arranged in increasing order.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       BarChart( &lt;List of Raw Data&gt;, &lt;Width of Bars&gt;, &lt;Vertical Scale Factor (optional)&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a bar chart using the given raw data; the bars have the given width and the height of the bars depends on the vertical scale factor.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>BarChart({1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 5, 5, 5, 5}, 1)</code></p> </li> 
+       <li> <p><code>BarChart({1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 5, 5, 5, 5}, 1, 2)</code></p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       BarChart( &lt;List of Data&gt; , &lt;List of Frequencies&gt;, &lt;Width of Bars&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a bar chart using the list of data and corresponding frequencies. Bars' width is given.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>BarChart({10, 11, 12, 13, 14}, {5, 8, 12, 0, 1}, 0.5)</code> leaves gaps between bars.</p> </li> 
+       <li> <p><code>BarChart({10, 11, 12, 13, 14}, {5, 8, 12, 0, 1}, 0)</code> produces a line graph.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       BarChart( &lt;Start Value&gt;, &lt;End Value&gt;, &lt;List of Heights&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a bar chart over the given interval: the number of bars is determined by the length of the list, whose elements are the heights of the bars.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>BarChart(10, 20, {1, 2, 3, 4, 5})</code> gives a bar chart with five bars of specified height in the interval [10, 20].</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       BarChart( &lt;Start Value&gt;, &lt;End Value&gt; , &lt;Expression&gt;, &lt;Variable&gt;, &lt;From Number&gt;, &lt;To Number&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a bar chart over the interval [<em>Start Value</em>, <em>End Value</em>], that calculates the bars’ heights using the expression of the given <em>Variable</em> in the interval [<em>From number</em>, <em>To number</em>].</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>If <em>p = 0.1</em>, <em>q = 0.9</em>, and <em>n = 10</em> are numbers, then <code>BarChart(-0.5, n + 0.5, BinomialCoefficient(n,k) * p^k * q^(n-k), k, 0, n)</code> gives you a bar chart in the interval [<em>-0.5, n+0.5</em>]. The heights of the bars depend on the probabilities calculated using the given expression.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       BarChart( &lt;Start Value&gt;, &lt;End Value&gt;, &lt;Expression&gt;, &lt;Variable&gt;, &lt;From Number&gt;, &lt;To Number&gt;, &lt;Step Width&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a bar chart over the interval [<em>Start Value</em>, <em>End Value</em>], that calculates the bars’ heights using the expression of the given <em>Variable</em> in the interval [<em>From number</em>, <em>To number</em>] with given <em>Step width</em>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>It is possible to specify a different color/filling for each bar in the <span class="image"><img src="../../images/16px-Menu-options.svg.png" alt="Menu-options.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/Object_Properties/" class="xref page">Object Properties</a>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

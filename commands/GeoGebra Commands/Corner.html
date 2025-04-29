@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Corner</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Corner Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Corner( &lt;Number of Corner&gt; ) 
+     </dt> 
+     <dd> 
+      <p>For number <em>n = 1, 2, 3, 4</em> creates a point at the corner of the <span class="image"><img src="../../images/16px-Menu_view_graphics.svg.png" alt="Menu view graphics.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/Graphics_View/" class="xref page">Graphics View</a>, for <em>n = 5</em> returns point <em>(w, h)</em>, where <em>w</em> and <em>h</em> are width and height of the Graphics View in pixels. Always uses <span class="image"><img src="../../images/16px-Menu_view_graphics1.svg.png" alt="Menu view graphics1.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/Graphics_View/" class="xref page">first Graphics View</a>, even if second is active.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>Corner( &lt;Number of Corner&gt; ) won’t work inside other commands. Instead create eg <code>C_1 = Corner(1)</code> and use that.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Corner( &lt;Graphics View&gt;, &lt;Number of Corner&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a point at the corner of <span class="image"><img src="../../images/16px-Menu_view_graphics.svg.png" alt="Menu view graphics.svg" width="16" height="16"></span> Graphics View (1, 2) which is never visible in that view. Supported values of number <em>n</em> are <em>1, 2, 3, 4</em> and <em>5</em> as above.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>Corner( &lt;Graphics View&gt;, &lt;Number of Corner&gt; ) won’t work inside other commands. Instead create eg <code>C_1 = Corner(1, 1)</code> and use that.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>Use <code>-1</code> for the <span class="image"><img src="../../images/16px-Perspectives_algebra_3Dgraphics.svg.png" alt="Perspectives algebra 3Dgraphics.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/3D_Graphics_View/" class="xref page">3D Graphics View</a>'s corners (available values for <em>Number</em>: from 1 to 8). Moreover:</p> 
+        </div> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p><code>Corner(-1,9)</code> returns point (<em>w</em>, <em>h</em>, 0), where <em>w</em> and <em>h</em> are width and height of the 3D Graphics View in pixels</p> </li> 
+          <li> <p><code>Corner(-1,10)</code> returns point (<em>w</em>, <em>h</em>, 0), where <em>w</em> and <em>h</em> are width and height of the main window in pixels</p> </li> 
+          <li> <p><code>Corner(-1,11)</code> returns view direction (for parallel projections) or eye position (for e.g. perspective projection)</p> </li> 
+          <li> <p><code>Corner(-1,12)</code> returns screen left-to-right direction</p> </li> 
+          <li> <p><code>Corner(-1,13)</code> returns scales for <em>x</em>, <em>y</em> and <em>z</em> axes.</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Corner( &lt;Image&gt;, &lt;Number of Corner&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a point at the corner of the image (number <em>n</em> = 1, 2, 3, 4).</p> 
+     </dd> 
+     <dt class="hdlist1">
+       Corner( &lt;Text&gt;, &lt;Number of Corner&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a point at the corner of the text (number <em>n</em> = 1, 2, 3, 4).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p><code>Corner( &lt;Text&gt;, &lt;Number of Corner&gt; )</code> won’t work inside the <a href="../CAS Specific Commands/Sequence.html" class="xref page">Sequence</a> or <a href="../List Commands/Zip.html" class="xref page">Zip</a> commands. Also the <em>Absolute Position on Screen</em> property must be unchecked</p> </li> 
+          <li> <p>The numbering of the corners is counter‐clockwise and starts at the lower left corner.</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

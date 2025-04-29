@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Percentile</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Percentile Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Percentile( &lt;List of Numbers&gt;, &lt;Percent&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Let <em>P</em> equal the given <em>Percent</em>. Returns the value that cuts off the first <em>P</em> percent of the <em>list of numbers</em>, when the list is sorted in ascending order. <em>Percent</em> must be a number in the interval <em>0 &lt; P ≤ 1</em>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Percentile({1, 2, 3, 4}, 0.25)</code> yields <em>1.25</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>The commands <a href="Quartile1.html" class="xref page">Quartile</a> and Percentile use different rules and do not always return matching results.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Q1({1, 2, 3, 4})</code> yields <em>1.5</em> whereas <code>Percentile({1, 2, 3, 4}, 0.25)</code> yields <em>1.25</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

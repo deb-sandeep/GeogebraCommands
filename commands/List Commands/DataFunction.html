@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>DataFunction</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">DataFunction Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       DataFunction( &lt;List of Numbers&gt;, &lt;List of Numbers&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Yields a function that connects points (x<sub>1</sub>, y<sub>1</sub>), (x<sub>2</sub>, y<sub>2</sub>),…​,(x<sub>n</sub>, y<sub>n</sub>) where {x<sub>1</sub>, …​, x<sub>n</sub>}, {y<sub>1</sub>, …​, y<sub>n</sub>} are the input lists. In between these points linear interpolation is used. This command is used by Sensors.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>DataFunction({0, 1, 2, 4}, {0, 1, 4, 16})</code> yields a function that goes through points (0, 0), (1,1), (2, 4), (4, 16).</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

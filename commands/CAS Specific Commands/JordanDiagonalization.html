@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>JordanDiagonalization</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">JordanDiagonalization Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p><span class="image left"><img src="../../images/64px-Globe.png" alt="Globe.png" width="64" height="64"></span></p> 
+          </div> 
+          <div class="paragraph"> 
+           <p>This command differs among variants of English:</p> 
+          </div> 
+          <div class="ulist"> 
+           <ul> 
+            <li> <p>JordanDiagonalization (US)</p> </li> 
+            <li> <p>JordanDiagonalisation (UK + Aus)</p> </li> 
+           </ul> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         JordanDiagonalization( &lt;Matrix&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Decomposes the given matrix into the form S J S⁻¹ where J is in <a href="https://mathworld.wolfram.com/JordanCanonicalForm.html">Jordan Canonical Form</a></p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>JordanDiagonalization({{1, 2}, {3, 4}})</code> yields \( \left(\begin{array}{}\sqrt{33} - 3&amp;-\sqrt{33} - 3\\6&amp;6\\\end{array}\right) \), \( \left(\begin{array}{}\frac{\sqrt{33} + 5}{2}&amp;0\\0&amp;\frac{-\sqrt{33} + 5}{2}\\\end{array}\right) \)</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="ulist"> 
+           <ul> 
+            <li> <p>See also <a href="../Vector and Matrix Commands/Eigenvalues.html" class="xref page">Eigenvalues Command</a>, <a href="../Vector and Matrix Commands/Eigenvectors.html" class="xref page">Eigenvectors Command</a>, <a href="../Vector and Matrix Commands/SVD.html" class="xref page">SVD Command</a>, <a href="../Vector and Matrix Commands/Invert.html" class="xref page">Invert Command</a>, <a href="../Vector and Matrix Commands/Transpose.html" class="xref page">Transpose Command</a></p> </li> 
+           </ul> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

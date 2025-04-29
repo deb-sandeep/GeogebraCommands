@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>PerpendicularLine</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">PerpendicularLine Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       PerpendicularLine( &lt;Point&gt;, &lt;Line&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a line through the point perpendicular to the given line.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Let <code>c: -3x + 4y = -6</code> be a line and <code>A = (-2, -3)</code> a point. <code>PerpendicularLine(A, c)</code> yields the line <em>d</em>: -4<em>x</em> - 3<em>y</em> = 17.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>For 3D objects a third argument is added to this command to specify the behavior: if 2D view is active, plane <em>z=0</em> is used as third argument, if 3D view is active, <em>space</em> is used instead. See PerpendicularLine( &lt;Point&gt;, &lt;Line&gt;, &lt;Context&gt; ) further below for details.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       PerpendicularLine( &lt;Point&gt;, &lt;Segment&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a line through the point perpendicular to the given segment.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Let <em>c</em> be the segment between the two points <em>A</em> = (-3, 3) and <em>B</em> = (0, 1). <code>PerpendicularLine(A, c)</code> yields the line <em>d: -3x + 2y = 15</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       PerpendicularLine( &lt;Point&gt;, &lt;Vector&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a line through the point perpendicular to the given vector.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Let <code>u = Vector((5, 3), (1, 1))</code> and <code>A = (-2, 0)</code> a point. <code>PerpendicularLine(A, u)</code> yields the line <em>c: 2x + y = -4</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       PerpendicularLine( &lt;Point&gt;, &lt;Plane&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a perpendicular line to the plane through the given point.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       PerpendicularLine( &lt;Line&gt; , &lt;Line&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a perpendicular line to the given lines through the intersection point of the two lines.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       PerpendicularLine( &lt;Point&gt;, &lt;Direction&gt;, &lt;Direction&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a perpendicular line to the given directions (that can be lines or vectors) through the given point.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       PerpendicularLine( &lt;Point&gt;, &lt;Line&gt;, &lt;Context&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a perpendicular line to the line through the point and depending on the context.</p> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>PerpendicularLine( &lt;Point&gt;, &lt;Line&gt;, &lt;Plane&gt; ) creates a perpendicular line to the given line through the point and parallel to the plane.</p> </li> 
+        <li> <p>PerpendicularLine( &lt;Point&gt;, &lt;Line&gt;, space ) creates a perpendicular line to the given line through the point. The two lines have an intersection point. This command yields undefined if the point is on the line in 3D.</p> </li> 
+       </ul> 
+      </div> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <span class="image"><img src="../../images/22px-Mode_linebisector.svg.png" alt="Mode linebisector.svg" width="22" height="22"></span> <a href="https://geogebra.github.io/docs/manual/en/tools/Perpendicular_Line/" class="xref page">Perpendicular Line</a> tool.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

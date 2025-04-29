@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>RandomPointIn</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">RandomPointIn Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       RandomPointIn( &lt;Region&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a random point inside a given polygon or closed conic.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       RandomPointIn( &lt;List of Points&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns a random point inside the polygon with given vertices.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>RandomPointIn(Polygon(A,B,C))</code> and <code>RandomPointIn(A,B,C)</code> both give random point inside triangle ABC.</p> 
+     </div> 
+     <div class="paragraph"> 
+      <p>To get a random point that belongs to the list use <a href="../CAS Specific Commands/RandomElement.html" class="xref page">Random Element</a> instead.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       RandomPointIn( &lt;xMin&gt;, &lt;xMax&gt;, &lt;yMin&gt;, &lt;yMax&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a random point with x-coordinate from interval [xMin,xMax] and y-coordinate from interval [yMin, yMax].</p> 
+     </dd> 
+    </dl> 
+   </div> 
+  </article> 
+ </body>
+</html>

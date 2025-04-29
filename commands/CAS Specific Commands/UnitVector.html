@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>UnitVector</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">UnitVector Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       UnitVector( &lt;Vector&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Yields a vector with length 1, which has the same direction and orientation as the given vector. The vector must be defined first.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Let <em>v=\(\begin{pmatrix}3\\4\end{pmatrix}\)</em>. <code>UnitVector(v)</code> yields <em>\(\begin{pmatrix}0.6\\0.8\end{pmatrix}\)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       UnitVector( &lt;Line&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Yields the direction vector of the given line with length 1.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>UnitVector(3x + 4y = 5)</code> yields <em>\(\begin{pmatrix}0.8\\-0.6\end{pmatrix}\)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       UnitVector( &lt;Segment&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Yields the direction vector of the given segment with length 1.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Let <code>s = Segment((1,1),(4,5))</code>.</p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>UnitVector(s)</code> yields <em>\(\begin{pmatrix}0.6\\0.8\end{pmatrix}\)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p><strong><span class="image"><img src="../../images/18px-Bulbgraph.png" alt="Note" width="18" height="22" title="Note"></span> Hint:</strong> In the <span class="image"><img src="../../images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/CAS_View/" class="xref page">CAS View</a> three-dimensional vectors and vectors with undefined variables are also valid inputs.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>UnitVector((a, b))</code> yields <em>(\(\frac{a}{\sqrt{a^2 + b^2}}\), \(\frac{b}{\sqrt{a^2 + b^2}}\))</em>.</p> </li> 
+       <li> <p><code>UnitVector((2, 4, 4))</code> yields <em>(\(\frac{1}{3}\), \(\frac{2}{3}\), \(\frac{2}{3}\))</em>.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

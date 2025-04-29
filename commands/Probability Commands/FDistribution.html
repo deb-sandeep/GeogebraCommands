@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>FDistribution</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">FDistribution Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       FDistribution( &lt;Numerator Degrees of Freedom&gt;, &lt;Denominator Degrees of Freedom&gt;, &lt;Variable Value&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Calculates the value of the cumulative distribution function of an <a href="https://en.wikipedia.org/wiki/F-distribution">F-distribution</a> at <em>variable value v</em>, i.e. the probability <em>P(X≤v)</em> where <em>X</em> is a random variable with F-distribution with given <em>numerator</em> and <em>denominator degrees of freedom</em>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>This syntax returns the probability at a given value, that is the area under the F-distribution curve to the left of the given <em>x</em>-coordinate.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       FDistribution( &lt;Numerator Degrees of Freedom&gt;, &lt;Denominator Degrees of Freedom&gt;, &lt;Variable Value&gt;, &lt;Boolean Cumulative&gt; ) 
+     </dt> 
+     <dd> 
+      <p>If <em>Cumulative = true</em>, calculates the value of the cumulative distribution function of an F-distribution with given <em>numerator</em> and <em>denominator degrees of freedom</em> at the given <em>variable value</em>, otherwise it calculates the probability density function of the F-distribution at <em>variable value</em>.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       FDistribution( &lt;Numerator Degrees of Freedom&gt;, &lt;Denominator Degrees of Freedom&gt;, x, &lt;Boolean Cumulative&gt; ) 
+     </dt> 
+     <dd> 
+      <p>If <em>Cumulative = true</em>, creates the cumulative density function (cdf) of an F-distribution with given <em>numerator</em> and <em>denominator degrees of freedom</em>, othewise it creates the probability density function (pdf) of the distribution.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>This command is also available in the <span class="image"><img src="../../images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/CAS_View/" class="xref page">CAS View</a>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

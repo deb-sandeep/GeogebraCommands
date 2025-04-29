@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Solve</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Solve Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p>Commands <strong>Solve</strong> and <a href="Solutions.html" class="xref page">Solutions</a> solve an equation or a system of equations over the real numbers symbolically. To solve equations numerically, use the <a href="NSolve.html" class="xref page">NSolve Command</a>. For solving equations in complex numbers see <a href="CSolve.html" class="xref page">CSolve Command</a>.</p> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Solve( &lt;Equation in x&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Solves a given equation for the main variable and returns a list of all solutions.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>Solve(x^2 = 4x)</code> yields <em>{x = 4, x = 0}</em>, the solutions of <em>x<sup>2</sup> = 4x</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="paragraph"> 
+      <p>The following commands are only available in the <span class="image"><img src="../../images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/CAS_View/" class="xref page">CAS View</a>.</p> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Solve( &lt;Equation&gt;, &lt;Variable&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Solves an equation for a given unknown variable and returns a list of all solutions.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>Solve(x * a^2 = 4a, a)</code> yields {\(a = \frac{4}{x}, a = 0\)}.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Solve( &lt;Equation in x&gt;, &lt;Assumption&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Solves an equation x, conditional on the assumption</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>Solve(x^2=1, x&gt;0)</code> yields \({x = 1}\)</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Solve( &lt;List of Equations&gt;, &lt;List of Variables&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Solves a set of equations for a given set of unknown variables and returns a list of all solutions.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>Solve({x = 4 x + y , y + x = 2}, {x, y})</code> yields <em>{{ x = -1, y = 3 }}</em></p> </li> 
+         <li> <p><code>Solve({2a^2 + 5a + 3 = b, a + b = 3}, {a, b})</code> yields <em>{{a = 0, b = 3}, {a = -3, b = 6}}</em>.</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Solve( &lt;Equation&gt;, &lt;Variable&gt; , &lt;List of assumptions&gt;) 
+       </dt> 
+       <dd> 
+        <p>Solves an equation for a given unknown variable with the list of assumptions and returns a list of all solutions.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>Solve(u *x &lt; a,x, u&gt;0)</code> yields <em>{x &lt; a / u}</em>, the solution of <em>u *x &lt; a</em> assuming that <em>u&gt;0</em></p> </li> 
+         <li> <p><code>Solve(u *x &lt; a,x, {u&lt;0, a&lt;0})</code> yields <em>{x &gt; a / u}</em>.</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Solve( &lt;List of Parametric Equations&gt;, &lt;List of Variables&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Solves a set of parametric equations for a given set of unknown variables and returns a list of all solutions.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>Solve({(x, y) = (3, 2) + t*(5, 1), (x, y) = (4, 1) + s*(1, -1)}, {x, y, t, s})</code> yields <em>{{x = 3, y = 2, t = 0, s = -1}}</em>.</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="ulist"> 
+           <ul> 
+            <li> <p>The right hand side of equations (in any of the above syntaxes) can be omitted. If the right hand side is missing, it is treated as 0.</p> </li> 
+            <li> <p>Sometimes you need to do some manipulation to allow the automatic solver to work, for example <code> Solve(TrigExpand(sin(5/4 π + x) - cos(x - 3/4 π) = sqrt(6) * cos(x) - sqrt(2)))</code>.</p> </li> 
+            <li> <p>For piecewise-defined functions, you will need to use <a href="NSolve.html" class="xref page">NSolve</a></p> </li> 
+           </ul> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>RandomPolynomial</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">RandomPolynomial Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         RandomPolynomial( &lt;Degree&gt; , &lt;Minimum for Coefficients&gt;, &lt;Maximum for Coefficients&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Returns a randomly generated polynomial in <em>x</em> of degree <em>d</em>, whose (integer) coefficients are in the range from <em>minimum</em> to <em>maximum</em>, both included.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>RandomPolynomial(0, 1, 2)</code> yields either <em>1</em> or <em>2</em>.</p> </li> 
+         <li> <p><code>RandomPolynomial(2, 1, 2)</code> yields a random polynomial with a degree of two and only <em>1</em> and <em>2</em> as coefficients, for example <em>2x<sup>2</sup> + x + 1</em>.</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="paragraph"> 
+      <p>The following command is only available in the <span class="image"><img src="../../images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/CAS_View/" class="xref page">CAS View</a>.</p> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         RandomPolynomial( &lt;Variable&gt;, &lt;Degree&gt; , &lt;Minimum for Coefficients&gt;, &lt;Maximum for Coefficients&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Returns a randomly generated polynomial in <em>Variable</em> of degree <em>d</em>, whose (integer) coefficients are in the range from <em>minimum</em> to <em>maximum</em>, both included.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>RandomPolynomial(a, 0, 1, 2)</code> yields either <em>1</em> or <em>2</em>.</p> </li> 
+         <li> <p><code>RandomPolynomial(a, 2, 1, 2)</code> yields a random polynomial with a degree of two and only <em>1</em> and <em>2</em> as coefficients, for example <em>2a<sup>2</sup> + a + 1</em>.</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p>In both cases if <em>minimum</em> or <em>maximum</em> are not integers, <em>round(minimum)</em> and <em>round(maximum)</em> are used instead.</p> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

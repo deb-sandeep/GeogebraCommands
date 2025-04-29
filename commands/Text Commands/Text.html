@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Text</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Text Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Text( &lt;Object&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a <a href="https://geogebra.github.io/docs/manual/en/Texts/" class="xref page">text</a> containing the formula of the given object.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>If <em>a = 2</em> and <em>c = a<sup>2</sup></em>, then <code>Text(c)</code> creates the text <em>"4"</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>By default, values are substituted to the corresponding variables.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Text( &lt;Object&gt;, &lt;Boolean for Substitution of Variables&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a text containing the formula of the given object. The Boolean variable determines whether values are substituted to variables (<em>true</em>) or variable names are shown in the text (<em>false</em>).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>If <em>a = 2</em> and <em>c = a<sup>2</sup></em>, then</p> 
+     </div> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>Text(c, true)</code> creates the text <em>"4"</em> and</p> </li> 
+       <li> <p><code>Text(c, false)</code> creates the text <em>"a<sup>2</sup>"</em>.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Text( &lt;Object&gt;, &lt;Point&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a text containing the formula of the given object at the given position (point).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Text("hello", (2, 3))</code> creates the text <em>"hello"</em> at <em>(2, 3)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Text( &lt;Object&gt;, &lt;Point&gt;, &lt;Boolean for Substitution of Variables&gt; ) 
+     </dt> 
+     <dd> 
+      <p> Creates a text containing the formula of the given object at the given position (point). The Boolean variable determines whether values are substituted to variables (<em>true</em>) or variable names are shown in the text (<em>false</em>).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>If <em>a = 2</em> and <em>c = a<sup>2</sup></em>, then <code>Text(c, (2, 1), true)</code> creates the text <em>"4"</em> at <em>(2, 1)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Text( &lt;Object&gt;, &lt;Point&gt;, &lt;Boolean for Substitution of Variables&gt;, &lt;Boolean for LaTeX formula&gt; ) 
+     </dt> 
+     <dd> 
+      <p> Creates a text containing the formula of the given object at the given position (point). The first Boolean variable determines whether values are substituted to variables (<em>true</em>) or variable names are shown in the text (<em>false</em>). If the second Boolean variable is <em>true</em>, the text is rendered using <a href="https://geogebra.github.io/docs/manual/en/LaTeX/" class="xref page">LaTeX</a>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>If <em>a = 2</em> and <em>c = a<sup>2</sup></em>, then <code>Text(c, (2, 1), true, true)</code> creates the LaTeX text <em>"4"</em> at <em>(2, 1)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Text( &lt;Object&gt;, &lt;Point&gt;, &lt;Boolean for Substitution of Variables&gt;, &lt;Boolean for LaTeX formula&gt;, &lt;Horizontal alignment [-1|0|1]&gt;, &lt;Vertical alignment [-1|0|1]&gt; ) 
+     </dt> 
+     <dd> 
+      <p> Creates a text containing the formula of the given object at the given position (point). The first Boolean variable determines whether values are substituted to variables (<em>true</em>) or variable names are shown in the text (<em>false</em>). If the second Boolean variable is <em>true</em>, the text is rendered using <a href="https://geogebra.github.io/docs/manual/en/LaTeX/" class="xref page">LaTeX</a>. The values -1, 0, 1 define the horizontal and vertical alignment, shifting the text from the default position respectively as follows:</p> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>-1: horizontal shift leftwards / vertical shift downwards</p> </li> 
+        <li> <p>0: centers the text object horizontally / vertically at the given point</p> </li> 
+        <li> <p>1: horizontal shift rightwards / vertical shift upwards</p> </li> 
+       </ul> 
+      </div> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>If <em>a = 2</em> and <em>c = a<sup>2</sup></em>, then <code>Text(c, (2, 1), true, true, -1, 0)</code> creates the LaTeX text <em>"4"</em> to the left of <em>(2, 1)</em>, and vertically aligned with the point.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <span class="image"><img src="../../images/22px-Mode_text.svg.png" alt="Mode text.svg" width="22" height="22"></span> <a href="https://geogebra.github.io/docs/manual/en/tools/Text/" class="xref page">Text</a> tool.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

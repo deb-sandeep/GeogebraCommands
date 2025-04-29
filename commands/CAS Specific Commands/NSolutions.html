@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>NSolutions</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">NSolutions Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         NSolutions( &lt;Equation&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Attempts (numerically) to find a solution for the equation for the main variable. For non-polynomials you should always specify a starting value (see below)</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>NSolutions(x^6 - 2x + 1 = 0)</code> yields <em>{0.51, 1}</em> or <em>{0.508660391642, 1}</em> (the number of decimals depends on the choosen in <a href="https://geogebra.github.io/docs/manual/en/Options_Menu/" class="xref page">global rounding</a>)</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="paragraph"> 
+      <p>The following syntaxes are only available in the <span class="image"><img src="../../images/16px-Menu_view_cas.svg.png" alt="Menu view cas.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/CAS_View/" class="xref page">CAS View</a>.</p> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         NSolutions( &lt;Equation&gt;, &lt;Variable&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Attempts (numerically) to find a solution of the equation for the given unknown variable. For non-polynomials you should always specify a starting value (see below)</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>NSolutions(a^4 + 34a^3 = 34, a)</code> yields <em>{a = -34.00086498588374, a = 0.9904738885574178}</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         NSolutions( &lt;Equation&gt;, &lt;Variable = starting value&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Finds numerically the list of solutions to the given equation for the given unknown variable with its starting value.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>NSolutions(cos(x) = x, x = 0)</code> yields <em>{0.74}</em></p> </li> 
+         <li> <p><code>NSolutions(a^4 + 34a^3 = 34, a = 3)</code> yields the list <em>{0.99}</em>.</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         NSolutions( &lt;List of Equations&gt;, &lt;List of Variables&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Attempts (numerically) to find a solution of the set of equations for the given set of unknown variables.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>NSolutions({pi / x = cos(x - 2y), 2 y - pi = sin(x)}, {x = 3, y = 1.5})</code> yields the list <em>{3.14, 1.57}</em></p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="ulist"> 
+           <ul> 
+            <li> <p>If you don’t give a starting point like <em>a=3</em> or <em>{x = 3, y = 1.5}</em> the numerical algorithm may find it hard to find a solution (and giving a starting point doesn’t guarantee that a solution will be found)</p> </li> 
+            <li> <p>The number of decimals depends on the choosen in <a href="https://geogebra.github.io/docs/manual/en/Options_Menu/" class="xref page">global rounding</a>.</p> </li> 
+            <li> <p>NSolutions won’t work for functions that are asymptotic to the x-axis. They can often be reformulated though.</p> </li> 
+            <li> <p>NSolutions will work only if the function is continuous</p> </li> 
+            <li> <p>See also <a href="../Algebra Commands/Solutions.html" class="xref page">Solutions Command</a> and <a href="../Algebra Commands/NSolve.html" class="xref page">NSolve Command</a>.</p> </li> 
+           </ul> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

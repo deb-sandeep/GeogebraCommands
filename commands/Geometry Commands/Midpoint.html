@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Midpoint</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Midpoint Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Midpoint( &lt;Segment&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns the midpoint of the segment.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Let <code>s = Segment((1, 1), (1, 5))</code>. <code>Midpoint(s)</code> yields <em>(1, 3)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Midpoint( &lt;Conic&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns the center of the conic.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Midpoint(x^2 + y^2 = 4)</code> yields <em>(0, 0)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Midpoint( &lt;Interval&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns the midpoint of the interval (as number).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Midpoint(2 &lt; x &lt; 4)</code> yields <em>3</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Midpoint( &lt;Point&gt;, &lt;Point&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns the midpoint of two points.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Midpoint((1, 1), (5, 1))</code> yields <em>(3, 1)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Midpoint( &lt;Quadric&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns the midpoint of the given quadric (e.g. sphere, cone, etc.)</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Midpoint(x^2 + y^2 + z^2 = 1)</code> yields <em>(0, 0, 0)</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <span class="image"><img src="../../images/24px-Mode_midpoint.svg.png" alt="Mode midpoint.svg" width="24" height="24"></span> <a href="https://geogebra.github.io/docs/manual/en/tools/Midpoint_or_Center/" class="xref page">Midpoint or Center</a> tool.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

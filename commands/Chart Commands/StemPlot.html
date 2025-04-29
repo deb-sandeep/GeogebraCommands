@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>StemPlot</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">StemPlot Command</h1> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p><span class="image left"><img src="../../images/64px-Globe.png" alt="Globe.png" width="64" height="64"></span></p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>This command differs among variants of English:</p> 
+        </div> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>StemPlot (US)</p> </li> 
+          <li> <p>StemAndLeaf (UK + Aus)</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       StemPlot( &lt;List&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns a stem plot of the given list of numbers. Outliers are removed from the plot and listed separately. An outlier is defined as a value outside the interval [ Q1 - 1.5 (Q3 - Q1) , Q3 + 1.5 (Q3 - Q1) ].</p> 
+     </dd> 
+     <dt class="hdlist1">
+       StemPlot( &lt;List&gt;, &lt;Adjustment -1|0|1&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns a stem plot of the given list of numbers. If <em>Adjustment</em> = -1 the default stem unit is divided by 10 If <em>Adjustment</em> = 0 nothing is changed If <em>Adjustment</em> = 1 the default stem unit is multiplied by 10</p> 
+     </dd> 
+    </dl> 
+   </div> 
+  </article> 
+ </body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>BoxPlot</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">BoxPlot Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       BoxPlot( yOffset, yScale, List of Raw Data ) 
+     </dt> 
+     <dd> 
+      <p>Creates a box plot using the given raw data and whose vertical position in the coordinate system is controlled by variable <em>yOffset</em> and whose height is influenced by factor <em>yScale</em>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>BoxPlot(0, 1, {2, 2, 3, 4, 5, 5, 6, 7, 7, 8, 8, 8, 9})</code></p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       BoxPlot( yOffset, yScale, Start Value, Q1, Median, Q3, End Value ) 
+     </dt> 
+     <dd> 
+      <p>Creates a box plot for the given statistical data in interval (<em>Start Value, End Value</em>).</p> 
+     </dd> 
+     <dt class="hdlist1">
+       BoxPlot( &lt;yOffset&gt;, &lt;yScale&gt;, &lt;List of Raw Data&gt;, &lt;Boolean Outliers&gt; ) 
+     </dt> 
+     <dd> 
+      <p>This allows outliers to be plotted as "X"s rather than included in the boxplot. For this command, <a href="https://en.wikipedia.org/wiki/Outlier">outliers</a> are data lying below <em>Q1 - 1.5 * (Q3 - Q1)</em> or above <em>Q3 + 1.5 * (Q3 - Q1)</em> (<a href="https://en.wikipedia.org/wiki/IQR">see IQR</a>).</p> 
+     </dd> 
+     <dt class="hdlist1">
+       BoxPlot( &lt;yOffset&gt;, &lt;yScale&gt;, &lt;List of Data&gt;, &lt;List of Frequencies&gt;, &lt;Boolean Outliers&gt; ) 
+     </dt> 
+     <dd> 
+      <p>This allows data from a frequency table to be easily plotted as a boxplot.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+  </article> 
+ </body>
+</html>

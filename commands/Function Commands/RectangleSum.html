@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>RectangleSum</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">RectangleSum Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       RectangleSum( &lt;Function&gt;, &lt;Start x-Value&gt;, &lt;End x-Value&gt;, &lt;Number of Rectangles&gt;, &lt;Position for rectangle start&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Calculates between the <em>Start x-Value</em> and the <em>End x-Value</em> the sum of rectangles with left height starting at a fraction <em>d</em> (0 ≤ <em>d</em> ≤ 1) of each interval, using <em>n</em> rectangles. When <em>d</em> = 0 it is equivalent to the <a href="LeftSum.html" class="xref page">LeftSum</a> command, and when <em>d</em> = 1 it computes the right sum of the given function.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>This command draws the rectangles of the left sum as well.</p> </li> 
+          <li> <p>This command is designed as a visual aid so won’t give accurate answers if the number of rectangles is too large.</p> </li> 
+          <li> <p>See also the commands: <a href="UpperSum.html" class="xref page">UpperSum</a>, <a href="LowerSum.html" class="xref page">LowerSum</a>, <a href="LeftSum.html" class="xref page">LeftSum</a> , <a href="TrapezoidalSum.html" class="xref page">TrapezoidalSum</a>.</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

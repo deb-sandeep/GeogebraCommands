@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Cell</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Cell Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Cell( &lt;Column&gt;, &lt;Row&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns copy of <a href="https://geogebra.github.io/docs/manual/en/Spreadsheet_View/" class="xref page">spreadsheet</a> cell in given column and row.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>Cell(2, 1)</code> returns copy of B1.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>By default the cells in spreadsheet cells are <a href="https://geogebra.github.io/docs/manual/en/Free_Dependent_and_Auxiliary_Objects/" class="xref page">auxiliary</a> and in such case this command returns auxiliary object as well.</p> </li> 
+          <li> <p>You must make sure that the cells you refer to are <strong>earlier</strong> in the <span class="image"><img src="../../images/16px-Menu_view_construction_protocol.svg.png" alt="Menu view construction protocol.svg" width="16" height="16"></span> <a href="https://geogebra.github.io/docs/manual/en/Construction_Protocol/" class="xref page">Construction Protocol</a> than this command.</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

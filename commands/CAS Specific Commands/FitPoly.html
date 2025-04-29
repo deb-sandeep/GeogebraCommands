@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>FitPoly</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">FitPoly Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         FitPoly( &lt;List of Points&gt;, &lt;Degree of Polynomial&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Calculates the polynomial regression model of given <em>degree</em> that fits the specified <em>points</em>.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>FitPoly({(-1, -1), (0, 1), (1, 1), (2, 5)}, 3)</code> yields <em>f(x) = x<sup>3</sup> - 1 x<sup>2</sup> + 1</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         FitPoly( &lt;Freehand Function&gt;, &lt;Degree of Polynomial&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Calculates the polynomial regression model of given <em>degree</em> that fits a function drawn using the <a href="https://geogebra.github.io/docs/manual/en/tools/Freehand_Shape/" class="xref page">Freehand Shape Tool</a>.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="ulist"> 
+           <ul> 
+            <li> <p>To obtain a polynomial of degree <em>n</em> the list must contain at least <em>n</em> + 1 points.</p> </li> 
+            <li> <p>See also <a href="FitExp.html" class="xref page">FitExp Command</a>, <a href="FitLog.html" class="xref page">FitLog Command</a>, <a href="FitPow.html" class="xref page">FitPow Command</a> and <a href="FitSin.html" class="xref page">FitSin Command</a>.</p> </li> 
+            <li> <p>When working with big/small numbers, consider normalizing them for a more accurate result. See <a href="../Function Commands/Normalize.html" class="xref page">Normalize Command</a>.</p> </li> 
+           </ul> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         FitPoly( &lt;List of Points&gt;, &lt;Degree of Polynomial&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Calculates the polynomial regression model of given <em>degree</em> that fits the specified <em>points</em>.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>FitPoly({(-1, -1), (0, 1), (1, 1), (2, 5)}, 3)</code> yields <em>x<sup>3</sup> - x<sup>2</sup> + 1</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

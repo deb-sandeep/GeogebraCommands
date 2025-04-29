@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>FillCells</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">FillCells Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       FillCells( &lt;CellRange&gt;, &lt;Object&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Copies the value/equation etc. of the object to the given cellrange. Resulting cells are <a href="https://geogebra.github.io/docs/manual/en/Free_Dependent_and_Auxiliary_Objects/" class="xref page">free objects</a>, i.e. independent of object.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p><em>CellRange</em> has to be entered like this: e.g.: <em>B2:D5</em>.</p> </li> 
+          <li> <p><em>Object</em> can be anything, e.g.: <em>3</em>, <em>RandomBetween(0, 10)</em>, <em>Circle(A, B)</em>.</p> </li> 
+          <li> <p>Cells are labelled by column and row, e.g.: <em>B2</em>.</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       FillCells( &lt;Cell&gt;, &lt;List&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Copies values from the list to the first cells on the right of the given cell. Resulting cells are ([Free, Dependent and Auxiliary Objects|free objects)], i.e. independent of the list.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       FillCells( &lt;Cell&gt;, &lt;Matrix&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Copies values from the matrix into the spreadsheet. The upper left corner of the matrix is matched to the given cell. Resulting cells are <a href="https://geogebra.github.io/docs/manual/en/Free_Dependent_and_Auxiliary_Objects/" class="xref page">free objects</a>, i.e. independent of the matrix.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <a href="FillRow.html" class="xref page">FillRow</a> and <a href="FillColumn.html" class="xref page">FillColumn</a> commands.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>You can use <code>FillCell(cell, Transpose({list}))</code> to fill vertically. The extra braces convert the list into a matrix thus <code>{list}</code></p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

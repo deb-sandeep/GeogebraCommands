@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Spline</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Spline Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Spline( &lt;List of Points&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a cubic <a href="https://en.wikipedia.org/wiki/Spline_(mathematics)">spline</a> through all points.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       Spline( &lt;List of Points&gt;, &lt;Order ≥ 3&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a spline with given order through all points.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       Spline( &lt;List of Points&gt;, &lt;Order ≥ 3&gt;, &lt;Weight Function&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a spline with given order through all points. The weight function says what should be the difference of <em>t</em> values for point <em>P</em><sub>i</sub> and <em>P</em><sub>i+1</sub> given their difference <em>P</em><sub>i+1</sub> - <em>P</em><sub>i</sub> = (<em>x</em>, <em>y</em>). To get the spline you expect from "function" algorithm you should use <code>abs(x)+0*y</code>, to get the GeoGebra’s default spline you can use <code>sqrt(x^2+y^2)</code>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>The choice of default makes the result behave nicely when transformed, making sure that <code>Rotate(Spline(list), a)</code> gives the same as <code>Spline(Rotate(list, a))</code>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

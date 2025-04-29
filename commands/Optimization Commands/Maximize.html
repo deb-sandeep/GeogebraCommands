@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Maximize</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Maximize Command</h1> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p><span class="image left"><img src="../../images/64px-Globe.png" alt="Globe.png" width="64" height="64"></span></p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>This command differs among variants of English:</p> 
+        </div> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>Maximize (US)</p> </li> 
+          <li> <p>Maximise (UK + Aus)</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Maximize( &lt;Dependent number&gt;, &lt;Free number&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Calculates the free number which gives the maximal value of the dependent number. The free number must be a slider and the slider interval will be used as the search interval. The relationship should be continuous and have only one <em>local</em> maximum point in the interval. If the construction is complicated, this command might return&nbsp;? to avoid using too much processor time.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Let <em>a</em> be a slider in [0,10] and <em>t1</em> the right triangle with vertices <em>C</em>=(<em>a</em>, 0), <em>A</em>=(0, 0) and <em>B</em>=(0,10 - <em>a</em>). <code>Maximize(t1,a)</code> gives 5, the value of <em>a</em> that maximizes the area of <em>t1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Maximize( &lt;Dependent Number&gt;, &lt;Point on Path&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Calculates the position of the point which gives the maximal value of the dependent number. The point must be a point on a path and the path will be used as the search interval. The relationship should be continuous and have only one local maximum point in the interval. If the construction is complicated, this command might return ? to avoid using too much processor time.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Let <em>c</em> be a circle, <em>C</em> a point on it and <em>D</em> a point outside the circle. If <em>f</em> = Segment(C,D) then <code>Maximize(f,C)</code> creates the point on <em>c</em> having maximum distance from <em>D</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <a href="Minimize.html" class="xref page">Minimize</a> command.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

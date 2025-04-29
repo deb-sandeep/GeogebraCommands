@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Circle</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Circle Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Circle( &lt;Point&gt;, &lt;Radius Number&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Yields a circle with given center and radius.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       Circle( &lt;Point&gt;, &lt;Segment&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Yields a circle with given center and radius equal to the length of the given segment.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       Circle( &lt;Point&gt;, &lt;Point&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Yields a circle with given center through a given point.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       Circle( &lt;Point&gt;, &lt;Point&gt;, &lt;Point&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Yields a circle through the three given points (if they do not lie on the same line).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <span class="image"><img src="../../images/20px-Mode_compasses.svg.png" alt="Mode compasses.svg" width="20" height="20"></span> <a href="https://geogebra.github.io/docs/manual/en/tools/Compass/" class="xref page">Compass</a>, <span class="image"><img src="../../images/20px-Mode_circle2.svg.png" alt="Mode circle2.svg" width="20" height="20"></span> <a href="https://geogebra.github.io/docs/manual/en/tools/Circle_with_Center_through_Point/" class="xref page">Circle with Center through Point</a>, <span class="image"><img src="../../images/20px-Mode_circlepointradius.svg.png" alt="Mode circlepointradius.svg" width="20" height="20"></span> <a href="https://geogebra.github.io/docs/manual/en/tools/Circle_with_Center_and_Radius/" class="xref page">Circle with Center and Radius</a>, and <span class="image"><img src="../../images/20px-Mode_circle3.svg.png" alt="Mode circle3.svg" width="20" height="20"></span> <a href="https://geogebra.github.io/docs/manual/en/tools/Circle_through_3_Points/" class="xref page">Circle through 3 Points</a> tools.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Circle( &lt;Line&gt;, &lt;Point&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a circle with line as axis and through the point.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       Circle( &lt;Point&gt;, &lt;Radius&gt;, &lt;Direction&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a circle with center, radius, and axis parallel to direction, which can be a line, vector or plane.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       Circle( &lt;Point&gt;, &lt;Point&gt;, &lt;Direction&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a circle with center, through a point, and axis parallel to direction.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>In order to avoid the ambiguity line/plane of notations in 2D and 3D, don’t use equations like <code>x = 0</code> or <code>y = 0</code> for the <em>Direction</em>. For example, you want the <em>Direction</em> to be the plane <code>x = 0</code>, use an expression like <code>x + 0y + 0z = 0</code> instead.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <a href="https://geogebra.github.io/docs/manual/en/tools/Circle_with_Axis_through_Point/" class="xref page"><span class="image"><img src="../../images/24px-Mode_circleaxispoint.svg.png" alt="Mode circleaxispoint.svg" width="24" height="24"></span></a> <a href="https://geogebra.github.io/docs/manual/en/tools/Circle_with_Axis_through_Point/" class="xref page">Circle with Axis through Point</a> and <a href="https://geogebra.github.io/docs/manual/en/tools/Circle_with_Center_Radius_and_Direction/" class="xref page"><span class="image"><img src="../../images/24px-Mode_circlepointradiusdirection.svg.png" alt="Mode circlepointradiusdirection.svg" width="24" height="24"></span></a> <a href="https://geogebra.github.io/docs/manual/en/tools/Circle_with_Center_Radius_and_Direction/" class="xref page">Circle with Center, Radius and Direction</a> tools.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

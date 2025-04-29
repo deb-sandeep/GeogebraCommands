@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Limit</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Limit Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Limit( &lt;Function&gt;, &lt;Value&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Computes the <a href="https://en.wikipedia.org/wiki/Limit_of_a_function">limit</a> of the function for the given value of the main function variable. (This may also yield infinity.)</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>Limit((x^2 + x) / x^2, +∞)</code> yields <em>1</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p>Not all limits can be calculated by GeoGebra, so <em>undefined</em> will be returned in those cases (as well as when the correct result is undefined).</p> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Limit( &lt;Expression&gt;, &lt;Value&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Computes the limit of the expression for the given value of the main function variable.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>Limit(a sin(x) / x, 0)</code> yields <em>a</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Limit( &lt;Expression&gt;, &lt;Variable&gt;, &lt;Value&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Computes the limit of the expression for the given value of the given function variable.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>Limit(a sin(v) / v, v, 0)</code> yields <em>a</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="ulist"> 
+           <ul> 
+            <li> <p>Not all limits can be calculated by GeoGebra, so <em>?</em> will be returned in those cases (as well as when the correct result is undefined).</p> </li> 
+            <li> <p>If you want the limit of a <a href="../Logic Commands/If.html" class="xref page">piecewise-defined function</a> you need to use <a href="../Function Commands/LimitAbove.html" class="xref page">LimitAbove</a> or <a href="../Function Commands/LimitBelow.html" class="xref page">LimitBelow</a>, for example <code>LimitAbove(If(x&gt;1, x^2, -2x), 1)</code></p> </li> 
+            <li> <p>See also <a href="../Function Commands/Asymptote.html" class="xref page">Asymptote Command</a>, <a href="../Function Commands/LimitAbove.html" class="xref page">LimitAbove Command</a> and <a href="../Function Commands/LimitBelow.html" class="xref page">LimitBelow Command</a>.</p> </li> 
+           </ul> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

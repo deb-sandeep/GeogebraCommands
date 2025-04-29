@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>SetValue</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">SetValue Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       SetValue( &lt;Boolean&gt;, &lt;0|1&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Sets the state of a boolean / check box&nbsp;: 1 = true, 0 = false</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>If <em>b</em> is a boolean, <code> SetValue(b,1)</code> sets the boolean <em>b</em> as <em>true</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       SetValue( &lt;Object&gt;, &lt;Object&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Let <em>A</em> be the first and <em>B</em> the second object. If <em>A</em> is a <a href="https://geogebra.github.io/docs/manual/en/Free_Dependent_and_Auxiliary_Objects/" class="xref page">free object</a> or a <a href="https://geogebra.github.io/docs/manual/en/Points_and_Vectors/" class="xref page">Point</a> restricted to <a href="https://geogebra.github.io/docs/manual/en/Geometric_Objects/" class="xref page">Path or Region</a>, its value is set to current value of <em>B</em> (i.e. <em>A</em> doesn’t change value if <em>B</em> is changed afterwards).</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>If <em>f</em> is a function, <code>SetValue(f, RandomElement({cos(x), 3x+2, ln(x)}))</code> defines, at random, f as being one of the functions proposed in the list.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       SetValue( &lt;List&gt;, &lt;Number&gt;, &lt;Object&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Let <em>n</em> be the <em>&lt;Number&gt;</em>. The command SetValue sets the n-th element of a free list to the current value of the object. Number <em>n</em> can be at most 1 + length of L.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       SetValue( &lt;Dependent Object&gt;,&nbsp;? ) 
+     </dt> 
+     <dd> 
+      <p>This is a special syntax that will set a dependent object to undefined without needing to fully redefine it using <code>=</code>.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       SetValue( &lt; 
+      <a href="https://geogebra.github.io/docs/manual/en/Action_Objects/" class="xref page">drop-down list</a>&gt;, &lt;Number n &gt; ) 
+     </dt> 
+     <dd> 
+      <p>Set <em>n</em> as <a href="../List Commands/SelectedIndex.html" class="xref page">the index of the selected element</a> in the drop-down list.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+  </article> 
+ </body>
+</html>

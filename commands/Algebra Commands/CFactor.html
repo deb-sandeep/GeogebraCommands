@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>CFactor</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">CFactor Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p><span class="image left"><img src="../../images/64px-Globe.png" alt="Globe.png" width="64" height="64"></span> This command differs among variants of English:</p> 
+          </div> 
+          <div class="ulist"> 
+           <ul> 
+            <li> <p>CFactor (US)</p> </li> 
+            <li> <p>CFactorise (UK + Aus)</p> </li> 
+           </ul> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         CFactor( &lt;Expression&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Factorizes a given expression, allowing for complex factors.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>CFactor(x^2 + 4)</code> yields <em>(x + 2 ί) (x - 2 ί)</em>, the factorization of <em>x<sup>2</sup> + 4</em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         CFactor( &lt;Expression&gt;, &lt;Variable&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Factorizes an expression with respect to a given variable, allowing for complex factors.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>CFactor(a^2 + x^2, a)</code> yields <em>(ί x + a) (- ί x + a)</em>, the factorization of <em>a<sup>2</sup> + x<sup>2</sup></em> with respect to <em>a</em>.</p> </li> 
+         <li> <p><code>CFactor(a^2 + x^2, x)</code> yields <em>(x + ί a) (x - ί a)</em>, the factorization of <em>a<sup>2</sup> + x<sup>2</sup></em> with respect to <em>x</em>.</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="paragraph"> 
+           <p>This command factors expressions over the <a href="https://en.wikipedia.org/wiki/Gaussian_rational">Complex Rational Numbers</a>. To factor over rational numbers, see the <a href="../Function Commands/Factor.html" class="xref page">Factor Command</a>.</p> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

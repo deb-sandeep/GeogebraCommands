@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>ZProportionTest</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">ZProportionTest Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       ZProportionTest( &lt;Sample Proportion&gt;, &lt;Sample Size&gt;, &lt;Hypothesized Proportion&gt;, &lt;Tail&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Performs a one sample <em>Z</em> test of a proportion using the given sample statistics. <em>Hypothesized Proportion</em> is the population proportion assumed in the null hypothesis. <em>Tail</em> has possible values "&lt;", "&gt;" , "≠". These specify the alternative hypothesis as follows:<br> "&lt;" = population proportion &lt; <em>Hypothesized Proportion</em><br> "&gt;" = population proportion &gt; <em>Hypothesized Proportion</em><br> "≠" = population proportion ≠ <em>Hypothesized Proportion</em></p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="paragraph"> 
+    <p>Results are returned in list form as {Probability value, Z test statistic}.</p> 
+   </div> 
+  </article> 
+ </body>
+</html>

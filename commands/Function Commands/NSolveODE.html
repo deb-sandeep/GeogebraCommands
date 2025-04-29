@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>NSolveODE</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">NSolveODE Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       NSolveODE( &lt;List of Derivatives&gt;, &lt;Initial x-coordinate&gt;, &lt;List of Initial y-coordinates&gt;, &lt;Final x-coordinate&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Solves (numerically) the system of differential equations</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>f'(t, f, g, h) = g </code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>g'(t, f, g, h) = h</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>h'(t, f, g, h) = -t h + 3t g + 2f + t</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>NSolveODE({f', g', h'}, 0, {1,2,-2}, 10)</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>NSolveODE({f', g', h'}, 0, {1,2,-2}, -5)</code> (solves the system backwards in time).</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code>x1'(t, x1, x2, x3, x4) = x2</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>x2'(t, x1, x2, x3, x4) = x3</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>x3'(t, x1, x2, x3, x4) = x4</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>x4'(t, x1, x2, x3, x4) = -8x1 + sin(t) x2 - 3x3 + t^2</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>x10 = -0.4</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>x20 = -0.3</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>x30 = 1.8</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>x40 = -1.5</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>NSolveODE({x1', x2', x3', x4'}, 0, {x10, x20, x30, x40}, 20)</code></p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Pendulum:</p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>g = 9.8</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>l = 2</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>a = 5</code> (starting location)</p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>b = 3</code> (starting force)</p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>y1'(t, y1, y2) = y2</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>y2'(t, y1, y2) = (-g) / l sin(y1) </code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>NSolveODE({y1', y2'}, 0, {a, b}, 20) </code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>len = Length(numericalIntegral1) </code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>c = Slider(0, 1, 1 / len, 1, 100, false, true, true, false) </code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>x1 = l sin(y(Point(numericalIntegral1, c))) </code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>y1 = -l cos(y(Point(numericalIntegral1, c))) </code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>A = (x1, y1) </code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>Segment((0, 0), A)</code></p> 
+     </div> 
+     <div class="paragraph"> 
+      <p><code>StartAnimation()</code></p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <a href="SlopeField.html" class="xref page">SlopeField command</a>, <a href="SolveODE.html" class="xref page">SolveODE command</a>.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

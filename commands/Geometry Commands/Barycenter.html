@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Barycenter</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Barycenter Command</h1> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p><span class="image left"><img src="../../images/64px-Globe.png" alt="Globe.png" width="64" height="64"></span> This command differs among variants of English:</p> 
+        </div> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>Barycenter (US)</p> </li> 
+          <li> <p>Barycentre (UK + Aus)</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Barycenter( &lt;List of Points&gt;, &lt;List of Weights&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Set the center of a system of points in the list, defined as the average of their positions, weighted by their value, using the <a href="https://en.wikipedia.org/wiki/Center_of_mass">proper formula</a>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>Barycenter({(2, 0), (0, 2), (-2, 0), (0, -2)}, {1, 1, 1, 1})</code> yields point <em>A(0, 0)</em></p> </li> 
+       <li> <p><code>Barycenter({(2, 0), (0, 2), (-2, 0), (0, -2)}, {2, 1, 1, 1})</code> yields point <em>B(0.4, 0)</em>. The <em>x</em>-coordinate of this point was determined by <em>\( \frac{1}{ 2+1+1+1 }*(2*2+1*0+1*(-2)+1*0)\) = \(\frac{1}{ 5 }*2\) = 0.4</em></p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

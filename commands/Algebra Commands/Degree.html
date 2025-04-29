@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Degree</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Degree Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Degree( &lt;Polynomial&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Gives the <a href="https://en.wikipedia.org/wiki/degree_of_a_polynomial">degree of a polynomial</a> (in the main variable).</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>Degree(x^4 + 2 x^2)</code> yields <em>4</em></p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Degree( &lt;Polynomial&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Gives the <a href="https://en.wikipedia.org/wiki/degree_of_a_polynomial">degree of a polynomial</a> (in the main variable or <a href="https://en.wikipedia.org/wiki/Monomial">monomial</a>).</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>Degree(x^4 + 2 x^2)</code> yields <em>4</em></p> </li> 
+         <li> <p><code>Degree(x^6 y^3 + 2 x^2 y^3)</code> yields <em>9</em></p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         Degree( &lt;Polynomial&gt;, &lt;Variable&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Gives the degree of a polynomial in the given variable.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>Degree(x^4 y^3 + 2 x^2 y^3, x)</code> yields <em>4</em></p> </li> 
+         <li> <p><code>Degree(x^4 y^3 + 2 x^2 y^3, y)</code> yields <em>3</em></p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

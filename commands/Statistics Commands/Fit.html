@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Fit</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Fit Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Fit( &lt;List of Points&gt;, &lt;List of Functions&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns a linear combination of the <em>functions</em> that best fit the <em>points</em> in the list.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>Fit({(-2, 3), (0, 1), (2, 1), (2, 3)}, {x^2, x})</code> yields <em>0.625 x^2 - 0.25x</em>.</p> </li> 
+       <li> <p>Let <em>L = {A, B, C, …​}</em>, <em>f(x) = 1</em>, <em>g(x) = x</em>, <em>h(x) = e^x</em>, <em>F = {f, g, h}</em>. <code>Fit(L, F)</code> calculates a function of the form <em>a + b x + c e^x</em> that fits the points in the list.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Fit( &lt;List of points&gt;, &lt;Function&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Returns a function that fits the <em>points</em> in the list with minimum squared error with respect to the specified model. The given model <em>function</em> must depend on one or more sliders, that are taken as start values of parameters to be optimized. The non-linear iteration might not converge, but adjusting the sliders to a better starting point might help.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Let <em>a</em> be slider with interval from <em>-5</em> to <em>5</em> and increment 1. <code>Fit({(-2, 3), (0, 1), (2, 1), (2, 3)}, a + x^2)</code> yields <em>-1 + x^2</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>See also <a href="../CAS Specific Commands/FitExp.html" class="xref page">FitExp</a>, <a href="FitGrowth.html" class="xref page">FitGrowth</a>, <a href="FitLine.html" class="xref page">FitLine</a>, <a href="FitLineX.html" class="xref page">FitLineX</a>, <a href="../CAS Specific Commands/FitLog.html" class="xref page">FitLog</a>, <a href="FitLogistic.html" class="xref page">FitLogistic</a>, <a href="../CAS Specific Commands/FitPoly.html" class="xref page">FitPoly</a>, <a href="../CAS Specific Commands/FitPow.html" class="xref page">FitPow</a> and <a href="../CAS Specific Commands/FitSin.html" class="xref page">FitSin</a></p> </li> 
+          <li> <p>If you work with big/small numbers, you should consider normalizing them for a more accurate result, see <a href="../Function Commands/Normalize.html" class="xref page">Normalize Command</a>.</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

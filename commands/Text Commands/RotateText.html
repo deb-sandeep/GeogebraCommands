@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>RotateText</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">RotateText Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       RotateText( &lt;Text&gt;, &lt;Angle&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a new <a href="https://geogebra.github.io/docs/manual/en/LaTeX/" class="xref page">LaTeX</a> text, rotated by the given angle.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>The text needs to be enclosed in double quotes <code>"</code>.</p> </li> 
+          <li> <p>The text is rotated around the top left corner (also known as Corner 4) of the box containing it, and placed at the origin of the coordinate system.</p> </li> 
+          <li> <p>The default setting for the angle is radians. Use the degree symbol <code>°</code> for rotation angles measured in degrees.</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>RotateText("a = 5", 45°)</code></p> </li> 
+       <li> <p>If you want to place the text "GeoGebra", rotated by 42°, at point (6,6), use the command <code>Text(RotateText("GeoGebra", 42°), (6, 6),true,true)</code></p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

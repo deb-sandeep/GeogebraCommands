@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>SetCoords</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">SetCoords Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       SetCoords( &lt;Object&gt;, &lt;x&gt;, &lt;y&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Sets the cartesian coordinates of <a href="https://geogebra.github.io/docs/manual/en/Free_Dependent_and_Auxiliary_Objects/" class="xref page">free</a> objects in a 2D View as the given coordinates. This command uses the coordinates values, not their definitions, therefore the object stays free.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       SetCoords( &lt;Object&gt;, &lt;x&gt;, &lt;y&gt;, &lt;z&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Sets the cartesian coordinates of <a href="https://geogebra.github.io/docs/manual/en/Free_Dependent_and_Auxiliary_Objects/" class="xref page">free</a> objects in the 3D View as the given coordinates. This command uses the coordinates values, not their definitions, therefore the object stays free.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>This also works for points on paths and in regions. The point will be moved to the closest possible position.</p> </li> 
+          <li> <p>This command works also for sliders, buttons, checkboxes, input Boxes and Images.</p> </li> 
+          <li> <p>If the option "Absolute Screen Position" is selected, then <em>x</em>, <em>y</em> and <em>z</em> are in screen pixels.</p> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

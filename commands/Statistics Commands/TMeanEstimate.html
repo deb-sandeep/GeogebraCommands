@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>TMeanEstimate</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">TMeanEstimate Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       TMeanEstimate( &lt;List of Sample Data&gt;, &lt;Confidence level&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Calculates a <em>t</em> confidence interval estimate of a population mean using the given sample data and confidence level. Results are returned in list form as <em>{lower confidence limit, upper confidence limit}</em>.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       TMeanEstimate( &lt;Sample Mean&gt;, &lt;Sample Standard Deviation&gt;, &lt;Sample Size&gt;, &lt;Confidence level&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Calculates a <em>t</em> confidence interval estimate of a population mean using the given sample statistics and confidence level. Results are returned in list form as <em>{lower confidence limit, upper confidence limit}</em>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+  </article> 
+ </body>
+</html>

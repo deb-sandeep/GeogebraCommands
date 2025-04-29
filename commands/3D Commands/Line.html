@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>Line</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">Line Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       Line( &lt;Point&gt;, &lt;Point&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a line through two points <em>A</em> and <em>B</em>.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       Line( &lt;Point&gt;, &lt;Parallel Line&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a line through the given point parallel to the given line.</p> 
+     </dd> 
+     <dt class="hdlist1">
+       Line( &lt;Point&gt;, &lt;Direction Vector&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Creates a line through the given point with direction vector <em>v</em>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <span class="image"><img src="../../images/24px-Mode_join.svg.png" alt="Mode join.svg" width="24" height="24"></span> <a href="https://geogebra.github.io/docs/manual/en/tools/Line/" class="xref page">Line</a> and <span class="image"><img src="../../images/24px-Mode_parallel.svg.png" alt="Mode parallel.svg" width="24" height="24"></span> <a href="https://geogebra.github.io/docs/manual/en/tools/Parallel_Line/" class="xref page">Parallel Line</a> tools.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>You can also use a parametric syntax to create a line eg <code>X = (1, 2) + r (2, 3)</code> or <code>X = (1, 2, 3) + r (2, 3, 4)</code></p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>FitPow</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">FitPow Command</h1> 
+   <div id="preamble"> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         FitPow( &lt;List of Points&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Calculates the regression curve in the form <em>a x<sup>b</sup></em>.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>FitPow({(1, 1), (3, 2), (7, 4)})</code> creates the regression curve <em>f(x) = 0.97 x<sup>0.71</sup></em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sect1"> 
+    <h2 id="_cas_syntax"><a class="anchor" href="#_cas_syntax"></a>CAS Syntax</h2> 
+    <div class="sectionbody"> 
+     <div class="dlist"> 
+      <dl> 
+       <dt class="hdlist1">
+         FitPow( &lt;List of Points&gt; ) 
+       </dt> 
+       <dd> 
+        <p>Calculates the regression curve in the form <em>a x<sup>b</sup></em>.</p> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="exampleblock"> 
+      <div class="content"> 
+       <div class="paragraph"> 
+        <p><code>FitPow({(1, 1), (3, 2), (7, 4)})</code> yields <em>0.97 x<sup>0.71</sup></em>.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="admonitionblock note"> 
+      <table> 
+       <tbody> 
+        <tr> 
+         <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+         <td class="content"> 
+          <div class="ulist"> 
+           <ul> 
+            <li> <p>All points used need to be in the first quadrant of the coordinate system.</p> </li> 
+            <li> <p>See also <a href="FitExp.html" class="xref page">FitExp Command</a>, <a href="FitLog.html" class="xref page">FitLog Command</a>, <a href="FitPoly.html" class="xref page">FitPoly Command</a>, and <a href="FitSin.html" class="xref page">FitSin Command</a>.</p> </li> 
+            <li> <p>If you work with big/small numbers, you should consider normalizing them for a more accurate result, see <a href="../Function Commands/Normalize.html" class="xref page">Normalize Command</a>.</p> </li> 
+           </ul> 
+          </div> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>

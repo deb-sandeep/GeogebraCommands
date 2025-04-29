@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>ParseToFunction</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">ParseToFunction Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       ParseToFunction( &lt;Text&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Parses the text containing the function definition and creates the corresponding <a href="https://geogebra.github.io/docs/manual/en/Functions/" class="xref page">function</a>.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code> ParseToFunction("x^2")</code> creates the function <em>f</em>(<em>x</em>) = <em>x</em><sup>2</sup><em>.</em></p> </li> 
+       <li> <p><code> ParseToFunction("t+2/t")</code> creates the function <em>f</em>(<em>t</em>) = <em>t</em> + 2/<em>t</em>.</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       ParseToFunction( &lt;Function&gt;, &lt;Text&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Parses the string and stores the result to a <a href="https://geogebra.github.io/docs/manual/en/Functions/" class="xref page">function</a> <em>f</em>, which must be defined and <a href="https://geogebra.github.io/docs/manual/en/Free_Dependent_and_Auxiliary_Objects/" class="xref page">free</a> before the command is used.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p>Define <code> f(x) = 3x² + 2</code> and <code> text1 = "f(x) = 3x + 1"</code>. <code> ParseToFunction(f, text1)</code> returns <em>f(x) = 3x +1</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       ParseToFunction( &lt;Text&gt;, &lt;List of variables&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Parses the text containing the function definition and creates the corresponding <a href="https://geogebra.github.io/docs/manual/en/Functions/" class="xref page">function</a> of the variables defined in the list.</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="paragraph"> 
+      <p><code> ParseToFunction("2u+3v",{"u", "v"})</code> creates the function <em>a(u,v) = 2u + 3v</em>.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="admonitionblock note"> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td class="icon"> <i class="fa icon-note" title="Note"></i> </td> 
+       <td class="content"> 
+        <div class="paragraph"> 
+         <p>See also <a href="ParseToNumber.html" class="xref page">ParseToNumber</a> command.</p> 
+        </div> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </article> 
+ </body>
+</html>

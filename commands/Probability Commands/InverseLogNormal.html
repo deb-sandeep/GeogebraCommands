@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TTEN152TZ"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { 
+        dataLayer.push(arguments); 
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5TTEN152TZ');
+    </script> 
+  <meta charset="UTF-8"> 
+  <title>InverseLogNormal</title> 
+  <link rel="stylesheet" href="../../site.css"> 
+  <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script> 
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script> 
+ </head> 
+ <body> 
+  <article class="doc"> 
+   <h1 class="page">InverseLogNormal Command</h1> 
+   <div class="dlist"> 
+    <dl> 
+     <dt class="hdlist1">
+       InverseLogNormal( &lt;Mean&gt;, &lt;Standard Deviation&gt;, &lt;Probability&gt; ) 
+     </dt> 
+     <dd> 
+      <p>Computes the inverse of the cumulative distribution function of a <a href="https://en.wikipedia.org/wiki/Log-normal_distribution">log-normal distribution</a> at probability <em>p</em>, where the log-normal distribution is defined by the given parameters <em>mean</em> and <em>standard deviation</em>. In other words, it finds <em>t</em> such that <em>P(X ≤ t) = p</em>, where <em>X</em> is a log-normal random variable. Probability <em>p</em> must be a value in the closed interval [<em>0, 1</em>].</p> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="exampleblock"> 
+    <div class="content"> 
+     <div class="ulist"> 
+      <ul> 
+       <li> <p><code>InverseLogNormal(10, 20, 1/3)</code> returns <em>3.997</em>.</p> </li> 
+       <li> <p><code>InverseLogNormal(1000, 2, 1)</code> returns \( \infty \).</p> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+ </body>
+</html>
